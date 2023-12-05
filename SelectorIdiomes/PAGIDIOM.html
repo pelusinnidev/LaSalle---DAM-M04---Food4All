@@ -9,29 +9,46 @@
 
 <body>
 
+    <!--AQUÍ ESTA EL HEADER DE LA PÀGINA DEL SELECTOR D'IDIOMES AMB EL LOGO I UN PARELL DE HEADERS-->
     <header>
+
         <h1>Welcome to Food4All</h1>
         <h2>Choose your language / Escull Idioma / Elige un idioma</h2>
+        <img src="/SelectorIdiomes/Resources/Logo.png" alt="Logo Restaurant">
+
     </header>
 
     <main>
-        <button>    
-            <a href="../English/MAINPAG.html">English</a>
-            <img src="/SelectorIdiomes/Resources/EnFlag.jpg" alt="English">
-        </button>
-
-        <button>    
-            <a href="../Català/PAGPRIN.html">Catalan</a>
-            <img src="/SelectorIdiomes/Resources/Catflag.jpg" alt="Català">
-        </button>
-
-        <button>    
-            <a href="../Español/PAGPRIN.html">English</a>
-            <img src="/SelectorIdiomes/Resources/Spflag.jpg" alt="Español">
-        </button>
+        
+        <div class="grid-container">
+            <!--Item1-->
+            <div class="grid-item">English
+                <button>    
+                    <a href="../English/MAINPAG.html">English</a>
+                    <img src="/SelectorIdiomes/Resources/EnFlag.jpg" alt="English">
+                </button>
+            </div>
+            
+            <!--Item2-->
+            <div class="grid-item">Català
+                <button>    
+                    <a href="../Català/PAGPRIN.html">Català</a>
+                    <img src="/SelectorIdiomes/Resources/Catflag.jpg" alt="Català">
+                </button>
+            </div>
+            
+            <!--Item3-->
+            <div class="grid-item">Español
+                <button>    
+                    <a href="../Español/PAGPRIN.html">Español</a>
+                    <img src="/SelectorIdiomes/Resources/Spflag.jpg" alt="Español">
+                </button>
+            </div>
+        </div>
         
     </main>
 
+    <!--AQUÍ ESTA EL FOOTER DE LA PÀGINA DEL SELECTOR D'IDIOMES PER POSAR EL COPY-->
     <footer>
         <p>&copy; 2023-2024 Food4All. All rights reserved.</p>
     </footer>
