@@ -8,6 +8,7 @@ body {
     padding-bottom: 50px;
 }
 
+/* AQUÍ ESTA LA CONFIG DE LA CAPÇALERA */
 header {
     background-color: #333;
     color: #ffffff;
@@ -15,6 +16,7 @@ header {
     text-align: center;
 }
 
+/* AQUÍ ESTA LA CONFIG DELS TÍTOLS */
 h1 {
     font-size: 3em;
 }
@@ -23,6 +25,7 @@ h2 {
     font-size: 1.5em;
 }
 
+/* AQUÍ ESTA LA CONFIG DELS BOTONS COM ALTERNATIVA TMEPORAL AL GRID */
 .button-container {
     display: flex;
     justify-content: center;
@@ -66,6 +69,7 @@ h2 {
     height: 100%;
 }
 
+/* AQUÍ ESTA EL PEU DE PÀGINA EPR MOSTRAR LA DATA DE CREACIÓ I EL COPYRIGHT */
 footer {
     background-color: #333;
     color: #ffffff;
