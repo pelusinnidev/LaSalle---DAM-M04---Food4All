@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="PAGIDIOM_Style.css"
-    <title>Food4All</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food4All</title>
+        <link rel="stylesheet" href="PAGIDIOM_Style.css">
+    </head>
 
-<body>
+    <body>
+        <!--AQUÍ ESTÀN ELS TÍTOLS DE LA PÀGINA WEB-->
+        <header>
+            <h1>Welcome to / Benvingut a / Bienvenido a Food4All!</h1>
+            <h2>Choose your language / Escull Idioma / Elige un idioma</h2>
+            <img src="/SelectorIdiomes/Resources/Logo.png" alt="Logo of Restaurant">
+        </header>
 
-    <!--AQUÍ ESTA EL HEADER DE LA PÀGINA DEL SELECTOR D'IDIOMES AMB EL LOGO I UN PARELL DE HEADERS-->
-    <header>
+        <!--AQUÍ ESTAN POSATS ELS BOTONS EN FORMA DE BUTTON CONATINER I NO GRID - GRID NO AGRADA RESULTAT (DE MOMENT)-->
+        <main>
 
-        <h1>Welcome to Food4All</h1>
-        <h2>Choose your language / Escull Idioma / Elige un idioma</h2>
-        <img src="/SelectorIdiomes/Resources/Logo.png" alt="Logo Restaurant">
+            <div class="button-container">
 
-    </header>
+                <!--BOTÓ ENGLISH-->
+                <div class="button-item">
+                    <button>    
+                        <a href="../English/MAINPAG.html">English</a>
+                        <img src="/SelectorIdiomes/Resources/EnFlag.jpg" alt="English Flag">
+                    </button>
+                </div>
 
-    <main>
-        <!--AQUEST EL CONTAINER ON ESTARAN TOTS ELS BOTONS PER SELECCIONAR ELS IDIOMES-->
-        <div class="grid-container">
+                <!--BOTÓ CATALÀ-->
+                <div class="button-item">
+                    <button>    
+                        <a href="../Català/PAGPRIN.html">Català</a>
+                        <img src="/SelectorIdiomes/Resources/Catflag.jpg" alt="Catalan Flag">
+                    </button>
+                </div>
+                
+                <!--BOTÓ ESPAÑOL-->
+                <div class="button-item">
+                    <button>    
+                        <a href="../Español/PAGPRIN.html">Español</a>
+                        <img src="/SelectorIdiomes/Resources/Spflag.jpg" alt="Spanish Flag">
+                    </button>
+                </div>
 
-            <!--Item1-->
-            <div class="grid-item">
-                <button>    
-                    <a href="../English/MAINPAG.html">English</a>
-                    <img src="/SelectorIdiomes/Resources/EnFlag.jpg">
-                </button>
             </div>
-            
-            <!--Item2-->
-            <div class="grid-item">
-                <button>    
-                    <a href="../Català/PAGPRIN.html">Català</a>
-                    <img src="/SelectorIdiomes/Resources/Catflag.jpg">
-                </button>
-            </div>
-            
-            <!--Item3-->
-            <div class="grid-item">
-                <button>    
-                    <a href="../Español/PAGPRIN.html">Español</a>
-                    <img src="/SelectorIdiomes/Resources/Spflag.jpg">
-                </button>
-            </div>
-        </div>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2023-2024 Food4All. All rights reserved.</p>
+        </footer>
         
-    </main>
-
-    <!--AQUÍ ESTA EL FOOTER DE LA PÀGINA DEL SELECTOR D'IDIOMES PER POSAR EL COPY-->
-    <footer>
-        <p>&copy; 2023-2024 Food4All. All rights reserved.</p>
-    </footer>
-
+    </body>
 </html>
