@@ -9,11 +9,18 @@ body {
 }
 
 /* AQUÍ ESTA LA CONFIG DE LA CAPÇALERA */
+
 header {
     background-color: #333;
     color: #ffffff;
     padding: 5px 0;
     text-align: center;
+}
+
+header img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
 /* AQUÍ ESTA LA CONFIG DELS TÍTOLS */
@@ -25,51 +32,45 @@ h2 {
     font-size: 1.5em;
 }
 
-/* AQUÍ ESTA LA CONFIG DELS BOTONS COM ALTERNATIVA TMEPORAL AL GRID */
+/* AQUÍ ESTA LA CONFIG DELS BOTONS COM ALTERNATIVA TEMPORAL AL GRID */
+
 .button-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 120px;
+    padding: 60px;
+    background-color: #333;
 }
 
 .button-item {
     position: relative;
     text-align: center;
+    width: auto;
+    height: auto;
+    background-color: #333;
 }
 
 .button-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.button-item button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    width: 150px;  
-    height: 50px;  
-    line-height: 50px;
-    text-align: center;  
-}
-
-.button-item button:hover {
-    background-color: #0056b3;
+    width: 300px;
+    height: 200px;
+    object-fit: resize;
 }
 
 .button-item a {
-    color: #fff;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    background-color: #000;
+    top: 42.5%;
+    left: 40%;
+    right: auto;
+    bottom: auto;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px;
 }
 
 /* AQUÍ ESTA EL PEU DE PÀGINA EPR MOSTRAR LA DATA DE CREACIÓ I EL COPYRIGHT */
+
 footer {
     background-color: #333;
     color: #ffffff;
