@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     /* Gradient d'estil tricolor, com la senyera, perquè Catalunya és guai! 🌈 */
-    background: linear-gradient(to right, #61af61, #db4343, #daa544);
+    background: linear-gradient(to bottom,#c05252, #dd9b45, #b0aaaa);
     padding-bottom: 50px;
 }
 
@@ -111,7 +111,7 @@ header img {
 
 /* Peu de pàgina - l'última pista de la festa, amb una mica de boig! 🎉 */
 footer {
-    background: rgba(137, 119, 119, 0.7); /* Un color vermellós amb 70% d'opacitat, com una post-festa amb classe! */
+    background: #b0aaaa; /* Un color vermellós amb 70% d'opacitat, com una post-festa amb classe! */
     color: #fff;
     text-align: center;
     padding: 10px 0;
