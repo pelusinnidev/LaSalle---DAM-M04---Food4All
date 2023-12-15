@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="robots" content="index, follow">
-        <meta name="csrf-token" content="tu-token-csrf"> <!--seguretat-->
-        <meta name="keywords" content="palabra1, palabra2, palabra3">
-        <meta name="author" content="Pol, David, Ariadna">
-        <link rel="icon" type="image/x-icon" href="/SelectorIdiomes/Resources/icono.png">
-        <title>Food4All</title>
-        <link rel="stylesheet" href="PAGIDIOM_Style.css">
-    </head>
 
-    <body>
-        <!--AQUÍ ESTÀN ELS TÍTOLS DE LA PÀGINA WEB-->
-        <header>
-            <h1>Welcome to / Benvingut a / Bienvenido a Food4All!</h1>
-            <h2>Choose your language / Escull Idioma / Elige un idioma</h2>
-            <img src="/SelectorIdiomes/Resources/Logo.png" alt="Logo del Restaurant">
-        </header>
+<head>
+    <!-- Meta-informació - on guardem els secrets de la pàgina web! 🔐 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow"> <!-- Robots que volen explorar aquesta increïble pàgina! 🤖 -->
+    <meta name="csrf-token" content="tu-token-csrf"> <!-- Un tòken CSRF per protegir-nos dels hackers maleïts! -->
+    <meta name="keywords" content="palabra1, palabra2, palabra3"> <!-- Paraules clau - les paraules màgiques de la web! ✨ -->
+    <meta name="author" content="Pol, David, Ariadna"> <!-- Els mestres darrere del codi - els heroes sense capa! 🦸 -->
+    
+    <!-- Icona que marca la nostra identitat digital - com la capa d'un superheroi! 🦸‍♂️ -->
+    <link rel="icon" type="image/x-icon" href="/SelectorIdiomes/Resources/icono.png">
 
-        <!--AQUÍ ESTAN POSATS ELS BOTONS EN FORMA DE BUTTON CONATINER I NO GRID - GRID NO AGRADA RESULTAT (DE MOMENT) provant-->
-        <main>
+    <!-- Nom de la pàgina - com el títol d'una pel·lícula èpica! 🎬 -->
+    <title>Food4All</title>
 
-            <div class="button-container"> 
+    <!-- Enllaç al nostre espectacle visual - el CSS! 💃 -->
+    <link rel="stylesheet" href="PAGIDIOM_Style.css">
+</head>
 
-                <!--BOTÓ IDIOMA ENGLISH-->
-                <button class="button-item" onclick="location.href='/English/MAINPAG.html'"> 
-                    <img src="/SelectorIdiomes/Resources/EnFlag.jpg" alt="English Flag">
-                </button>
+<body>
+    <!-- Capçalera - el començament de la nostra història èpica! 📖 -->
+    <header>
+        <h1>Welcome to / Benvingut a / Bienvenido a Food4All!</h1>
+        <h2>Choose your language / Escull Idioma / Elige un idioma</h2>
+        <img src="/SelectorIdiomes/Resources/Logo.png" alt="Logo del Restaurant"> <!-- La imatge que parla més que mil paraules! 📷 -->
+    </header>
 
-                <!--BOTÓ IDIOMA CATALÀ-->
-                <button class="button-item" onclick="location.href='/Català/PAGPRIN.html'">
-                    <img src="/SelectorIdiomes/Resources/Catflag.jpg" alt="Catalan Flag">
-                </button>
-                
-                <!--BOTÓ IDIOMA ESPAÑOL-->
-                <button class="button-item" onclick="location.href='/Español/PAGPRIN.html'">
-                    <img src="/SelectorIdiomes/Resources/Spflag.jpg" alt="Spanish Flag">
-                </button>
+    <!-- El plat fort - el contingut principal! 🍔 -->
+    <main>
+        <!-- Contenidor de botons - on triem la nostra pròpia aventura! 🚀 -->
+        <div class="button-container">
+            <!-- Botó 1 - L'aventura en anglès! 🇬🇧 -->
+            <button class="button-item">
+                <img src="/SelectorIdiomes/Resources/EnFlag.jpg" alt="English Flag">
+                <a href="/English/MAINPAG.html"></a> <!-- L'enllaç que ens portarà a terres angloparlants! 🗺️ -->
+            </button>
 
-            </div>
+            <!-- Botó 2 - L'aventura en català! 🎉 -->
+            <button class="button-item">
+                <img src="/SelectorIdiomes/Resources/Catflag.jpg" alt="Catalan Flag">
+                <a href="/Català/PAGPRIN.html"></a> <!-- L'enllaç que ens portarà a terres catalanes! 🏰 -->
+            </button>
 
-        </main>
+            <!-- Botó 3 - L'aventura en espanyol! 🌮 -->
+            <button class="button-item">
+                <img src="/SelectorIdiomes/Resources/Spflag.jpg" alt="Spanish Flag">
+                <a href="/Español/PAGPRIN.html"></a> <!-- L'enllaç que ens portarà a terres espanyoles! 🌍 -->
+            </button>
+        </div>
+    </main>
 
-        <footer>
-            <p>&copy; 2023-2024 Food4All. All rights reserved.</p>
-        </footer>
-        
-    </body>
+    <!-- Peu de pàgina - l'epíleg de la nostra història! 📚 -->
+    <footer>
+        <p>&copy; 2023-2024 Food4All. All rights reserved.</p> <!-- El dret reservat com el secret millor guardat! 🤫 -->
+    </footer>
+
+</body>
+
 </html>

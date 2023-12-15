@@ -1,121 +1,118 @@
-/* CSS for PAGIDIOM.html */
-
+/* Configuració global del cos de la pàgina */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color:rgb(252, 241, 241);
+    /* Gradient d'estil tricolor, com la senyera, perquè Catalunya és guai! 🌈 */
+    background: linear-gradient(to right, #61af61, #db4343, #daa544);
     padding-bottom: 50px;
 }
 
-/* AQUÍ ESTA LA CONFIG DE LA CAPÇALERA */
-
+/* Capçalera - aquí és on comença la festa del codi! 🥳 */
 header {
-    background-color: rgb(252, 241, 241);
-    color: black;
-    padding: 5px 0;
+    color: white;
+    padding: 30px 0;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
+/* Títols, que són com les estrelles del codi 🌟 */
 h1, h2 {
-    text-shadow: 2px 2px 4px rgba(88, 87, 87, 0.5);
-}
-
-
-/*AQUÍ ESTAN LES CONFIGURACIONS DE LA IMATGE + ANIMACIONS*/
-header img {
-    width: 300%;
-    max-width: 300px;
-    height: auto;
-}
-
-@keyframes moverDerechaIzquierda {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(-10px); /* Mueve la imagen 10px a la izquierda */
-    }
-}
-  
-header img {
-      animation: moverDerechaIzquierda 2s ease-in-out infinite; /* Aplica la animación */
-}
-
-/* AQUÍ ESTA LA CONFIG DELS TÍTOLS */
-h1 {
+    text-shadow: none;
     font-size: 3em;
 }
 
-h2 {
-    font-size: 1.5em;
+/* H1, el gran protagonista del codi - com una rockstar! 🤘 */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
-/* AQUÍ ESTA LA CONFIG DELS BOTONS COM ALTERNATIVA TEMPORAL AL GRID */
+/* H2, el petit gran amic del H1 - potser no tan fort, però igual de guai! 😎 */
+h2 {
+    font-size: 1.8em;
+}
 
+/* L'animació del logo - fent un petit ball amb el bounce! 💃 */
+header img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    animation: bounce 4s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite; /* Animació de ball a ritme de Cubic Bezier! */
+}
+
+@keyframes bounce {
+    0%, 50%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    25% {
+        transform: translateY(-10px) scale(1.05);
+    }
+    75% {
+        transform: translateY(-10px) scale(0.95);
+    }
+}
+
+/* Contenidor dels botons - perquè tots ballin junts! 🕺 */
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 100px; /* espai entre els botons*/
-    padding: 60px; 
-    background-color: rgb(252, 241, 241);
+    gap: 50px;
+    padding: 60px;
+    animation: button-pulse 2s ease-in-out infinite; /* Pulsació de botons perquè es diverteixin! */
 }
 
+/* El botó en sí - un petit temblor abans del gran ball! 👯‍♂️ */
 .button-item {
     position: relative;
-    text-align: center;
-    width: auto;
-    height: auto;
-    background: transparent;
-    border: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* suavitza la transició dels efectes*/
-
-    background: transparent; /* Hace el fondo del botón transparente */
-    border: none; /* Elimina cualquier borde */
-    outline: none; /* Elimina el contorno que aparece al hacer clic en el botón */
-    box-shadow: none; /* Elimina cualquier sombra del botón */
-    padding: 0; /* Elimina cualquier padding que pueda estar causando espacio extra */
-    margin: 0; /* Elimina cualquier margen */
-
-}
-.button-item:hover {   
-    transform: scale(1.05); /* Agumenta el tamany del botó en un 5% */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Afegeix una sombra per donar profunditat */
-}
-
-.button-item:active {
-    transform: scale(0.95); /* Redueix el tamany del botó en un 5% al fer clic */
-}
-
-.button-item img {
-    width: 400px;
+    width: 200px;
     height: 200px;
-    object-fit: resize;
-    border: none;
-    border-radius: 25px;
-    background: none;
-    padding: 0;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    animation: button-shake 0.5s ease-in-out infinite;
+
+    /* Quan ho toques, tot es mou més ràpid! 🚀 */
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+    }
 }
 
-.button-item a {  /*  estil del link a les respectives pagines d'idiomes*/
+/* Quan passis el ratolí sobre el botó, la imatge es mostra a la gran pantalla! 📸 */
+.button-item:hover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* La imatge del botó - com una superestrella que omple tot l'escenari! 🌟 */
+.button-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Enllaç dins del botó - perquè els botons també poden ser intellectuals! 🤓 */
+.button-item a {
     position: absolute;
-    background-color: black;
-    top: 42.5%;
-    left: 40%;
-    right: auto;
-    bottom: auto;
-    color: #982626;
-    font-size: 1.5em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8em;
     font-weight: bold;
-    padding: 5px;
-    border: none;
 }
 
-/* AQUÍ ESTA EL PEU DE PÀGINA PER MOSTRAR LA DATA DE CREACIÓ I EL COPYRIGHT */
-
+/* Peu de pàgina - l'última pista de la festa, amb una mica de boig! 🎉 */
 footer {
-    background-color: rgb(137, 119, 119);
-    color: #000000;
+    background: rgba(137, 119, 119, 0.7); /* Un color vermellós amb 70% d'opacitat, com una post-festa amb classe! */
+    color: #fff;
     text-align: center;
     padding: 10px 0;
     position: fixed;
