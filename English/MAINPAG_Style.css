@@ -1,0 +1,98 @@
+/* General Styles */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .search-container {
+    display: flex;
+  }
+  
+  input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #searchResults {
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  main .section {
+    margin-bottom: 20px;
+  }
+  
+  section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    font-size: 16px;
+  }
+  
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Food Images */
+  
+  section.american-food {
+    background-image: url("images/american-food.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+  
+  section.italian-food {
+    background-image: url("images/italian-food.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+  
+  section.japanese-food {
+    background-image: url("images/japanese-food.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+  
