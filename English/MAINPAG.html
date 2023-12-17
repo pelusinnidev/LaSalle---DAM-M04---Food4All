@@ -1,56 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Food4All - Delicious Food Delivered</title>
-        <link rel="stylesheet" href="/English/MAINPAG_Style.css">
-        <script src="/English/MAINPAG.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food4All - Delicious Food Delivered</title>
+    <link rel="stylesheet" href="/English/MAINPAG_Style.css">
+    <script src="/English/MAINPAG.js"></script>
+</head>
 
-    <body>
-        <nav>
-            <ul>
-                <li><a href="/SelectorIdiomes/PAGIDIOM.html">LanguageSelector</a></li>
-                <li><a href="#">AmericanFood</a></li>
-                <li><a href="#">ItalianFood</a></li>
-                <li><a href="#">JapaneseFood</a></li>
-                <li><a href="#">OrderPay</a></li>
-                <li><a href="/SelectorIdiomes/PAGIDIOM.html">Language Select</Select></a></li>
-                <li><input type="text" id="searchInput" placeholder="Search..." oninput="search()"></li>
-            </ul>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/English/American/A_MAINPAG.html">American Food</a></li>
+            <li><a href="#">Italian Food</a></li>
+            <li><a href="#">Japanese Food</a></li>
+            <li><a href="#">Order Pay</a></li>
+            <li><a href="/SelectorIdiomes/PAGIDIOM.html">Language Select</a></li>
+            <li class="search-container"><input type="text" id="searchInput" placeholder="Search..."
+                    oninput="search()"></li>
+        </ul>
 
-            <div id="searchResults">
-                <!-- Los resultados de la búsqueda se mostrarán aquí -->
+        <div id="searchResults">
+            <!-- Search results will be displayed here -->
+        </div>
+    </nav>
+
+    <header>
+        <h1>Welcome to Food4All</h1>
+    </header>
+
+    <main>
+        <section class="Welcome">
+            <div class="content">
+                <h2>Welcome!</h2>
+                <p>Indulge in a culinary experience like no other at Food4All. We take pride in offering a diverse menu
+                    crafted with passion and dedication.</p>
             </div>
-        </nav>
+            <div class="image">
+                <img src="images/welcome-image.jpg" alt="Welcome Image">
+            </div>
+        </section>
 
-        <header>
-            <h1>Welcome to Food4All</h1>  
-        </header>
+        <section class="History">
+            <div class="image">
+                <img src="images/history-image.jpg" alt="History Image">
+            </div>
+            <div class="content">
+                <h2>Our History</h2>
+                <p>Established in 2010, Food4All has been a symbol of culinary excellence. Over the years, we've evolved
+                    into a destination for food lovers seeking exquisite flavors and exceptional dining.</p>
+            </div>
+        </section>
 
-        <main>
-            <section>
-                <h2>Discover Our Delicious Food</h2>
-                <p>Indulge in a wide variety of mouthwatering dishes made with love and passion. From haburgers to pasta, we have it all!</p>
-            </section>
+        <section class="Who?">
+            <div class="content">
+                <h2>Who We Are?</h2>
+                <p>At Food4All, we are a team of culinary experts and enthusiasts committed to delivering an
+                    unforgettable dining experience. Our chefs bring creativity and expertise to every dish they
+                    create.</p>
+            </div>
+            <div class="image">
+                <img src="images/who-we-are-image.jpg" alt="Who We Are Image">
+            </div>
+        </section>
 
-            <section>
-                <h2>Best Selling Amercian Food</h2>
-            </section>
+        <section class="Mission">
+            <div class="image">
+                <img src="images/mission-image.jpg" alt="Mission Image">
+            </div>
+            <div class="content">
+                <h2>Our Mission</h2>
+                <p>Our mission at Food4All is to delight your taste buds with a variety of dishes that showcase the
+                    best of American, Italian, and Japanese cuisines. We aim to create memories through the joy of good
+                    food and warm hospitality.</p>
+            </div>
+        </section>
 
-            <section>
-                <h2>Best Selling Italian Food</h2>
-            </section>
+        <!-- Rest of the content remains unchanged -->
+    </main>
 
-            <section>
-                <h2>Best Selling Japanese Food</h2>
-            </section>
-        </main>
+    <footer>
+        <p>&copy; 2023 - 2024 Food4All. All rights reserved.</p>
+    </footer>
+</body>
 
-        <footer>
-            <p>&copy; 2023 - 2024 Food4All. All rights reserved.</p>
-        </footer>
-    </body>
 </html>
