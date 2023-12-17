@@ -11,14 +11,14 @@
 
     <body>
         <nav>
-            <ul>
-                <li><a href="/English/MAINPAG.html">Main Menu</a></li>
-                <li><a href="#">Italian Food</a></li>
-                <li><a href="#">Japanese Food</a></li>
-                <li><a href="#">Order Pay</a></li>
-                <li><a href="/SelectorIdiomes/PAGIDIOM.html">Language Select</Select></a></li>
-                <li><input type="text" id="searchInput" placeholder="Search..." oninput="search()"></li>
-            </ul>
+            <div class="navbar">
+                <a href="/English/MAINPAG.html" class="nav-link">Main Menu</a>
+                <a href="#" class="nav-link">Italian Food</a>
+                <a href="#" class="nav-link">Japanese Food</a>
+                <a href="#" class="nav-link">Order Pay</a>
+                <a href="/SelectorIdiomes/PAGIDIOM.html" class="nav-link">Language Select</a>
+                <input type="text" id="searchInput" placeholder="Search..." oninput="search()">
+            </div>
 
             <div id="searchResults">
                 <!-- Los resultados de la búsqueda se mostrarán aquí -->
@@ -30,10 +30,10 @@
         </header>
 
         <main>
-            <section>
+            <div class="content">
                 <h2>Discover Our Delicious Amercian Menu!</h2>
                 <p>Best-Selling haburgers around the world!</p>
-            </section>
+            </div>
         </main>
 
         <footer>

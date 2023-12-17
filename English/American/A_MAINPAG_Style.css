@@ -1,28 +1,46 @@
-/* Reset default styles */
-body, h1, p {
+/* Reset browser styles */
+body, div, h1, h2, p, ul {
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
 }
 
-/* Set background color and font styles */
 body {
-    background-color: #f2f2f2;
     font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-/* Style the main heading */
-h1 {
-    font-size: 24px;
-    font-weight: bold;
+.navbar {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav-link {
+    text-decoration: none;
     color: #333;
-    margin-bottom: 20px;
+    padding: 8px 16px;
 }
 
-/* Style paragraphs */
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #666;
-    margin-bottom: 10px;
+.nav-link:hover {
+    background-color: #ddd;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.content {
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
