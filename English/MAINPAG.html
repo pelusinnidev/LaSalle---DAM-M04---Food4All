@@ -11,18 +11,17 @@
 
 <body>
     <nav>
-        <ul>
-            <li><a href="/English/American/A_MAINPAG.html">American Food</a></li>
-            <li><a href="#">Italian Food</a></li>
-            <li><a href="#">Japanese Food</a></li>
-            <li><a href="#">Order Pay</a></li>
-            <li><a href="/SelectorIdiomes/PAGIDIOM.html">Language Select</a></li>
-            <li class="search-container"><input type="text" id="searchInput" placeholder="Search..."
-                    oninput="search()"></li>
-        </ul>
+        <div class="navbar">
+            <a href="/English/American/A_MAINPAG.html" class="nav-link">American Menu</a>
+            <a href="#" class="nav-link">Italian Food</a>
+            <a href="#" class="nav-link">Japanese Food</a>
+            <a href="#" class="nav-link">Order Pay</a>
+            <a href="/SelectorIdiomes/PAGIDIOM.html" class="nav-link">Language Select</a>
+            <input type="text" id="searchInput" placeholder="Search..." oninput="search()">
+        </div>
 
         <div id="searchResults">
-            <!-- Search results will be displayed here -->
+            <!-- Los resultados de la búsqueda se mostrarán aquí -->
         </div>
     </nav>
 
