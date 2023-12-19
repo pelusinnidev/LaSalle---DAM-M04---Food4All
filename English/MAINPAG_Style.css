@@ -111,7 +111,6 @@ section.Mission {
   
 }
 
-
 /* Estilo para las imágenes dentro de .image que se pueden agrandar */
 .image img.transicion {
   cursor: pointer;
@@ -122,3 +121,12 @@ section.Mission {
 .image img.transicion:hover {
   transform: scale(1.1);
 }
+
+/* Estil per el grid de proba */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat (1, 1fr);
+  background-color: #8c8c8c;
+  padding: 10px;
+} 
