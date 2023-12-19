@@ -1,4 +1,6 @@
 /* Configuració global del cos de la pàgina */
+
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -55,11 +57,15 @@ header img {
 
 /* Contenidor dels botons - perquè tots ballin junts! 🕺 */
 .button-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(470px, 2fr));
     justify-content: center;
-    gap: 50px;
+    justify-items: center;
+    gap: 10px;
     padding: 60px;
     animation: button-pulse 2s ease-in-out infinite; /* Pulsació de botons perquè es diverteixin! */
+    box-sizing: border-box;
+
 }
 
 /* El botó en sí - un petit temblor abans del gran ball! 👯‍♂️ */
