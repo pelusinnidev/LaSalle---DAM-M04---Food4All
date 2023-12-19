@@ -84,25 +84,26 @@ section.Welcome {
   padding: 20px;
 }
 
-.Welcome .content,
-.History .content,
-.Who? .content,
-.Mission .content {
-  width: 45%;
+section.History {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.Welcome .image,
-.History .image,
-.Who? .image,
-.Mission .image {
-  width: 45%;
+section.Who {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.Welcome .image img,
-.History .image img,
-.Who? .image img,
-.Mission .image img {
-  width: 100%;
-  border-radius: 8px;
-  margin-top: 10px;
+section.Mission {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
 }
