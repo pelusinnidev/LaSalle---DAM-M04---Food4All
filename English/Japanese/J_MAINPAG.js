@@ -82,3 +82,20 @@ function search() {
   }
   
 //Aquest sistema de búsqueda és una modificació del sistema de búsqueda de la pàgina web https://www.digitalocean.com/community/tutorials/how-to-add-search-functionality-to-a-website-with-javascript
+
+
+//ES PER FER SCROLL I CAMBIAR DE COLOR
+// Selecciona el elemento del menú de navegación
+ /*const nav = document.querySelector('nav');
+
+// Registra un evento de desplazamiento en la ventana
+window.addEventListener('scroll', () => {
+    // Verifica si el desplazamiento vertical es mayor que 100px (puedes ajustar este valor)
+    if (window.scrollY > 100) {
+        // Si es mayor, agrega la clase 'nav-scrolled'
+        nav.classList.add('nav-scrolled');
+    } else {
+        // Si es menor, quita la clase 'nav-scrolled'
+        nav.classList.remove('nav-scrolled');
+    }
+});*/
