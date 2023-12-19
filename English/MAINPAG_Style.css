@@ -126,7 +126,22 @@ section.Mission {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat (1, 1fr);
-  background-color: #8c8c8c;
+  grid-template-columns: repeat(1, 1fr);
   padding: 10px;
-} 
+}
+
+.grid-container .Welcome {
+  background-color: #ff9900;
+}
+
+.grid-container .History {
+  background-color: #ffcc00;
+}
+
+.grid-container .Who {
+  background-color: #d9ff00;
+}
+
+.grid-container .Mission {
+  background-color: #2fff00;
+}
