@@ -90,7 +90,9 @@ section.History {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+
 }
+
 
 section.Who {
   display: flex;
@@ -106,4 +108,17 @@ section.Mission {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  
+}
+
+
+/* Estilo para las imágenes dentro de .image que se pueden agrandar */
+.image img.transicion {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; /* Agregar transición para un efecto suave */
+}
+
+/* Agregar la regla de hover para agrandar la imagen */
+.image img.transicion:hover {
+  transform: scale(1.1);
 }
