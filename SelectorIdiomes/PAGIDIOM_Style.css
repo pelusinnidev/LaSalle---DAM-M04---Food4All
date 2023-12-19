@@ -58,7 +58,7 @@ header img {
 /* Contenidor dels botons - perquè tots ballin junts! 🕺 */
 .button-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(470px, 2fr));
+    grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
     justify-content: center;
     justify-items: center;
     gap: 10px;
@@ -117,7 +117,7 @@ header img {
 
 /* Peu de pàgina - l'última pista de la festa, amb una mica de boig! 🎉 */
 footer {
-    background: #b0aaaa; /* Un color vermellós amb 70% d'opacitat, com una post-festa amb classe! */
+    background: #6f6767; /* Un color vermellós amb 70% d'opacitat, com una post-festa amb classe! */
     color: #fff;
     text-align: center;
     padding: 10px 0;
