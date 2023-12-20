@@ -167,44 +167,38 @@ footer {
 
 /*USER PREFERENCE */
 #userPreferences {
-
-    display: flex;
-    flex-direction: column; /* Cambia a dirección vertical */
-    align-items: center; /* Centrar las imágenes horizontalmente */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
     background-color: #FFB869;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin: 20px 0;
-
-    
 }
 
-#userPreferences h3 {
+#decide {
+    text-align: center;
+    background-color: #feab4c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  #decide h3 {
     color: #1b160f;
-}
-
-#userPreferences p {
+  }
+  
+  #decide p {
     color: #524848;
-    margin-bottom: 15px;
-}
+    line-height: 1.5;
+  }
+ 
 
-#userPreferences ul {
-    display: flex; /* Hace que la lista sea un contenedor flexible */
-    list-style: none; /* Quita los estilos de la lista, como viñetas */
-    padding: 0; /* Elimina el relleno predeterminado de la lista */
-    list-style-type: none;
-    padding: 0;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column; /* Para que los elementos estén en una columna */
-    align-items: center; /* Centra los elementos horizontalmente */
-
-}
-
-#userPreferences li {
+#userPreferences .suggested-dish {
     background-color: #ffd297;
     color: #1b160f;
     padding: 10px;
@@ -214,19 +208,15 @@ footer {
     margin-bottom: 20px; /* Ajusta según tus preferencias */
 }
 
-#userPreferences img {
+#userPreferences .suggested-dish img {
     max-width: 100%; /* La imagen no debe superar el ancho del contenedor */
-    max-height: 150px; /* Establece un tamaño máximo para la altura */
-    width: auto; /* Permite que el ancho se ajuste automáticamente */
+    height: auto; /* Establece la altura automática según el ancho */
     border-radius: 10px; /* Bordes redondeados, ajusta según tus preferencias */
     margin-bottom: 10px; /* Espacio entre la imagen y el texto, ajusta según tus preferencias */
 }
 
-
-/* Estilo adicional para colocar los platos sugeridos en vertical */
-#userPreferences ul {
-    display: flex;
-    flex-direction: column; /* Alinea los elementos en una columna */
+#userPreferences .suggested-dish:active {
+    transform: scale(1.1); /* Hace que la imagen se agrande al pasar el ratón */
 }
 
 
