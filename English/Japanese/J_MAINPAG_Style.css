@@ -75,6 +75,35 @@ header {
 }
 
 
+#platosEstrella {
+    text-align: center;
+    background-color: #FFB869;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  #platosEstrella h3 {
+    color: #1b160f;
+  }
+  
+  #platosEstrella p {
+    color: #524848;
+    line-height: 1.5;
+  }
+  
+
+  /*FEM ELS VIDEOS MES GRANS*/
+  .video-item:hover video {
+    transform: scale(1.1); /* Ajusta el valor según tus preferencias */
+    transition: transform 0.3s ease; /* Agrega una transición suave para animar el cambio de escala */
+  }
+
+  /* Estilos para los videos y sus contenedores */
+
+  
+
 
 
 
@@ -112,12 +141,13 @@ video {
     margin-bottom: 10px; /* Espaciado entre videos, ajusta según tus necesidades */
     border-radius: 10px;
     filter: blur(1px);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+   
 }
 
 .video-grid video {
     width: 100%;
-    filter: blur(5px); /* Ajusta el valor de desenfoque según tus necesidades */
+    filter: blur(1px); /* Ajusta el valor de desenfoque según tus necesidades */
     
 }
 
@@ -133,6 +163,71 @@ footer {
     padding: 10px 0;
 }
 
+
+
+/*USER PREFERENCE */
+#userPreferences {
+
+    display: flex;
+    flex-direction: column; /* Cambia a dirección vertical */
+    align-items: center; /* Centrar las imágenes horizontalmente */
+    background-color: #FFB869;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px 0;
+
+    
+}
+
+#userPreferences h3 {
+    color: #1b160f;
+}
+
+#userPreferences p {
+    color: #524848;
+    margin-bottom: 15px;
+}
+
+#userPreferences ul {
+    display: flex; /* Hace que la lista sea un contenedor flexible */
+    list-style: none; /* Quita los estilos de la lista, como viñetas */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    list-style-type: none;
+    padding: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Para que los elementos estén en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+
+}
+
+#userPreferences li {
+    background-color: #ffd297;
+    color: #1b160f;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px; /* Ajusta según tus preferencias */
+}
+
+#userPreferences img {
+    max-width: 100%; /* La imagen no debe superar el ancho del contenedor */
+    max-height: 150px; /* Establece un tamaño máximo para la altura */
+    width: auto; /* Permite que el ancho se ajuste automáticamente */
+    border-radius: 10px; /* Bordes redondeados, ajusta según tus preferencias */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto, ajusta según tus preferencias */
+}
+
+
+/* Estilo adicional para colocar los platos sugeridos en vertical */
+#userPreferences ul {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+}
 
 
 /*PANTALLES MES PETITES*/
@@ -152,19 +247,20 @@ footer {
 }
 
 
+/* Estilos específicos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: repeat(1, 1fr); /* Un solo elemento por fila en pantallas más pequeñas */
+    }
 
-.image-grid,
-.description-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* En pantallas más pequeñas, un solo elemento por fila */
-    gap: 10px;
-    margin-bottom: 20px;
-}
+    /* También puedes ajustar el espaciado o el tamaño de las imágenes en pantallas más pequeñas si es necesario */
+    .video-item {
+        margin-bottom: 10px;
+    }
 
-/* Estilos específicos para pantallas más grandes */
-@media (min-width: 768px) {
-    .image-grid,
-    .description-grid {
-        grid-template-columns: repeat(4, 1fr);
+    video {
+        filter: none; /* Elimina el desenfoque en pantallas más pequeñas */
     }
 }
+
+
