@@ -1,156 +1,173 @@
-/* Configuració global del cos de la pàgina */
-
+/* Fonts and general colors */
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    /* Gradient d'estil tricolor, com la senyera, perquè Catalunya és guai! 🌈 */
-    background: linear-gradient(to bottom,#c05252, #dd9b45, #b0aaaa);
-    padding-bottom: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
+  background-color: #000000;
+  margin-top: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Capçalera - aquí és on comença la festa del codi! 🥳 */
+/* Styles for the header */
+
 header {
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
+  background-color: #000000;
+  padding-bottom: 50px;
+  margin: 25px;
 }
 
-/* Títols, que són com les estrelles del codi 🌟 */
-h1, h2 {
-    text-shadow: none;
-    font-size: 3em;
+header h1 {
+  color: #C8AD7F;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-align: center; /* Center the text */
 }
 
-/* H1, el gran protagonista del codi - com una rockstar! 🤘 */
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+header h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #C8AD7F;
+  font-size: 1.2em;
+  text-align: center; /* Center the text */
 }
 
-/* H2, el petit gran amic del H1 - potser no tan fort, però igual de guai! 😎 */
-h2 {
-    font-size: 1.8em;
-}
-
-/* L'animació del logo - fent un petit ball amb el bounce! 💃 */
 header img {
-    width: 300px;
-    height: auto;
-    border-radius: 50%;
-    animation: bounce 4s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite; /* Animació de ball a ritme de Cubic Bezier! */
+  padding-top: 32px;
+  width: 320px;
+  height: 320px; /* Set the desired height for the image */
+  margin: 0 auto; /* Center the image horizontally */
+  display: block; /* Make sure it's treated as a block element */
+
+  /* Animation for the header image */
+  animation: bounce 4s ease-in-out infinite;
 }
 
 @keyframes bounce {
-    0%, 50%, 100% {
-        transform: translateY(0) scale(1);
-    }
-    25% {
-        transform: translateY(-10px) scale(1.05);
-    }
-    75% {
-        transform: translateY(-10px) scale(0.95);
-    }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-/* Contenidor dels botons - perquè tots ballin junts! 🕺 */
-.button-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
-    justify-content: center;
-    justify-items: center;
-    gap: 10px;
-    padding: 60px;
-    animation: button-pulse 2s ease-in-out infinite; /* Pulsació de botons perquè es diverteixin! */
-    box-sizing: border-box;
+/* Grid-items animations */
 
+.grid-container {
+  display: flex;
+  align-self: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 25px;
+  justify-content: center;
+  margin: 25px;
 }
 
-/* El botó en sí - un petit temblor abans del gran ball! 👯‍♂️ */
-.button-item {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    animation: button-shake 0.5s ease-in-out infinite;
+.grid-item {
+  margin: auto;
+  background-color: #000;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    /* Quan ho toques, tot es mou més ràpid! 🚀 */
-    &:hover {
-        transform: scale(1.1);
-        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
-    }
+  /* Animation for the grid-item containers */
+  animation: pulse 3s ease-in-out infinite; /* Adjust the animation duration to your liking */
 }
 
-/* Quan passis el ratolí sobre el botó, la imatge es mostra a la gran pantalla! 📸 */
-.button-item:hover img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
 }
 
-/* La imatge del botó - com una superestrella que omple tot l'escenari! 🌟 */
-.button-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+.grid-item img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
-/* Enllaç dins del botó - perquè els botons també poden ser intellectuals! 🤓 */
-.button-item a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.8em;
-    font-weight: bold;
+/* Grid-item buttons */
+.grid-item a {
+  text-decoration: none;
+  max-width: fit-content;
+  max-height: fit-content;
+
+  /* Animation for the grid-item buttons */
+  animation: shake 0.3s ease-in-out infinite;
 }
 
-/* Peu de pàgina - l'última pista de la festa, amb una mica de boig! 🎉 */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(10px);
+  }
+  20% {
+    transform: translateX(-10px);
+  }
+  30% {
+    transform: translateX(10px);
+  }
+  40% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Footer */
 footer {
-    background: #6f6767; /* Un color vermellós amb 70% d'opacitat, com una post-festa amb classe! */
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  background-color: #000000;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  font-size: 1em;
+  color: #C8AD7F;
 }
 
-
-/*MEDIA QUERIES: per exemple per al movil*/
-
-
-
+/* MEDIA QUERIES: for example, for mobile */
 @media (max-width: 768px) {
-    /* Estilos específicos para pantallas más pequeñas (ej. tablets) */
-    .button-container {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
+  /* Specific styles for smaller screens (e.g., tablets) */
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
 
-    .button-item {
-        width: 150px;
-        height: 150px;
-    }
+  .grid-item {
+    width: 150px;
+    height: 120px; /* Adjust the height for smaller screens */
+  }
 }
 
 @media (max-width: 480px) {
-    /* Estilos específicos para pantallas más pequeñas (ej. móviles) */
-    .button-container {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
+  /* Specific styles for smaller screens (e.g., mobile) */
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
 
-    .button-item {
-        width: 120px;
-        height: 120px;
-    }
+  .grid-item {
+    width: 120px;
+    height: 100px; /* Adjust the height for smaller screens */
+  }
 }
