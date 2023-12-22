@@ -1,44 +1,46 @@
 /* Fonts and general colors */
 
+/* Estil per al cos de la pàgina - la base de l'aventura! 🌐 */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #000000;
-  background-color: #000000;
+  color: #000000; /* Text color - el color del text! */
+  background-color: #000000; /* Background color - el color de fons! */
   margin-top: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Una ombra subtil com la nit que s'acosta! 🌚 */
 }
 
-/* Styles for the header */
+/* Estils per a la capçalera */
 
 header {
-  background-color: #000000;
+  background-color: #000000; /* Un fons fosc com la nit! 🌙 */
   padding-bottom: 50px;
   margin: 25px;
 }
 
+/* Estil per als títols de la capçalera - la llegenda de l'aventura! 📖 */
 header h1 {
-  color: #C8AD7F;
+  color: #C8AD7F; /* Un color daurat com els tresors perduts! 💰 */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2em;
+  font-size: 2.4em;
   margin-bottom: 10px;
-  text-align: center; /* Center the text */
+  text-align: center; /* Centra el text - com un mapa que apunta al trésor! 🗺️ */
 }
 
 header h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #C8AD7F;
-  font-size: 1.2em;
-  text-align: center; /* Center the text */
+  font-size: 1.8em;
+  text-align: center; /* Centra el text - com un far que guia els mariners! ⚓ */
 }
 
 header img {
   padding-top: 32px;
   width: 320px;
-  height: 320px; /* Set the desired height for the image */
-  margin: 0 auto; /* Center the image horizontally */
-  display: block; /* Make sure it's treated as a block element */
+  height: 320px; /* Altura desitjada per a la imatge! */
+  margin: 0 auto; /* Centra la imatge horitzontalment - com el sol al zenit! ☀️ */
+  display: block; /* Assegura que sigui tractada com un element de bloc! */
 
-  /* Animation for the header image */
+  /* Animació per a la imatge de la capçalera - com les ones del mar! 🌊 */
   animation: bounce 4s ease-in-out infinite;
 }
 
@@ -54,7 +56,7 @@ header img {
   }
 }
 
-/* Grid-items animations */
+/* Animacions dels elements de la graella */
 
 .grid-container {
   display: flex;
@@ -78,8 +80,8 @@ header img {
   flex-direction: column;
   justify-content: center;
 
-  /* Animation for the grid-item containers */
-  animation: pulse 3s ease-in-out infinite; /* Adjust the animation duration to your liking */
+  /* Animació per als contenidors d'elements de la graella - com els batecs del cor! 💓 */
+  animation: pulse 3s ease-in-out infinite;
 }
 
 @keyframes pulse {
@@ -101,15 +103,16 @@ header img {
   height: auto;
   margin: 0 auto;
   display: block;
+  border-radius: 10px;
 }
 
-/* Grid-item buttons */
+/* Botons dels elements de la graella */
 .grid-item a {
   text-decoration: none;
   max-width: fit-content;
   max-height: fit-content;
 
-  /* Animation for the grid-item buttons */
+  /* Animació per als botons dels elements de la graella - com el tremolor d'una brisa! 🍃 */
   animation: shake 0.3s ease-in-out infinite;
 }
 
@@ -137,37 +140,38 @@ header img {
   }
 }
 
-/* Footer */
+/* Peu de pàgina */
 footer {
-  background-color: #000000;
+  background-color: #000000; /* Un fons fosc com la nit! 🌙 */
+  position: fixed;
   width: 100%;
-  bottom: 0;
+  bottom: 0%;
   text-align: center;
   font-size: 1em;
-  color: #C8AD7F;
+  color: #C8AD7F; /* Un color daurat com les estrelles brillants! ✨ */
 }
 
-/* MEDIA QUERIES: for example, for mobile */
+/* MEDIA QUERIES: per exemple, per a mòbils */
 @media (max-width: 768px) {
-  /* Specific styles for smaller screens (e.g., tablets) */
+  /* Estils específics per a pantalles més petites (p. ex., tauletes) */
   .grid-container {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 
   .grid-item {
     width: 150px;
-    height: 120px; /* Adjust the height for smaller screens */
+    height: 120px; /* Ajusta l'altura per a pantalles més petites */
   }
 }
 
 @media (max-width: 480px) {
-  /* Specific styles for smaller screens (e.g., mobile) */
+  /* Estils específics per a pantalles més petites (p. ex., mòbils) */
   .grid-container {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 
   .grid-item {
     width: 120px;
-    height: 100px; /* Adjust the height for smaller screens */
+    height: 100px; /* Ajusta l'altura per a pantalles més petites */
   }
 }
