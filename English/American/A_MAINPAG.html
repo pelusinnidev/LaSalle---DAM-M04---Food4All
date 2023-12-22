@@ -1,43 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Food4All - American</title>
-        <link rel="stylesheet" href="/English/American/A_MAINPAG_Style.css">
-        <script src="/English/American/A_MAINPAG.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food4All - American</title>
+    <link rel="stylesheet" href="/English/American/A_MAINPAG_Style.css">
+    <script src="/English/American/A_MAINPAG.js"></script>
+</head>
 
     <body>
         <nav>
             <div class="navbar">
                 <a href="/English/MAINPAG.html" class="nav-link">Main Menu</a>
-                <a href="#" class="nav-link">Italian Food</a>
+                <a href="/English/Italian/I_MAINPAG.html" class="nav-link">Italian Food</a>
                 <a href="/English/Japanese/J_MAINPAG.html" class="nav-link">Japanese Food</a>
                 <a href="#" class="nav-link">Order Pay</a>
                 <a href="/SelectorIdiomes/PAGIDIOM.html" class="nav-link">Language Select</a>
                 <input type="text" id="searchInput" placeholder="Search..." oninput="search()">
             </div>
 
-            <div id="searchResults">
-                <!-- Los resultados de la búsqueda se mostrarán aquí -->
+        <div id="searchResults">
+            <!-- Los resultados de la búsqueda se mostrarán aquí -->
+        </div>
+    </nav>
+
+    <header>
+        <h1>Welcome to American Menu!</h1>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <h2>Star Dishes</h2>
+            <div class="stardishes">
+                <div class="item">
+                    <img src="/English/American/Resources/Hamburger.jpg" alt="Hamburguer">
+                    <h3>Hamburguer</h3>
+                    <p>Price: 5.99€</p>
+                </div>
+                <div class="item">
+                    <img src="/English/American/Resources/HotDog.jpg" alt="Hot Dog">
+                    <h3>Hot Dog</h3>
+                    <p>Price: 3.99€</p>
+                </div>
+                <div class="item">
+                    <img src="/English/American/Resources/FrenchFries.jpg" alt="French Fries">
+                    <h3>French Fries</h3>
+                    <p>Price: 2.99€</p>
+                </div>
             </div>
-        </nav>
+        </div>
 
-        <header>
-            <h1>Welcome to American Menu!</h1>  
-        </header>
-
-        <main>
-            <div class="content">
-                <h2>Discover Our Delicious Amercian Menu!</h2>
-                <p>Best-Selling haburgers around the world!</p>
+        <div class="grid-container">
+            <h2>Full Menu</h2>
+            <div class="fullmenu">
+                <div class="item">
+                    <img src="/English/American/Resources/ChickenWings.jpg" alt="Chicken Wings">
+                    <h3>Chicken Wings</h3>
+                    <p>Price: 4.99€</p>
+                </div>
+                <div class="item">
+                    <img src="/English/American/Resources/OnionRings.jpg" alt="Onion Rings">
+                    <h3>Onion Rings</h3>
+                    <p>Price: 3.99€</p>
+                </div>
+                <div class="item">
+                    <img src="/English/American/Resources/ChickenNuggets.jpg" alt="Chicken Nuggets">
+                    <h3>Chicken Nuggets</h3>
+                    <p>Price: 3.99€</p>
+                </div>
+                <div class="item">
+                    <img src="/English/American/Resources/MilkShake.jpg" alt="Milkshake">
+                    <h3>Milkshake</h3>
+                    <p>Price: 2.99€</p>
+                </div>
+                <div class="item">
+                    <img src="/English/American/Resources/CocaCola.jpg" alt="Coca-Cola">
+                    <h3>Coca-Cola</h3>
+                    <p>Price: 1.99€</p>
+                </div>
+                <div class="item">
+                    <img src="/English/American/Resources/Water.jpg" alt="Water">
+                    <h3>Water</h3>
+                    <p>Price: 1.99€</p>
+                </div>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <footer>
-            <p>&copy; 2023 - 2024 Food4All. All rights reserved.</p>
-        </footer>
-    </body>
+    <footer>
+        <p>&copy; 2023 - 2024 Food4All. All rights reserved.</p>
+    </footer>
+</body>
+
 </html>
