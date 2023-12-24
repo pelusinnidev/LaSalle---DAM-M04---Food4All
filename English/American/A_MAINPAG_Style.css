@@ -30,7 +30,7 @@ body {
     background-color: #333; /* Dark gray hover color */
 }
 
-/* Style for the grid container */
+/* Style for the grid */
 .grid-container {
     background-color: rgba(200, 16, 46, 0.6); /* Opaque red background for grid container */
     border-radius: 10px; /* Rounded corners */
@@ -40,51 +40,35 @@ body {
     margin: 20px;
 }
 
-/* Style for the items inside grid container */
-.grid-container .stardishes,
-.grid-container .fullmenu,
-.grid-container .item {
+.grid-item {
+    background-color: rgba(200, 16, 47, 0.416); /* Opaque red background for grid item */
     border-radius: 10px; /* Rounded corners */
-    background-color: rgba(0, 0, 0, 0.8); /* Opaque black background for items */
-    padding: 20px; /* Add padding for better spacing */
-    text-align: center;
+    padding: 10px;
+    overflow: hidden; /* Evitar que las imágenes sobresalgan del grid-item */
+    margin: 10px; /* Establecer margen entre los grid-items */
+    text-align: center; /* Centrar contenido horizontalmente */
 }
 
-/* Styles for individual items */
-.item img {
-    max-width: 100%; /* Make sure the image fits inside the container */
+.grid-item img {
+    max-width: 100%;
+    height: 380px;
+    border-radius: 10px; /* Rounded corners */
+    display: inline-block; /* Eliminar espacio adicional debajo de la imagen */
 }
 
-.item h3 {
-    font-weight: bold;
-    margin: 15px 0; /* Increase margin */
+.grid-item h2 {
+    margin: 0; /* Remove default margin */
+    align-self: center;
 }
 
-.item p {
-    margin: 10px 0; /* Increase margin */
+.grid-item p {
+    margin: 0; /* Remove default margin */
+    align-self: center;
 }
 
-/* Additional Styles for Each Section */
-.stardishes {
-    background-color: #1e1e1e;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px; /* Add padding for better spacing */
-    position: relative; /* Set position to relative for absolute positioning */
-}
-
-.stardishes h2 {
-    position: absolute; /* Set position to absolute */
-    top: 50%; /* Move to 50% from the top */
-    left: 50%; /* Move to 50% from the left */
-    transform: translate(-50%, -50%); /* Center the h2 */
-    margin-top: -40px; /* Adjust top margin to center it better */
-}
-
-.fullmenu {
-    background-color: #c8ad7f;
-    padding: 20px; /* Add padding for better spacing */
+/* Transition effect - Mirar pq no funciona...(buscar solució per implementar-ho també o algunaa cosa similar) */
+.grid-item:hover img.transicion {
+    transform: scale(0.9);
 }
 
 footer {
