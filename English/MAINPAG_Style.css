@@ -6,7 +6,6 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #000; /* Black background */
   color: #fff; /* White text color */
   display: flex;
   flex-direction: column;
@@ -31,7 +30,9 @@ body {
 }
 
 header {
-  background-color: #c8ad7f; /* Beige header background */
+  background-image: url('../SelectorIdiomes/Resources/bkgrd.gif'); /* Ruta de la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Ajusta la imagen al tamaño del cuerpo */
   padding: 20px;
 }
 
@@ -43,8 +44,9 @@ header h1 {
 #searchResults {
   border: 1px solid #ccc;
   padding: 20px;
-  background-color: #1e1e1e; /* Dark gray search results background */
-  color: #fff; /* White text color in search results */
+  background-image: url('../SelectorIdiomes/Resources/bkgrd.gif'); /* Ruta de la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Ajusta la imagen al tamaño del cuerpo */
 }
 
 main .section {
@@ -92,33 +94,32 @@ section p {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
-  margin: 20px;
   flex-grow: 1; /* Allow the grid container to grow and fill the available space */
+  background-image: url('../SelectorIdiomes/Resources/bkgrd.gif'); /* Ruta de la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Ajusta la imagen al tamaño del cuerpo */
 }
 
 .grid-container .Welcome {
   background-color: #1e1e1e;
-  border-radius: 10px;
 }
 
 .grid-container .History {
   background-color: #c8ad7f;
-  border-radius: 10px;
 }
 
 .grid-container .Who {
   background-color: #000;
-  border-radius: 10px;
 }
 
 .grid-container .Mission {
   background-color: #c8ad7f;
-  border-radius: 10px;
 }
 
 footer {
-  background-color: #000;
+  background-image: url('../SelectorIdiomes/Resources/bkgrd.gif'); /* Ruta de la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Ajusta la imagen al tamaño del cuerpo */
   padding: 20px;
   text-align: center;
   color: #fff;
