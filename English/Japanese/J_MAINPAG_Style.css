@@ -10,15 +10,11 @@ body {
     line-height: 1.6;
 }
 
-/*ESTILS DEL NAV*/
 nav {
     position: sticky;
     top: 0;
     z-index: 1000;
 }
-
-
-
 
 .navbar {
     background-color: #ffd297;
@@ -49,12 +45,11 @@ header {
     padding: 20px 0;
 }
 
-
-.grid-container{
-    background-color:#ffd297
+.grid-container {
+    background-color: #ffd297;
 }
+
 .content {
-    
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 20px;
@@ -74,7 +69,6 @@ header {
     line-height: 1.5;
 }
 
-
 #platosEstrella {
     text-align: center;
     background-color: #FFB869;
@@ -82,90 +76,53 @@ header {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-  }
-  
-  #platosEstrella h3 {
+}
+
+#platosEstrella h3 {
     color: #1b160f;
-  }
-  
-  #platosEstrella p {
+}
+
+#platosEstrella p {
     color: #524848;
     line-height: 1.5;
-  }
-  
+}
 
-  /*FEM ELS VIDEOS MES GRANS*/
-  .video-item:hover video {
-    transform: scale(1.1); /* Ajusta el valor según tus preferencias */
-    transition: transform 0.3s ease; /* Agrega una transición suave para animar el cambio de escala */
-  }
-
-  /* Estilos para los videos y sus contenedores */
-
-  
-
-
-
-
-/*ESTILS A LA CUADRÍCULA DE 4X2*/
-/* Agrega estilos a la cuadrícula de imágenes */
-.image-grid {
+.video-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas en la primera fila */
-    gap: 10px; /* Espaciado entre las imágenes */
-
-
-}
-
-.grid-item {
-    text-align: center;
-    margin: 10px; /* Ajusta el valor según tus preferencias */
-}
-
-
-/* Estilos para las imágenes */
-.video-grid, .description-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    padding-bottom: 200px;
-    padding-top: 50px;
-}
-
-/* estils als videos*/
-video {
-    width: 100%; /* O un valor específico en píxeles, porcentaje, etc. */
-    height: auto; /* Para mantener la proporción original */
-    max-width: 100%; /* Para garantizar que no se desborde el contenedor */
-    display: block; /* Evitar espacios no deseados debajo de los videos */
-    margin-bottom: 10px; /* Espaciado entre videos, ajusta según tus necesidades */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
     border-radius: 10px;
-    filter: blur(1px);
-    margin-bottom: 5px;
-   
-}
-
-.video-grid video {
-    width: 100%;
-    filter: blur(1px); /* Ajusta el valor de desenfoque según tus necesidades */
-    
-}
-
-/* Nueva regla para los div */
-.description-grid p {
-    margin: 10px; /* Puedes ajustar este valor según tus necesidades */
-}
-
-footer {
-    background-color: #db6d3e;
-    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 10px 0;
+    background-color: #ffd297;
 }
 
+.video-item {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
 
+.video-item video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
 
-/*USER PREFERENCE */
+.video-item:hover video {
+    transform: scale(1.1);
+}
+
+.video-item p {
+    color: #524848;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
 #userPreferences {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -186,17 +143,16 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-  }
-  
-  #decide h3 {
+}
+
+#decide h3 {
     color: #1b160f;
-  }
-  
-  #decide p {
+}
+
+#decide p {
     color: #524848;
     line-height: 1.5;
-  }
- 
+}
 
 #userPreferences .suggested-dish {
     background-color: #ffd297;
@@ -205,51 +161,76 @@ footer {
     margin: 5px 0;
     border-radius: 5px;
     text-align: center;
-    margin-bottom: 20px; /* Ajusta según tus preferencias */
+    margin-bottom: 20px;
 }
 
 #userPreferences .suggested-dish img {
-    max-width: 100%; /* La imagen no debe superar el ancho del contenedor */
-    height: auto; /* Establece la altura automática según el ancho */
-    border-radius: 10px; /* Bordes redondeados, ajusta según tus preferencias */
-    margin-bottom: 10px; /* Espacio entre la imagen y el texto, ajusta según tus preferencias */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
+
+#userPreferences .suggested-dish h3 {
+    background-color: #eaad68; /* Color del fondo del h3 */
+    padding: 10px; /* Espaciado interno del h3 */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 10px; /* Ajusta según tus preferencias */
+    color: #1b160f; /* Color del texto del h3 */
+}
+
+
 
 #userPreferences .suggested-dish:active {
-    transform: scale(1.1); /* Hace que la imagen se agrande al pasar el ratón */
+    transform: scale(1.1);
 }
 
+/*ESTILS PEL PREU*/
+.video-item {
+    position: relative;
+}
 
-/*PANTALLES MES PETITES*/
+.price-container {
+    background-color: #eaad68; /* Color del recuadro del precio */
+    padding: 10px;
+    border-radius: 0 0 10px 10px; /* Bordes redondeados solo en la parte inferior */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
 
-/* Consulta de medios para pantallas más pequeñas (por ejemplo, hasta 768px de ancho) */
+.price-container:hover{
+    cursor: pointer;
+}
+
+.price {
+    color: #1b160f;
+    font-weight: bold;
+}
+.video-item p {
+    margin-bottom: 70px; /* Ajusta el espacio entre la descripción y el precio según tus necesidades */
+}
+
+footer {
+    background-color: #db6d3e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
 @media only screen and (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Cambia la dirección de los elementos en el navbar */
-        align-items: center; /* Centra los elementos en el navbar */
+        flex-direction: column;
+        align-items: center;
     }
 
     .nav-link {
-        padding: 8px 0; /* Ajusta el relleno de los enlaces en pantallas más pequeñas */
+        padding: 8px 0;
     }
 
-    /* ... otros ajustes para pantallas más pequeñas ... */
-}
-
-
-/* Estilos específicos para pantallas más pequeñas */
-@media (max-width: 768px) {
     .video-grid {
-        grid-template-columns: repeat(1, 1fr); /* Un solo elemento por fila en pantallas más pequeñas */
-    }
-
-    /* También puedes ajustar el espaciado o el tamaño de las imágenes en pantallas más pequeñas si es necesario */
-    .video-item {
-        margin-bottom: 10px;
-    }
-
-    video {
-        filter: none; /* Elimina el desenfoque en pantallas más pequeñas */
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
