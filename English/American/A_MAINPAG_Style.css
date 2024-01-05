@@ -67,6 +67,16 @@ body {
     margin-top: 5px;
 }
 
+.grid-item-text a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.grid-item-text a:hover {
+    color: orange; /* Dark gray hover color */
+}
+
 /* Transition effect - Mirar pq no funciona...(buscar solució per implementar-ho també o algunaa cosa similar) */
 .grid-item:hover img.transicion {
     transform: scale(0.9);
