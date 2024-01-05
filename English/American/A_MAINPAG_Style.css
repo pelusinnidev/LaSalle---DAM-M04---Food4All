@@ -73,14 +73,32 @@ body {
     cursor: pointer;
 }
 
+.animated {
+    font-size: 20px;
+}
+
 .grid-item-text a:hover {
     color: orange; /* Dark gray hover color */
+    scale: 1.5;
 }
 
 /* Transition effect - Mirar pq no funciona...(buscar solució per implementar-ho també o algunaa cosa similar) */
 .grid-item:hover img.transicion {
     transform: scale(0.9);
 }
+
+@keyframes pulse {
+    0%, 100% {
+      transform: scale(1); /* Estado original */
+    }
+    50% {
+      transform: scale(1.5); /* Crece 1.5 veces el tamaño original */
+    }
+  }
+  
+  header {
+    animation: pulse 3s infinite !important;
+  }
 
 footer {
     background-color: #000;
