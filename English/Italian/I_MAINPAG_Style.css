@@ -11,10 +11,16 @@ body {
 }
 
 .navbar {
-    background-color: #f4f4f4;
+    background-color: #333;
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
+
+}
+
+.navbar a {
+
+color: white;
 }
 
 .nav-link {
@@ -27,15 +33,11 @@ body {
     background-color: #ddd;
 }
 
-.searchResults {
-    background-color: #333;
-}
-
 header {
-    background-color: #333;
-    color: white;
+    color: black;
     text-align: center;
     padding: 20px 0;
+    background-color: bisque;
 }
 
 .content {
@@ -47,4 +49,101 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+body {
+    background-color: beige;
+}
+
+section h2 {
+    font-size: medium;
+}
+
+.container-videos {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 20px;
+}
+
+.video-container {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 30%;
+}
+
+.video-container video {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.card__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.card__content img {
+    max-width: 50%;
+    height: auto;
+    margin-left: 75px; /* Ajusta el margen según tus necesidades */
+    margin-bottom: 25px;
+}
+
+.card__content div {
+    flex: 1;
+}
+
+.card__content h3,
+.card__content p {
+    margin-top: 5px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+h3 {
+
+    text-align: center;
+    font-size: 30px;
+}
+
+h4 {
+
+    margin-left: 500px;
+}
+/* Agrega estas reglas CSS para la sección del menú */
+.menu {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.menu h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.menu-item h3 {
+    color: #333;
+    font-size: 24px;
+    text-align: left;
+}
+
+.menu-item .price {
+    color: #ff5733;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-item p {
+    color: #666;
+    font-size: 18px;
+    margin-top: 10px; /* Añade margen superior para separar el precio del texto */
 }
