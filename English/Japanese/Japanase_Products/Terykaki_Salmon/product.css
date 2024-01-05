@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe5c3;
+    
+}
+
+.product-container {
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+h1 {
+    color: #1b160f;
+}
+
+
+/*ESTILS EN CAS QUE SIGUI UN VIDEO: */
+
+.video-container {
+    margin-top: 20px;
+}
+
+video {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/*ESTILS EN CAS QUE SIGUI UNA IMATGE: */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+/*ESTILS DE LA DESCRIPCIÓ*/
+
+
+
+.description {
+    color: #524848;
+    line-height: 1.5;
+    margin: 20px auto; /* Alinea la descripción al centro horizontalmente */
+    width: 600px; /* Establece un ancho fijo en píxeles para la descripción */
+    font-size: 18px;
+}
+
+
+h2 {
+    color: #1b160f;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/*ESTILS DE LA LLISTA D'INGREDIENTS*/
+.ingredients-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.ingredients-list li {
+    background-color: #ffd297;
+    color: #1b160f;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.ingredients-list li:hover {
+    background-color: #ffdbac; 
+}
+
+.ingredients-list li span {
+    color: #524848;
+    font-size: 14px;
+}
+
+
+
+
+/*ESTILS DEL BOTÓ PAY NOW i BACK BUTTON*/
+
+.Back-button, .buy-button {
+    background-color: #eaad68;
+    color: #1b160f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Back-button:hover, .buy-button:hover {
+    background-color: #ffdbac;
+}
