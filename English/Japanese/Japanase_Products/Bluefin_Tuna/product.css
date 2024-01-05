@@ -89,9 +89,9 @@ h2 {
 
 
 
-/*ESTILS DEL BOTÓ PAY NOW*/
+/*ESTILS DEL BOTÓ PAY NOW i BACK BUTTON*/
 
-.buy-button {
+.Back-button, .buy-button {
     background-color: #eaad68;
     color: #1b160f;
     padding: 10px 20px;
@@ -101,7 +101,6 @@ h2 {
     transition: background-color 0.3s ease;
 }
 
-.buy-button:hover {
+.Back-button:hover, .buy-button:hover {
     background-color: #ffdbac;
 }
-
