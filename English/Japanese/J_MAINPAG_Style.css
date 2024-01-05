@@ -180,6 +180,17 @@ header {
 }
 
 
+.dish-link {
+    color: #1b160f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dish-link:hover {
+    color: #ffdbac;
+}
+
+
 
 #userPreferences .suggested-dish:active {
     transform: scale(1.1);
