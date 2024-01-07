@@ -147,3 +147,101 @@ h4 {
     font-size: 18px;
     margin-top: 10px; /* Añade margen superior para separar el precio del texto */
 }
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.menu-items {
+    width: 70%; /* Ajusta el ancho del menú principal según tus necesidades */
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.menu-image {
+    width: 25%; 
+    margin-right: 300px;
+    margin-top: 50px;
+    
+    
+}
+
+.menu-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card__content {
+    margin-top: 10px; /* Añade espacio entre el título y el contenido */
+}
+
+.card__content img {
+    max-width: 40%; /* Hace que la imagen se ajuste al ancho del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: block;
+}
+
+.card__content h3 {
+    font-size: 24px; /* Ajusta el tamaño de la letra del título según tus necesidades */
+}
+
+.card__content h4 {
+    font-size: 40px; /* Ajusta el tamaño de la letra del subtítulo según tus necesidades */
+    /* Hace que el h4 ocupe todo el ancho disponible */
+    margin-top: 25px;
+    margin-left: 375px;
+}
+
+.card__content p {
+    margin-top: 10px; /* Añade espacio entre el h4 y el párrafo */
+    text-align: center; /* Centra el texto */
+}
+
+
+
+
+.menu-item {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos de la sección como columna */
+    text-align: left;
+    margin-left: 25px;
+}
+
+.menu-item h3,
+.menu-item .price,
+.menu-item p {
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.sub-menu {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos de la subsección como columna */
+}
+
+.sub-menu-item {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.sub-menu-item h5,
+.sub-menu-item .price,
+.sub-menu-item p {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 25px;
+}
+
+.sub-menu-item h5{
+
+ font-size: 25px;
+}
+
+
+
+
+
