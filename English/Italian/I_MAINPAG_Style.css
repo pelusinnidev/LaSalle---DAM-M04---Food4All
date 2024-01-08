@@ -217,6 +217,7 @@ h4 {
 .menu-item .price,
 .menu-item p {
     text-align: left; /* Alinea el texto a la izquierda */
+    
 }
 
 .sub-menu {
@@ -238,6 +239,7 @@ h4 {
 
 .sub-menu-item h5{
 
+ margin-bottom: 50px;
  font-size: 25px;
 }
 
