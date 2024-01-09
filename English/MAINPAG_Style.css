@@ -1,15 +1,13 @@
-/* General Styles */
-
 body {
   font-family: 'Arial', sans-serif;
   font-size: 18px;
   margin: 0;
   padding: 0;
   text-align: center;
-  color: #fff; /* White text color */
+  color: #fff;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+  min-height: 100vh;
 }
 
 .navbar {
@@ -26,77 +24,60 @@ body {
   border-radius: 8px;
   background-color: #333;
   margin-top: 20px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-link:hover {
+  color: #0056b3;
+  background-color: #fff;
 }
 
 .Pay {
   background-color: #0056b3;
 }
 
-.nav-link:hover {
-  background-color: #333; /* Dark gray hover color */
-}
-
 header {
   background-color: black;
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  background-size: cover; /* Ajusta la imagen al tamaño del cuerpo */
   padding: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 header h1 {
-  font-size: 36px; /* Increased font size */
+  font-size: 36px;
   margin-bottom: 10px;
+  animation: pulse 2s infinite;
 }
 
-main .section {
-  margin-bottom: 40px; /* Increased margin between sections */
-}
-
-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.section .content {
-  flex-basis: 40%;
-  text-align: left; /* Align text to the left */
-}
-
-section h2 {
-  font-size: 48px; /* Doubled font size */
-  margin-bottom: 10px;
-}
-
-section p {
-  font-size: 24px; /* Smaller font size */
-  text-align: justify; /* Justify text */
-}
-
-/* Food Images */
-
-.image {
-  flex-basis: 40%;
-}
-
-.image img.transicion {
-  transition: transform 0.3s ease-in-out;
-}
-
-.image img.transicion:hover {
-  transform: scale(0.9);
-}
-
-/* Style for the grid container */
-
-.grid-container {
+main .grid-container {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  flex-grow: 1; /* Allow the grid container to grow and fill the available space */
-  background-image: url('../SelectorIdiomes/Resources/bkgrd.gif'); /* Ruta de la imagen de fondo */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  background-size: cover; /* Ajusta la imagen al tamaño del cuerpo */
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  flex-grow: 1;
+  background-image: url('../SelectorIdiomes/Resources/bkgrd.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-container .grid-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.grid-item .content, .grid-item .image {
+  padding: 20px;
 }
 
 .grid-container .Welcome {
@@ -115,15 +96,67 @@ section p {
   background-color: #c8ad7f;
 }
 
+.grid-item h2, .grid-item p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.grid-item h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.grid-item p {
+  font-size: 24px;
+}
+
+.image img.transicion {
+  transition: transform 0.5s ease;
+}
+
+.image img.transicion:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.grid-item {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.grid-item p:hover {
+  animation: shake 1s ease-in-out;
+}
+
 footer {
   background-color: black;
   padding: 20px;
   text-align: center;
   color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 footer p {
   font-size: 16px;
 }
-
-
