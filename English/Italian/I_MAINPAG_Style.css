@@ -11,14 +11,13 @@ body {
 }
 
 .navbar {
-    background-color: #333;
+    background-color: bisque;
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
 }
 
 .navbar a {
-
 color: white;
 }
 
@@ -36,7 +35,8 @@ color: white;
 }
 
 .Pay {
-    background-color: purple;
+    background-color: beige;
+    color: black !important;
 }
 
 header {
