@@ -341,6 +341,29 @@ a.button:hover {
     color: black;
 }
 
+@keyframes growShrink {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Aplica la animación a la imagen */
+div img {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    animation: growShrink 3s infinite; /* 3 segundos, repetición infinita */
+}
+
+.image-container img {
+    width: 100%;
+    animation: growShrink 3s infinite;
+    float: right; /* Coloca la imagen a la derecha */
+}
 
 
 
