@@ -115,7 +115,7 @@ main .grid-container {
 }
 
 .image img.transicion:hover {
-  transform: rotate(10deg) scale(1.1);
+  transform: scale(1.2);
 }
 
 @keyframes slideIn {
