@@ -190,9 +190,8 @@ header {
     color: #ffdbac;
 }
 
-#userPreferences .suggested-dish:active {
-    transform: scale(1.1);
-}
+
+
 
 /*ESTILS PEL PREU*/
 .video-item {
