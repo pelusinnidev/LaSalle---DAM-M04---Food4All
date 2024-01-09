@@ -35,7 +35,7 @@ nav {
 }
 
 .Pay {
-    background-color: purple;
+    background-color: rgb(216, 152, 2);
 }
 
 header {
@@ -44,6 +44,21 @@ header {
     text-align: center;
     padding: 20px 0;
 }
+
+@keyframes moveAnimation {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(40px); /* Puedes ajustar la distancia del desplazamiento según tus preferencias */
+    }
+}
+
+header h1 {
+    font-size: 2em;
+    animation: moveAnimation 3s infinite; /* 3s es la duración de la animación, e "infinite" indica que la animación se repetirá indefinidamente */
+}
+
 
 .grid-container {
     background-color: #ffd297;
