@@ -74,24 +74,13 @@ body {
     margin-top: 5px;
 }
 
-.grid-item-text a {
+.grid-item a {
     text-decoration: none;
-    color: white;
     cursor: pointer;
 }
 
-.animated {
-    font-size: 20px;
-}
-
-.grid-item-text a:hover {
-    color: orange; /* Dark gray hover color */
-    scale: 1.5;
-}
-
-/* Transition effect - Mirar pq no funciona...(buscar solució per implementar-ho també o algunaa cosa similar) */
-.grid-item:hover img.transicion {
-    transform: scale(0.9);
+.grid-item a:hover .grid-item-text p {
+    color: orange;
 }
 
 @keyframes pulse {
