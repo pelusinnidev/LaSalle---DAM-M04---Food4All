@@ -78,3 +78,9 @@ body {
 .action-button:hover {
     background-color: #444; /* Slightly lighter gray */
 }
+
+.ultra {
+    background-image: url('/SelectorIdiomes/Resources/bkgrd.gif'); 
+    color: black;
+    font-weight: bold;
+}
