@@ -19,6 +19,20 @@ body {
     width: 100%; /* Adjust to the width of the device */
 }
 
+.product-container h1 {
+    margin: 20px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.product-container h2 {
+    margin: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .image-container {
     overflow: hidden; /* Ensures the video doesn't exceed the border-radius */
     border-radius: 10px; /* Matches the product container */
