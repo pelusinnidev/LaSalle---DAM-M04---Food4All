@@ -64,22 +64,32 @@ section h2 {
 }
 
 .container-videos {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; /* Ajusta el espacio entre los videos según sea necesario */
     justify-content: space-around;
-    align-items: flex-end;
-    margin: 20px;
 }
 
 .video-container {
-    text-align: center;
-    border: 1px solid #ddd;
-    padding: 10px;
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .video-container video {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+}
+
+.video-bolo {
+    grid-row: 1; /* Ajusta el número de fila según sea necesario */
+    grid-column: 2; /* Asegura que el video de boloñesa esté en la columna del medio */
+}
+
+.video-pizza {
+    grid-row: 2; /* Ajusta el número de fila según sea necesario */
+    grid-column: 2; /* Asegura que el video de pizza esté en la columna del medio */
+    margin-top: 100px;
 }
 
 
@@ -181,30 +191,83 @@ h4 {
     display: block;
 }
 
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    text-align: center;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
 .card__content {
-    margin-top: 10px; /* Añade espacio entre el título y el contenido */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
 }
 
-.card__content img {
-    max-width: 40%; /* Hace que la imagen se ajuste al ancho del contenedor */
-    height: auto; /* Mantiene la proporción original de la imagen */
-    display: block;
+img {
+    max-width: 50%;
+    border-radius: 10px;
 }
 
-.card__content h3 {
-    font-size: 24px; /* Ajusta el tamaño de la letra del título según tus necesidades */
+.text-container {
+    width: 45%;
 }
 
-.card__content h4 {
-    font-size: 40px; /* Ajusta el tamaño de la letra del subtítulo según tus necesidades */
-    /* Hace que el h4 ocupe todo el ancho disponible */
-    margin-top: 25px;
-    margin-left: 375px;
+h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    margin-left: 250px;
 }
 
-.card__content p {
-    margin-top: 10px; /* Añade espacio entre el h4 y el párrafo */
-    text-align: center; /* Centra el texto */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    margin-left: 25px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.text-container {
+    margin-left: 25px;
+    text-align: left;
+
+}
+
+
+
+.price {
+    color: #e44d26;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.sub-menu {
+    margin-top: 10px;
+}
+
+.sub-menu-item {
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
 }
 
 
@@ -246,6 +309,36 @@ h4 {
  margin-bottom: 50px;
  font-size: 25px;
 }
+
+a.button {
+    background: linear-gradient(to right, #008C45, white, #CD2E3A);
+    font-weight: bold;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #CD2E3A;
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px; /* Ajusta el relleno para hacer el botón más estrecho */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    color: black;
+    justify-content: center;
+}
+
+a.button .flag-icon {
+    font-size: 18px; /* Ajusta el tamaño del emoji o ícono */
+    margin-right: 4px;
+    
+}
+
+
+a.button:hover {
+    background: linear-gradient(to right, #CD2E3A, white, #008C45);
+    color: black;
+}
+
 
 
 
