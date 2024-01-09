@@ -18,16 +18,19 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
+    margin-top: 20px;
 }
 
 .Pay {
-    background-color: red;
+    background-color: red !important;
 }
 
 .nav-link {
     text-decoration: none;
     color: #fff;
     padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #333;
 }
 
 .nav-link:hover {
