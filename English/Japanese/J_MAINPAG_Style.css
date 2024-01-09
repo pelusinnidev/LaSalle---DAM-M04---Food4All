@@ -34,8 +34,8 @@ nav {
     color: black;
 }
 
-.searchResults {
-    background-color: #e4b0b0;
+.Pay {
+    background-color: purple;
 }
 
 header {
@@ -189,8 +189,6 @@ header {
 .dish-link:hover {
     color: #ffdbac;
 }
-
-
 
 #userPreferences .suggested-dish:active {
     transform: scale(1.1);

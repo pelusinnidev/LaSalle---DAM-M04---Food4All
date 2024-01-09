@@ -25,12 +25,16 @@ body {
   padding: 8px 16px;
 }
 
+.Pay {
+  background-color: purple;
+}
+
 .nav-link:hover {
   background-color: #333; /* Dark gray hover color */
 }
 
 header {
-  background-image: url('../SelectorIdiomes/Resources/bkgrd.gif'); /* Ruta de la imagen de fondo */
+  background-color: black;
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-size: cover; /* Ajusta la imagen al tamaño del cuerpo */
   padding: 20px;
@@ -39,14 +43,6 @@ header {
 header h1 {
   font-size: 36px; /* Increased font size */
   margin-bottom: 10px;
-}
-
-#searchResults {
-  border: 1px solid #ccc;
-  padding: 20px;
-  background-image: url('../SelectorIdiomes/Resources/bkgrd.gif'); /* Ruta de la imagen de fondo */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  background-size: cover; /* Ajusta la imagen al tamaño del cuerpo */
 }
 
 main .section {
@@ -117,9 +113,7 @@ section p {
 }
 
 footer {
-  background-image: url('../SelectorIdiomes/Resources/bkgrd.gif'); /* Ruta de la imagen de fondo */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  background-size: cover; /* Ajusta la imagen al tamaño del cuerpo */
+  background-color: black;
   padding: 20px;
   text-align: center;
   color: #fff;

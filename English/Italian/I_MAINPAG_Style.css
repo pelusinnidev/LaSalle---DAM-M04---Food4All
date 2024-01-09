@@ -33,6 +33,10 @@ color: white;
     background-color: #ddd;
 }
 
+.Pay {
+    background-color: purple;
+}
+
 header {
     color: black;
     text-align: center;

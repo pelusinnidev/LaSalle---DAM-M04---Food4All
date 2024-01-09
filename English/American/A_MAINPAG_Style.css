@@ -20,6 +20,10 @@ body {
     padding: 10px 0;
 }
 
+.Pay {
+    background-color: purple;
+}
+
 .nav-link {
     text-decoration: none;
     color: #fff;
