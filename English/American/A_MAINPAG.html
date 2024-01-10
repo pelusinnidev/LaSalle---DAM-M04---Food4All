@@ -9,7 +9,8 @@
     </head>
     <body>
         <nav>
-            <div class="navbar">
+            <button class="nav-toggle">☰ Menu</button>
+            <div class="navbar" id="navbar">
                 <a href="/English/MAINPAG.html" class="nav-link">Main Menu</a>
                 <a href="/English/Italian/I_MAINPAG.html" class="nav-link">Italian Food</a>
                 <a href="/English/Japanese/J_MAINPAG.html" class="nav-link">Japanese Food</a>
@@ -17,7 +18,19 @@
                 <a href="/English/ContactPage/CONTACT_PAGE.html" class="nav-link">Contact Us</a>
                 <a href="/English/PayPage/PAYPAGE.html" class="nav-link Pay ultra">Pay</a>
             </div>
-        </nav>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var navToggle = document.querySelector('.nav-toggle');
+                    var navBar = document.getElementById('navbar');
+            
+                    navToggle.addEventListener('click', function() {
+                        navBar.classList.toggle('active');
+                    });
+                });
+            </script>
+            
+        </nav>        
 
         <header>
             <h1>Welcome to American Menu!</h1>
@@ -124,5 +137,6 @@
         <footer>
             <p>&copy; 2023 - 2024 Food4All. All rights reserved.</p>
         </footer>
+        
     </body>
     </html>
