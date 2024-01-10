@@ -1,16 +1,28 @@
+/* Estil general - La base de la nostra obra mestra! 🎨 */
 body {
     font-family: 'Arial', sans-serif;
     font-size: 18px;
     margin: 0;
-    padding: 0 0 20px 0; /* padding agregado en la parte inferior */
+    padding: 0 0 20px 0;
     text-align: center;
-    background-color: #000; /* fondo negro */
-    color: #fff; /* texto blanco */
+    background-color: #000;
+    color: #fff;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+/* Animació del títol - Balla, títol, balla! 💃 */
+@keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+}
+
+/* Capçalera - La corona de la nostra pàgina! 👑 */
 header {
     animation: pulse 3s infinite !important;
     margin: 50px;
@@ -21,11 +33,13 @@ header h1 {
     font-weight: bold;
 }
 
+/* Títols de secció - Els herois sense capa! 🦸 */
 h2 {
     font-size: 20px;
     font-weight: bold;
 }
 
+/* Navegació - El camí cap a l'aventura! 🧭 */
 .navbar {
     background-color: #000;
     display: flex;
@@ -34,28 +48,28 @@ h2 {
     margin-top: 20px;
 }
 
-.Pay {
-    background-color: red !important;
-}
-
 .nav-link {
     text-decoration: none;
     color: #fff;
     padding: 8px 16px;
     border-radius: 8px;
     background-color: #333;
-    transition: color 0.3s, background-color 0.3s; /* transición suave */
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .nav-link:hover {
-    color: #0056b3; /* color del texto al pasar el ratón */
-    background-color: #fff; /* color de fondo al pasar el ratón */
+    color: #0056b3;
+    background-color: #fff;
 }
 
-/* Estilo del grid */
+.Pay {
+    background-color: red !important;
+}
+
+/* Estil del grid - El tablero del nostre joc! 🎲 */
 .grid-container {
-    background-color: rgba(200, 16, 46, 0.6); /* fondo rojo opaco */
-    border-radius: 10px; /* bordes redondeados */
+    background-color: rgba(200, 16, 46, 0.6);
+    border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -63,31 +77,50 @@ h2 {
 }
 
 .grid-item {
-    background-color: rgba(200, 16, 47, 0.416); /* fondo rojo opaco */
-    border-radius: 10px; /* bordes redondeados */
+    background-color: rgba(200, 16, 47, 0.416);
+    border-radius: 10px;
     padding: 10px;
-    overflow: hidden; /* evita que las imágenes sobresalgan */
-    margin: 10px; /* margen entre grid-items */
-    text-align: center; /* centrar contenido horizontalmente */
-    transition: transform 0.5s ease; /* transición suave para transformación */
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.5s ease;
 }
 
 .grid-item:hover {
-    transform: scale(1.05); /* ligeramente más grande al pasar el ratón */
+    transform: scale(1.05);
 }
 
+/* Responsivitat - Ballant amb les mides! 📏🕺 */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar, .nav-link {
+        flex-direction: column;
+    }
+}
+
+/* Imatges dels plats - Un festí per a la vista! 🍔 */
 .grid-item img {
     width: 100%;
     height: 380px;
-    border-radius: 10px; /* bordes redondeados */
-    display: inline-block; /* elimina espacio extra debajo de la imagen */
-    transition: transform 0.5s ease; /* transición suave para transformación */
+    border-radius: 10px;
+    display: inline-block;
+    transition: transform 0.5s ease;
 }
 
 .grid-item img:hover {
-    transform: rotate(5deg); /* rotación al pasar el ratón */
+    transform: rotate(5deg);
 }
 
+/* Text dels items - Parlem del deliciós! 🗣️ */
 .grid-item-text {
     padding: 10px;
     background-color: black;
@@ -97,7 +130,6 @@ h2 {
     text-align: center;
     border-radius: 10px;
     margin-top: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* cambio de fuente */
 }
 
 .grid-item a {
@@ -106,18 +138,10 @@ h2 {
 }
 
 .grid-item a:hover .grid-item-text p {
-    color: orange; /* texto naranja al pasar el ratón */
+    color: orange;
 }
 
-@keyframes pulse {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.5);
-    }
-}
-
+/* Peu de pàgina - l'epíleg de la nostra història! 📚 */
 footer {
     background-color: #000;
     padding: 20px;
