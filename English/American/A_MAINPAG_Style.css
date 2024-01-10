@@ -66,6 +66,12 @@ h2 {
     background-color: red !important;
 }
 
+.ultra {
+    background-image: url('/SelectorIdiomes/Resources/bkgrd.gif'); 
+    color: black;
+    font-weight: bold;
+}
+
 /* Estil del grid - El tablero del nostre joc! 🎲 */
 .grid-container {
     background-color: rgba(200, 16, 46, 0.6);
