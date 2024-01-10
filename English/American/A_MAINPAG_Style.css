@@ -35,8 +35,10 @@ header h1 {
 
 /* Títols de secció - Els herois sense capa! 🦸 */
 h2 {
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* Navegació - El camí cap a l'aventura! 🧭 */
