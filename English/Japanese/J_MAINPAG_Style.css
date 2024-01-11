@@ -284,21 +284,31 @@ footer {
     padding: 10px 0;
 }
 
+
+/* Add the following CSS for responsiveness */
 @media only screen and (max-width: 768px) {
+    .grid-container {
+        padding: 10px;
+    }
+
     .navbar {
         flex-direction: column;
-        align-items: center;
     }
 
     .nav-link {
-        padding: 8px 0;
-        border-radius: 8px;
-        background-color: #333;
+        margin-bottom: 10px;
     }
 
-    .video-grid {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #userPreferences {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
 
