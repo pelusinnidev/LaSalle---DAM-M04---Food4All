@@ -149,6 +149,70 @@ main .grid-container {
   animation: shake 1s ease-in-out;
 }
 
+/* Responsivitat - Ballant amb les mides! 📏🕺 */
+@media screen and (max-width: 1024px) {
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+      grid-template-columns: 1fr;
+  }
+
+  .grid-item .content, .grid-item .image {
+      padding: 10px;
+  }
+
+  header h1, .grid-item h2 {
+      font-size: 32px;
+  }
+
+  .grid-item p {
+      font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-toggle {
+      display: block;
+      background-color: #272727;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+  }
+
+  .navbar {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: #272727;
+  }
+
+  .navbar.active {
+      display: flex;
+  }
+
+  .nav-link {
+      display: block;
+      margin: 5px;
+      background-color: black;
+  }
+
+  header h1, .grid-item h2 {
+      font-size: 24px;
+  }
+
+  .grid-item p {
+      font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjust styles for very small screens, such as smaller font sizes */
+}
+
 footer {
   background-color: black;
   padding: 20px;

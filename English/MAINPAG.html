@@ -9,6 +9,7 @@
 </head>
 <body>
     <nav>
+        <button class="nav-toggle">🍔 Menu</button>
         <div class="navbar">
             <a href="/English/American/A_MAINPAG.html" class="nav-link">American Food</a>
             <a href="/English/Italian/I_MAINPAG.html" class="nav-link">Italian Food</a>
@@ -18,6 +19,12 @@
             <a href="/English/PayPage/PAYPAGE.html" class="nav-link Pay">Pay</a>
         </div>
     </nav>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+    </script>
 
     <header>
         <h1>Welcome to Food4All</h1>
