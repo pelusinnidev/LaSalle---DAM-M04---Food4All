@@ -38,6 +38,7 @@
         </header>
 
         <main>
+            <label for="combo-offer-toggle" class="combo-offer-trigger">Check out our Special Combo Offer!</label>
             <h2>-- Star Dishes --</h2>
             <div class="grid-container">
                 <div class="grid-item">
@@ -131,6 +132,18 @@
                             <p>Price: 1.99€</p>
                         </div>
                     </a>
+                </div>
+            </div>
+
+            <!-- Combo Offer Modal Structure -->
+            <input type="checkbox" id="combo-offer-toggle" hidden>
+            <div class="modal">
+                <label for="combo-offer-toggle" class="modal-overlay"></label>
+                <div class="modal-content">
+                    <h2>Special Combo Offer</h2>
+                    <p>Enjoy our delicious combo: Hamburger, French Fries, and Chicken Nuggets for just 9.99€</p>
+                    <img src="https://img-global.cpcdn.com/recipes/a90603f413c15f8d/1200x630cq70/photo.jpg" alt="Combo Offer">
+                    <label for="combo-offer-toggle" class="modal-close">&#10006;</label>
                 </div>
             </div>
         </main>
