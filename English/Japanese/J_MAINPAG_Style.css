@@ -375,6 +375,22 @@ footer {
         font-size: 20px;
         cursor: pointer;
     }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--color-nav-toggle);
+    }
+
+    .nav-link {
+        background-color: var(--color-fons-general);
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
 }
 /* Add the following CSS for responsiveness */
 @media only screen and (max-width: 768px) {
