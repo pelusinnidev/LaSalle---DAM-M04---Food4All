@@ -64,16 +64,22 @@ h2 {
 }
 
 /* Navegació - El camí cap a l'aventura! 🧭 */
+.nav-logo {
+    width: 60px;
+    height: auto;
+}
+
 .navbar {
-    background-color: var(--color-fons-general);
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 10px 0;
     margin-top: 20px;
 }
 
 .nav-link {
     text-decoration: none;
+    text-align: center;
     color: var(--color-link);
     padding: 8px 16px;
     border-radius: 8px;
