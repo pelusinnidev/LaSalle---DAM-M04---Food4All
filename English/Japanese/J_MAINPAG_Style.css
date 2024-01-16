@@ -104,23 +104,29 @@ body {
     display: flex;
 }
 
+.nav-logo{
+    width: 60px;
+    height: auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
 nav {
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.navbar {
-    background-color: var(--color-fondo-nav);
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
 
 .nav-link {
     text-decoration: none;
+    text-align: center;
     color: var(--color-texto-nav);
     padding: 8px 16px;
     border-radius: 8px;
@@ -147,7 +153,7 @@ header {
         transform: translateX(0);
     }
     50% {
-        transform: translateX(40px); /* Puedes ajustar la distancia del desplazamiento según tus preferencias */
+        transform: translateX(30px); /* Puedes ajustar la distancia del desplazamiento según tus preferencias */
     }
 }
 
@@ -347,7 +353,45 @@ footer {
 
 
 
+/* Responsivitat - Ballant amb les mides! 📏🕺 */
+@media screen and (min-width: 789px) {
+    .nav-toggle {
+        background-color: var(--color-nav-toggle);
+        color: var(--color-nav-toggle);
+        border-color: var(--color-nav-toggle);
+        border-width: 0px;
+        visibility: hidden;
+    }
+}
 
+@media screen and (max-width: 480px) {
+    .nav-toggle {
+        display: block;
+        background-color: var(--color-nav-toggle);
+        width: 100%;
+        color: var(--color-text-general);
+        padding: 10px 20px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--color-nav-toggle);
+    }
+
+    .nav-link {
+        background-color: var(--color-fons-general);
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+}
 /* Add the following CSS for responsiveness */
 @media only screen and (max-width: 768px) {
     .grid-container {

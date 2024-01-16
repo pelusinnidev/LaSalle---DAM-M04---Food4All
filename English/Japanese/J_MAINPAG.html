@@ -9,17 +9,32 @@
     </head>
 
     <body>
+
         <nav>
-            <div class="navbar">
+            <button class="nav-toggle">🍔 Menu</button>
+            <div class="navbar" id="navbar">
+                <img class="nav-logo" src="/Resources/Logo.png" alt="Logo">
                 <a href="/English/MAINPAG.html" class="nav-link">Main Menu</a>
-                <a href="/English/American/A_MAINPAG.html" class="nav-link">American Food</a>
                 <a href="/English/Italian/I_MAINPAG.html" class="nav-link">Italian Food</a>
+                <a href="/English/American/A_MAINPAG.html" class="nav-link">American Food</a>
                 <a href="/index.html" class="nav-link">Language Select</a>
                 <a href="/English/ContactPage/CONTACT_PAGE.html" class="nav-link">Contact Us</a>
-                <a href="/English/PayPage/PAYPAGE.html" class="nav-link Pay">Pay</a>
+                <a href="/English/PayPage/PAYPAGE.html" class="nav-link Pay ultra">Pay</a>
             </div>
 
-        </nav>
+            <!-- JavaScript per a la barra de navegació desplegable -->
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var navToggle = document.querySelector('.nav-toggle');
+                    var navBar = document.getElementById('navbar');
+            
+                    navToggle.addEventListener('click', function() {
+                        navBar.classList.toggle('active');
+                    });
+                });
+            </script>
+
+        </nav> 
 
         <header>
             <h1>Welcome to Japanese Menu!</h1>  
