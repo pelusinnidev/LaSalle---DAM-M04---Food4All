@@ -166,10 +166,10 @@ header {
 
 @keyframes moveAnimation {
     0%, 100% {
-        transform: translateX(0);
+        transform: translateX();
     }
     50% {
-        transform: translateX(30px); /* Puedes ajustar la distancia del desplazamiento según tus preferencias */
+        transform: translateX(-10px); /* Puedes ajustar la distancia del desplazamiento según tus preferencias */
     }
 }
 
