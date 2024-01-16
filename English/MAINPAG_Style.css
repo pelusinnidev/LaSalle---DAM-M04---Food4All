@@ -226,6 +226,7 @@ footer p {
 }
 
 /* Responsivitat - Ballant amb les mides! 📏🕺 */
+/* Responsividad para pantallas pequeñas */
 @media screen and (max-width: 480px) {
   .nav-toggle {
     display: block;
@@ -261,4 +262,6 @@ footer p {
   .grid-item p {
     font-size: 16px;
   }
+
+  /* Ajustes adicionales según sea necesario para pantallas pequeñas */
 }
