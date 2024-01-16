@@ -19,6 +19,21 @@ header {
     padding: 20px;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 0; /* Elimina el margen superior del h1 para un aspecto más limpio */
+}
+
+.nav-logo {
+    max-width: 50px; /* Ajusta el tamaño del logo según tus preferencias */
+}
+
+
 main {
     margin: 20px;
 }

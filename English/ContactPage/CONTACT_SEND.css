@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #ec1717;
+    --secondary-color: #f46042;
+    --background-color: #f6f6f6;
+    --text-color: #f44e42;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Añade estilos para el mensaje de agradecimiento */
+.thank-you-message {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajusta el tamaño del logo */
+.nav-logo {
+    max-width: 100px; /* Ajusta el tamaño según tus preferencias */
+}
+
+a.back {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a.back:hover {
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
