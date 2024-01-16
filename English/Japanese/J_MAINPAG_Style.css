@@ -364,6 +364,18 @@ footer {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .nav-toggle {
+        display: block;
+        background-color: var(--color-nav-toggle);
+        width: 100%;
+        color: var(--color-text-general);
+        padding: 10px 20px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
 /* Add the following CSS for responsiveness */
 @media only screen and (max-width: 768px) {
     .grid-container {
