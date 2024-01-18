@@ -70,12 +70,15 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 1000;
+    transition: transform 0.3s; 
 }
 
 /* Mostra el modal quan el Checkbox està marcat */
 #combo-offer-toggle:checked + .modal {
     display: flex;
 }
+
+
 
 .modal-overlay {
     position: absolute;
@@ -152,6 +155,8 @@ nav {
     background-color:var(--color-fondo-nav);;
     color: var(--color-enlace-hover-nav);
 }
+
+
 
 .Pay {
     background-color: var(--color--pay);
@@ -255,8 +260,14 @@ header h1 {
 }
 
 
-.price-link:hover .price {
-    color: var(--color-fondo-grid) /* color que deseas cuando estás encima del enlace */;
+.price-container:active .price {
+    color: var(--color-fondo-grid); /* color que deseas cuando estás encima del enlace */
+}
+
+
+
+.price-link {
+    text-decoration: none;
 }
 
 
