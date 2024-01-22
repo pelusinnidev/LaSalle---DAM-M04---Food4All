@@ -1,17 +1,24 @@
+:root {
+  /* Definició de variables de colors */
+  --color-fons-principal: black;
+  --color-text-principal: white;
+  --color-text-titol: gold; /* Un daurat com els tresors perduts! 💰 */
+  --color-animacio-imatge: rgba(0, 0, 0, 0.2);
+  --color-sombra-element: rgba(0, 0, 0, 0.1);
+}
+
 /* Fonts and general colors */
 
 /* Estil per al cos de la pàgina - la base de l'aventura! 🌐 */
-
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  background-color: black;
+  color: var(--color-text-principal);
+  background-color: var(--color-fons-principal);
   margin-top: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px var(--color-animacio-imatge);
 }
 
 /* Estils per a la capçalera */
-
 header {
   padding-bottom: 50px;
   margin: 25px;
@@ -19,18 +26,18 @@ header {
 
 /* Estil per als títols de la capçalera - la llegenda de l'aventura! 📖 */
 header h1 {
-  color: white; /* Un color daurat com els tresors perduts! 💰 */
+  color: var(--color-text-titol);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2.4em;
   margin-bottom: 10px;
-  text-align: center; /* Centra el text - com un mapa que apunta al trésor! 🗺️ */
+  text-align: center;
 }
 
 header h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
+  color: var(--color-text-principal);
   font-size: 1.8em;
-  text-align: center; /* Centra el text - com un far que guia els mariners! ⚓ */
+  text-align: center;
 }
 
 header img {
@@ -45,10 +52,11 @@ header img {
 }
 
 .langtitle {
-  color: white;
+  color: var(--color-text-principal);
   font-weight: 300;
-  font-style: normal;
+  font-style: normal !important;
   font-size: 20px;
+  text-decoration: none;
 }
 
 @keyframes bounce {
@@ -77,7 +85,7 @@ header img {
 .grid-item {
   margin: auto;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px var(--color-sombra-element);
   border-radius: 10px;
   text-align: center;
   width: 250px;
@@ -153,7 +161,7 @@ footer {
   bottom: 0%;
   text-align: center;
   font-size: 1em;
-  color: #000000; /* Un color daurat com les estrelles brillants! ✨ */
+  color: var(--color-text-titol); /* Un color daurat com les estrelles brillants! ✨ */
 }
 
 /* MEDIA QUERIES: per exemple, per a mòbils */
