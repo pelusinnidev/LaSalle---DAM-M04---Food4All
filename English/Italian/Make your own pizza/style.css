@@ -1,12 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: beige;
-   
-}
+    background-image: url(https://images.pexels.com/photos/16203829/pexels-photo-16203829/free-photo-of-comida-pizza-cena-almuerzo.jpeg?auto=compress&cs=tinysrgb&w=600);
+    
+}   
 
 .menu {
     max-width: 600px;
+    height: 550px;
     margin: auto;
     padding: 20px;
     border: 2px solid #ccc;
@@ -28,7 +29,7 @@ label {
     margin-bottom: 8px;
 }
 
-button {
+a {
     background-color: #008C45;
     color: white;
     border: none;
@@ -41,3 +42,5 @@ button {
 button:hover {
     background-color: #006634;
 }
+
+
