@@ -80,7 +80,7 @@ body {
 }
 
 .ultra {
-    background-image: url('/Resources/bkgrd.gif'); 
+    background-image: url('../../../../Resources/bkgrd.gif'); 
     color: black;
     font-weight: bold;
 }

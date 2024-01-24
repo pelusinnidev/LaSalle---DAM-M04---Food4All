@@ -97,7 +97,7 @@ h2 {
 }
 
 .ultra {
-    background-image: url('/SelectorIdiomes/Resources/bkgrd.gif'); 
+    background-image: url('../../Resources/bkgrd.gif'); 
     color: var(--color-ultra-text);
     font-weight: bold;
 }
