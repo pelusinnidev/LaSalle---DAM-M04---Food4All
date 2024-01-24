@@ -86,6 +86,22 @@ h2 {
 }
 
 
+.alergenos {
+    display: block;
+    align-items: center;
+}
+
+.alergenos span {
+    margin-right: 10px; /* Ajusta según sea necesario */
+}
+
+.alergenos img {
+    width: 20px; /* Ajusta el tamaño según sea necesario */
+    height: 20px;
+}
+
+
+
 
 
 

@@ -77,11 +77,20 @@ h2 {
     font-size: 14px;
 }
 
-.contains-line img {
+.alergenos {
+    display: block;
+    align-items: center;
+}
+
+.alergenos span {
+    margin-right: 10px; /* Ajusta según sea necesario */
+}
+
+.alergenos img {
     width: 20px; /* Ajusta el tamaño según sea necesario */
     height: 20px;
-    margin-right: 5px; /* Espacio entre la imagen y el texto */
 }
+
 
 
 
