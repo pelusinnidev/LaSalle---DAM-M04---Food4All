@@ -77,6 +77,14 @@ h2 {
     font-size: 14px;
 }
 
+.contains-line img {
+    width: 20px; /* Ajusta el tamaño según sea necesario */
+    height: 20px;
+    margin-right: 5px; /* Espacio entre la imagen y el texto */
+}
+
+
+
 /*ESTILOS DEL BOTÓN BACK Y BUY NOW*/
 .Back-button, .buy-button {
     background-color: #eaad68;
