@@ -305,6 +305,7 @@ h5 {
 }
 
 .sub-menu-item h5,
+.sub-menu-item h4
 .sub-menu-item .price,
 .sub-menu-item p {
     text-align: left; /* Alinea el texto a la izquierda */
@@ -315,6 +316,11 @@ h5 {
 
  margin-bottom: 50px;
  font-size: 25px;
+}
+.sub-menu-item h6 {
+    font-size: 25px;
+    margin-left: 25px;
+    color: #333;
 }
 
 a.button {
