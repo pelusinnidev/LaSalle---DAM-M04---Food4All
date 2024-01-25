@@ -5,40 +5,60 @@ body {
   padding: 0;
   text-align: center;
   color: #fff;
+  background-color: black;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+/* Navegació - El camí cap a l'aventura! 🧭 */
+
+.nav-toggle{
+  display: none;
+}
+
+.nav-logo {
+  width: 60px;
+  height: auto;
+}
+
 .navbar {
-  background-color: #000;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 10px 0;
+  margin-top: 20px;
 }
 
 .nav-link {
   text-decoration: none;
-  color: #fff;
+  text-align: center;
+  color: var(--color-link);
   padding: 8px 16px;
   border-radius: 8px;
-  background-color: #333;
-  margin-top: 20px;
+  background-color: grey;
   transition: color 0.3s, background-color 0.3s;
 }
 
 .nav-link:hover {
-  color: #0056b3;
-  background-color: #fff;
+  color: var(--color-link-hover);
+  background-color: var(--color-link-fons-hover);
 }
 
 .Pay {
-  background-color: #0056b3;
+  background-image: url(../Resources/bkgrd.gif) !important;
+}
+
+.ultra {
+  background-image: url('../../Resources/bkgrd.gif'); 
+  color: white;
+  font-weight: bold;
 }
 
 header {
   background-color: black;
   padding: 20px;
+  margin-top: 18px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 

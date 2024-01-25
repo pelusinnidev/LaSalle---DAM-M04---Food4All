@@ -4,7 +4,7 @@
     --color-text-general: #fff;
     --color-link: #fff;
     --color-link-hover: #0056b3;
-    --color-link-fons: #333;
+    --color-link-fons: #ff4500;
     --color-link-fons-hover: #fff;
     --color-pay: red;
     --color-ultra-text: black;
@@ -48,6 +48,7 @@ body {
 header {
     animation: pulse 3s infinite !important;
     margin: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header h1 {
