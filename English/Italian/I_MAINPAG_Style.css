@@ -34,6 +34,11 @@ color: white;
     background-color: #ddd;
 }
 
+.nav-logo {
+    width: 60px;
+    height: auto;
+}
+
 .Pay {
     background-color: beige;
     color: black !important;
