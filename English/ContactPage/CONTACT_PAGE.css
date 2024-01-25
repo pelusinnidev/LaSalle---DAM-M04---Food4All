@@ -33,6 +33,11 @@ h1 {
     max-width: 50px; /* Ajusta el tamaño del logo según tus preferencias */
 }
 
+.ultra {
+    background-image: url('../../Resources/bkgrd.gif'); 
+    color: white;
+    font-weight: bold;
+}
 
 main {
     margin: 20px;
