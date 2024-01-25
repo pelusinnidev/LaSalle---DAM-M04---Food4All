@@ -196,6 +196,7 @@ footer p {
     padding: 20px;
     border-radius: 5px;
     text-align: center;
+    width: 70%; /* Adjusted width for better responsiveness */
     max-width: 500px;
 }
 
@@ -258,7 +259,60 @@ footer p {
         border-width: 0px;
         visibility: hidden;
     }
+
+    .modal {
+        align-self: center;
+        width: 50%;
+        height: 50%;
+    }
+
+    .modal-content {
+        width: 50%;
+        height: 50%;
+    }
 }
+
+/* Si aplico aquest media query funciona el mòbl en horitzontal pero no en vertical, i si el tinc en comentàris funciona viceversa...
+@media screen and (max-height: 500px) {
+    .nav-toggle {
+        display: block;
+        background-color: var(--color-nav-toggle);
+        width: 100%;
+        color: var(--color-text-general);
+        padding: 10px 20px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--color-nav-toggle);
+    }
+
+    .nav-link {
+        background-color: var(--color-fons-general);
+        padding: 8px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .modal {
+        align-self: center;
+        margin-top: 15%;
+        width: 50%;
+        height: 50%;
+    }
+
+    .modal-content img {
+        width: 32%;
+        height: auto;
+}
+*/
 
 @media screen and (max-width: 768px) {
     .nav-toggle {
@@ -294,9 +348,7 @@ footer p {
 
     .modal {
         align-self: center;
-        width: 34%;
-        height: auto;
-        padding-left: 33%;
+        width: 100%;
     }
 
     header h1, h2 {
@@ -323,18 +375,18 @@ footer p {
         font-size: 20px;
         cursor: pointer;
     }
-  
+
     .navbar {
         display: none;
         flex-direction: column;
         align-items: center;
         background-color: #272727;
     }
-  
+
     .navbar.active {
         display: flex;
     }
-  
+
     .nav-link {
         display: block;
         margin: 5px;
@@ -343,6 +395,11 @@ footer p {
 
     .grid-container {
         grid-template-columns: 1fr;
+    }
+
+    .modal {
+        align-self: center;
+        width: 100%;
     }
 
     header h1, h2 {
