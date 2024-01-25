@@ -103,107 +103,6 @@ h2 {
     font-weight: bold;
 }
 
-/* Estil del grid - El tauler del nostre joc! 🎲 */
-.grid-container {
-    background-color: var(--color-grid-container);
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin: 20px;
-}
-
-.grid-item {
-    background-color:
-    var(--color-grid-item);
-    border-radius: 10px;
-    padding: 10px;
-    overflow: hidden;
-    margin: 10px;
-    text-align: center;
-    transition: transform 0.5s ease;
-}
-
-.grid-item:hover {
-    transform: scale(1.05);
-}
-
-/* Responsivitat - Ballant amb les mides! 📏🕺 */
-@media screen and (min-width: 789px) {
-    .nav-toggle {
-        background-color: var(--color-nav-toggle);
-        color: var(--color-nav-toggle);
-        border-color: var(--color-nav-toggle);
-        border-width: 0px;
-        visibility: hidden;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-link {
-        display: block;
-        margin: 5px;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    header h1, h2 {
-        font-size: 24px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .nav-toggle {
-        display: block;
-        background-color: var(--color-nav-toggle);
-        width: 100%;
-        color: var(--color-text-general);
-        padding: 10px 20px;
-        border: none;
-        font-size: 20px;
-        cursor: pointer;
-    }
-
-    .navbar {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--color-nav-toggle);
-    }
-
-    .nav-link {
-        background-color: var(--color-fons-general);
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-
-    header h1, h2 {
-        font-size: 20px;
-    }
-
-    @keyframes pulse {
-        0%, 100% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.25);
-        }
-    }
-}
-
 /* Imatges dels plats - Un festí per a la vista! 🍔 */
 .grid-item img {
     width: 100%;
@@ -323,4 +222,139 @@ footer p {
     height: auto;
     margin-top: 20px;
     border-radius: 5px;
+}
+
+/* Estil del grid - El tauler del nostre joc! 🎲 */
+.grid-container {
+    background-color: var(--color-grid-container);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.grid-item {
+    background-color:
+    var(--color-grid-item);
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+/* Responsivitat - Ballant amb les mides! 📏🕺 */
+@media screen and (min-width: 789px) {
+    .nav-toggle {
+        background-color: var(--color-nav-toggle);
+        color: var(--color-nav-toggle);
+        border-color: var(--color-nav-toggle);
+        border-width: 0px;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+        background-color: var(--color-nav-toggle);
+        width: 100%;
+        color: var(--color-text-general);
+        padding: 10px 20px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--color-nav-toggle);
+    }
+
+    .nav-link {
+        background-color: var(--color-fons-general);
+        padding: 8px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .grid-container {
+        grid-template-columns: 2fr;
+    }
+
+    .modal {
+        align-self: center;
+        width: 34%;
+        height: auto;
+        padding-left: 33%;
+    }
+
+    header h1, h2 {
+        font-size: 20px;
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.25);
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-toggle {
+        display: block;
+        background-color: #272727;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+  
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #272727;
+    }
+  
+    .navbar.active {
+        display: flex;
+    }
+  
+    .nav-link {
+        display: block;
+        margin: 5px;
+        background-color: black;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    header h1, h2 {
+        font-size: 20px;
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.25);
+        }
+    }
 }
