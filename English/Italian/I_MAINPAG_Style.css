@@ -1,3 +1,20 @@
+
+:root {
+    --background-beige: beige;
+    --background-bisque: bisque;
+    --text-black: black;
+    --text-white: white;
+    --text-gray: #333;
+    --text-light: #666;
+    --accent-orange: #ff5733;
+    --accent-red: #e44d26;
+    --nav-link-hover: #ddd;
+    --menu-background: #fff;
+    --box-shadow: rgba(0, 0, 0, 0.1);
+    --gradient-start: #008C45;
+    --gradient-end: #CD2E3A;
+  }
+
 /* Reset browser styles */
 body, div, h1, h2, p, ul {
     margin: 0;
@@ -88,17 +105,6 @@ section h2 {
     height: auto;
 }
 
-.video-bolo {
-    grid-row: 1; /* Ajusta el número de fila según sea necesario */
-    grid-column: 2; /* Asegura que el video de boloñesa esté en la columna del medio */
-}
-
-.video-pizza {
-    grid-row: 2; /* Ajusta el número de fila según sea necesario */
-    grid-column: 2; /* Asegura que el video de pizza esté en la columna del medio */
-    margin-top: 100px;
-}
-
 
 
 .card__content {
@@ -134,7 +140,8 @@ h4 {
 
     margin-left: 500px;
 }
-/* Agrega estas reglas CSS para la sección del menú */
+
+
 .menu {
     background-color: #fff;
     padding: 20px;
