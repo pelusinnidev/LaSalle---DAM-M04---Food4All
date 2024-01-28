@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,34 @@
     <link rel="stylesheet" href="General_Reset.css">
     <link rel="stylesheet" href="MAINPAG_Style.css">
 </head>
+
 <body>
     <nav>
         <button class="nav-toggle">🍔 Menu</button>
         <div class="navbar">
             <img class="nav-logo" src="../../Resources/Logo.png" alt="Logo">
-            <a href="American/A_MAINPAG.html" class="nav-link">American Food</a>
-            <a href="Italian/I_MAINPAG.html" class="nav-link">Italian Food</a>
-            <a href="Japanese/J_MAINPAG.html" class="nav-link">Japanese Food</a>
-            <a href="../index.html" class="nav-link">Language Select</a>
-            <a href="ContactPage/CONTACT_PAGE.html" class="nav-link">Contact Us</a>
-            <a href="PayPage/PAYPAGE.html" class="nav-link Pay">Pay</a>
+            <a href="American/A_MAINPAG.html" class="nav-link" id="americanLink">American Food</a>
+            <a href="Italian/I_MAINPAG.html" class="nav-link" id="italianLink">Italian Food</a>
+            <a href="Japanese/J_MAINPAG.html" class="nav-link" id="japaneseLink">Japanese Food</a>
+            <a href="../index.html" class="nav-link" id="languageSelectLink">Language Select</a>
+            <a href="ContactPage/CONTACT_PAGE.html" class="nav-link" id="contactLink">Contact Us</a>
+            <a href="PayPage/PAYPAGE.html" class="nav-link Pay" id="payLink">Pay</a>
         </div>
     </nav>
 
-    <script>
-        document.querySelector('.nav-toggle').addEventListener('click', function() {
-            document.querySelector('.navbar').classList.toggle('active');
-        });
-    </script>
+    <button onclick="loadTranslations('en')">English</button>
+    <button onclick="loadTranslations('es')">Español</button>
+    <button onclick="loadTranslations('cat')">Catalan</button>
 
     <header>
-        <h1>Welcome to Food4All!</h1>
+        <h1><span id="pageTitle"></span></h1>
     </header>
 
     <main class="grid-container">
         <section class="grid-item Welcome">
             <div class="content">
-                <h2>Welcome!</h2>
-                <p>Indulge in a culinary journey like no other at Food4All. We invite you to savor our diverse menu, meticulously crafted with passion and dedication to deliver an extraordinary dining experience.</p>
+                <h2><span id="welcomeHeading"></span></h2>
+                <p><span id="welcomeText"></span></p>
             </div>
             <div class="image">
                 <img src="Resources/welcome_hamburger.webp" alt="Welcome Image" class="transicion">
@@ -47,15 +47,15 @@
                 <img src="Resources/history_book.webp" alt="History Image" class="transicion">
             </div>
             <div class="content">
-                <h2>Our History</h2>
-                <p>Since our establishment in 2010, Food4All has been a symbol of culinary excellence. Over the years, we have evolved into a renowned destination for food enthusiasts seeking exquisite flavors and exceptional dining experiences.</p>
+                <h2><span id="historyHeading"></span></h2>
+                <p><span id="historyText"></span></p>
             </div>
         </section>
 
         <section class="grid-item Who">
             <div class="content">
-                <h2>Who We Are?</h2>
-                <p>Food4All is more than a restaurant; we are a collective of culinary experts and enthusiasts committed to delivering an unforgettable dining experience. Our team of passionate chefs brings creativity and expertise to every dish they create, ensuring a symphony of flavors with every bite.</p>
+                <h2><span id="whoHeading"></span></h2>
+                <p><span id="whoText"></span></p>
             </div>
             <div class="image">
                 <img src="Resources/who_person.webp" alt="Who We Are Image" class="transicion">
@@ -67,14 +67,54 @@
                 <img src="Resources/our_objective.webp" alt="Mission Image" class="transicion">
             </div>
             <div class="content">
-                <h2>Our Mission</h2>
-                <p>At Food4All, our mission is to tantalize your taste buds with a rich tapestry of flavors from American, Italian, and Japanese cuisines. We aim to create lasting memories through the joy of exceptional food and warm hospitality, setting the stage for delightful culinary experiences.</p>
+                <h2><span id="missionHeading"></span></h2>
+                <p><span id="missionText"></span></p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 - 2024 Food4All. All rights reserved.</p>
+        <p><span id="footerText"></span></p>
     </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function () {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+
+
+    function loadTranslations(language) {
+        fetch("../JSON_MAINPAG/idiomes.json")
+    .then(response => response.json())
+    .then(data => {
+        const translations = data[language];
+
+        document.getElementById('pageTitle').innerText = translations.pageTitle;
+        document.querySelector('.nav-toggle').innerText = translations.navToggle;
+        document.getElementById('americanLink').innerText = translations.americanLink;
+        document.getElementById('italianLink').innerText = translations.italianLink;
+        document.getElementById('japaneseLink').innerText = translations.japaneseLink;
+        document.getElementById('languageSelectLink').innerText = translations.languageLink; // Cambiado a 'languageLink'
+        document.getElementById('contactLink').innerText = translations.contactLink;
+        document.getElementById('payLink').innerText = translations.payLink;
+
+        document.getElementById('welcomeHeading').innerText = translations.welcomeHeading;
+        document.getElementById('welcomeText').innerText = translations.welcomeText;
+
+        document.getElementById('historyHeading').innerText = translations.historyHeading;
+        document.getElementById('historyText').innerText = translations.historyText;
+
+        document.getElementById('whoHeading').innerText = translations.whoHeading;
+        document.getElementById('whoText').innerText = translations.whoText;
+
+        document.getElementById('missionHeading').innerText = translations.missionHeading;
+        document.getElementById('missionText').innerText = translations.missionText;
+
+        document.getElementById('footerText').innerText = translations.footerText;
+        // Otros elementos que desees actualizar...
+    });
+        }
+    </script>
 </body>
+
 </html>

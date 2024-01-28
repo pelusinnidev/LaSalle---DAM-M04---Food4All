@@ -62,6 +62,36 @@ header {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/*Botons JSON*/
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Estilos cuando el mouse pasa sobre los botones */
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos específicos para cada botón */
+button:nth-child(1) {
+  background-color: #2ecc71; /* Color verde para el botón de English */
+}
+
+button:nth-child(2) {
+  background-color: #e74c3c; /* Color rojo para el botón de Español */
+}
+
+button:nth-child(3) {
+  background-color: #f39c12; /* Color amarillo para el botón de Catalan */
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);
