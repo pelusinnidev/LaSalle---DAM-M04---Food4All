@@ -2,83 +2,54 @@
   /* Definició de variables de colors */
   --color-fons-principal: black;
   --color-text-principal: white;
-  --color-text-titol: gold; /* Un daurat com els tresors perduts! 💰 */
+  --color-text-titol: gold;
   --color-animacio-imatge: rgba(0, 0, 0, 0.2);
   --color-sombra-element: rgba(0, 0, 0, 0.1);
 }
 
-/* Fonts and general colors */
-
-/* Estil per al cos de la pàgina - la base de l'aventura! 🌐 */
+/* Estil per al cos de la pàgina */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--color-text-principal);
   background-color: var(--color-fons-principal);
-  margin-top: 25px;
-  box-shadow: 0 0 10px var(--color-animacio-imatge);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Assegura que el cos ocupa tota l'alçada de la pantalla */
+  display: flex;
+  flex-direction: column;
 }
 
-/* Estils per a la capçalera */
+/* Estils per al capçalera */
 header {
   padding-bottom: 50px;
   margin: 25px;
 }
 
-/* Estil per als títols de la capçalera - la llegenda de l'aventura! 📖 */
 header h1 {
   color: var(--color-text-titol);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2.4em;
   margin-bottom: 10px;
   text-align: center;
 }
 
 header h2 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--color-text-principal);
   font-size: 1.8em;
   text-align: center;
 }
 
 header img {
-  padding-top: 32px;
   width: 320px;
-  height: 320px; /* Altura desitjada per a la imatge! */
-  margin: 0 auto; /* Centra la imatge horitzontalment - com el sol al zenit! ☀️ */
-  display: block; /* Assegura que sigui tractada com un element de bloc! */
-
-  /* Animació per a la imatge de la capçalera - com les ones del mar! 🌊 */
-  animation: bounce 4s ease-in-out infinite;
+  height: 320px; /* Alçada fixa per a la imatge */
+  margin: 0 auto;
+  display: block;
 }
 
-.langtitle {
-  color: var(--color-text-principal);
-  font-weight: 300;
-  font-style: normal !important;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-/* Animacions dels elements de la graella */
-
+/* Estil per als ítems de la graella */
 .grid-container {
   display: flex;
-  align-self: center;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 25px;
   justify-content: center;
+  align-items: center;
   margin: 25px;
 }
 
@@ -88,122 +59,46 @@ header img {
   box-shadow: 0 0 10px var(--color-sombra-element);
   border-radius: 10px;
   text-align: center;
-  width: 250px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  /* Animació per als contenidors d'elements de la graella - com els batecs del cor! 💓 */
-  animation: pulse 3s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(0.9);
-  }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.9);
-  }
+  width: 200px; /* Amplada fixa */
+  height: 200px; /* Alçada fixa */
 }
 
 .grid-item img {
-  max-width: 100%;
-  max-height: 100%;
   width: 100%;
-  height: auto;
-  margin: 0 auto;
-  display: block;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imatge per cobrir tot l'espai disponible */
   border-radius: 10px;
 }
 
-/* Botons dels elements de la graella */
-.grid-item a {
-  text-decoration: none;
-  max-width: fit-content;
-  max-height: fit-content;
-
-  /* Animació per als botons dels elements de la graella - com el tremolor d'una brisa! 🍃 */
-  animation: shake 0.3s ease-in-out infinite;
-}
-
-@keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-  10% {
-    transform: translateX(10px);
-  }
-  20% {
-    transform: translateX(-10px);
-  }
-  30% {
-    transform: translateX(10px);
-  }
-  40% {
-    transform: translateX(-10px);
-  }
-  50% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-/* Peu de pàgina */
+/* Peu de pàgina fix al final */
 footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
   padding: 25px;
   text-align: center;
   font-size: 1em;
-  color: var(--color-text-titol); /* Un color daurat com les estrelles brillants! ✨ */
+  color: var(--color-text-titol);
+  margin-top: auto; /* Col·loca el peu de pàgina al final del contingut */
 }
 
-/* MEDIA QUERIES: per exemple, per a mòbils */
+/* Media queries per a mòbils */
 @media (max-width: 768px) {
-  /* Estils específics per a pantalles més petites (p. ex., tauletes) */
   .grid-container {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
-
-  .grid-item {
-    width: 150px;
-    height: 120px; /* Ajusta l'altura per a pantalles més petites */
-  }
-
-  footer {
-    position: fixed;
-    width: 100%;
-    margin-bottom: 0%;
-    text-align: center;
-    font-size: 1em;
-    color: var(--color-text-titol); /* Un color daurat com les estrelles brillants! ✨ */
   }
 }
 
 @media (max-width: 480px) {
-  /* Estils específics per a pantalles més petites (p. ex., mòbils) */
   .grid-container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    flex-direction: column;
   }
 
   .grid-item {
-    width: 120px;
-    height: 100px; /* Ajusta l'altura per a pantalles més petites */
+    width: 120px; /* Amplada reduïda per a mòbils */
+    height: 120px; /* Alçada reduïda per a mòbils */
   }
 
-  footer {
-    position: fixed;
+  .grid-item img {
     width: 100%;
-    margin-bottom: 0%;
-    text-align: center;
-    font-size: 1em;
-    color: var(--color-text-titol); /* Un color daurat com les estrelles brillants! ✨ */
+    height: 100%;
   }
 }
+
