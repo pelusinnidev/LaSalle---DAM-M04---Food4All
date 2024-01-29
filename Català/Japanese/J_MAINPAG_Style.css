@@ -1,8 +1,9 @@
+/*variables de colors per utlitzarles al llarg del codi */
 :root {
     --color-fondo-precio: #eaad68;
     --color-texto-precio: #1b160f;
-    --color-texto-fondo: #ffffff; /* Puedes cambiar este color según tu diseño */
-    --color-enlace-hover: #3366cc; /* Puedes cambiar este color según tu diseño */
+    --color-texto-fondo: #ffffff;
+    --color-enlace-hover: #3366cc; 
 
     --color-fondo-body: #ffd297;
     --color-texto-nav: #1b160f;
@@ -31,7 +32,7 @@
 }
 
 
-/* Reset browser styles */
+/* Reset estils a mes del fitxer reset */
 body, div, h1, h2, p, ul {
     margin: 0;
     padding: 0;
@@ -45,9 +46,7 @@ body {
 }
 
 
-/*MODAL*/
-
-
+/*Estils del MODAL*/
 .combo-offer-trigger {
     cursor: pointer;
     display: inline-block;
@@ -123,6 +122,7 @@ body {
     border-radius: 5px;
 }
 
+/*estils per a la barra de navegació*/
 
 .nav-logo{
     width: 60px;
@@ -159,7 +159,7 @@ nav {
 }
 
 
-
+/*Estils per l'element pay*/
 .Pay {
     background-color: var(--color--pay);
 }
@@ -176,16 +176,16 @@ header {
         transform: translateX();
     }
     50% {
-        transform: translateX(-10px); /* Puedes ajustar la distancia del desplazamiento según tus preferencias */
+        transform: translateX(-10px); 
     }
 }
 
 header h1 {
     font-size: 2em;
-    animation: moveAnimation 3s infinite; /* 3s es la duración de la animación, e "infinite" indica que la animación se repetirá indefinidamente */
+    animation: moveAnimation 3s infinite; /* 3s és la durada de l'animació, i "infinite" indica que l'animació es repetirà indefinidament*/
 }
 
-
+/*Estils per a la cuadrícula*/
 .grid-container {
     background-color: var(--color-fondo-grid);
 }
@@ -246,10 +246,10 @@ header h1 {
 }
 
 .image-item img {
-    max-width: 100%; /* Establecer un ancho máximo */
-    height: 250px; /* Mantener la proporción original de la imagen */
-    display: block; /* Eliminar el espacio adicional debajo de la imagen */
-    margin: 0 auto; /* Centrar la imagen dentro de su contenedor */
+    max-width: 100%; /* una amplada maxima */
+    height: 250px; /* mantenir la proporcio original de la imatge */
+    display: block; /* Eliminar el espaci adicional a sota  de la imaten */
+    margin: 0 auto; /* Centrar la imatge dins de su contenedor */
     border-radius: 15px;
 }
 
@@ -263,7 +263,7 @@ header h1 {
 
 
 .price-container:active .price {
-    color: var(--color-fondo-grid); /* color que deseas cuando estás encima del enlace */
+    color: var(--color-fondo-grid); /* color que desitjis que estigui*/
 }
 
 
@@ -316,19 +316,19 @@ header h1 {
 }
 
 #userPreferences .suggested-dish img {
-    max-width: 100%; /* Establecer un ancho máximo */
-    height: 250px; /* Mantener la proporción original de la imagen */
-    display: block; /* Eliminar el espacio adicional debajo de la imagen */
-    margin: 0 auto; /* Centrar la imagen dentro de su contenedor */
+    max-width: 100%; 
+    height: 250px; 
+    display: block; 
+    margin: 0 auto; /* Centrar la imatge dins  del su contenidor */
     border-radius: 15px;
 }
 
 #userPreferences .suggested-dish h3 {
-    background-color: var(--color-fondo-decide); /* Color del fondo del h3 */
-    padding: 10px; /* Espaciado interno del h3 */
-    border-radius: 5px; /* Bordes redondeados */
-    margin-top: 10px; /* Ajusta según tus preferencias */
-    color: var(--color-texto-decide-h3); /* Color del texto del h3 */
+    background-color: var(--color-fondo-decide);
+    padding: 10px; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+    color: var(--color-texto-decide-h3); 
 }
 
 
@@ -353,7 +353,7 @@ header h1 {
 .price-container {
     background-color: var(--color-fondo-preu); /* Color del recuadro del precio */
     padding: 10px;
-    border-radius: 0 0 10px 10px; /* Bordes redondeados solo en la parte inferior */
+    border-radius: 0 0 10px 10px; 
     position: absolute;
     bottom: 0;
     left: 0;
@@ -369,7 +369,7 @@ header h1 {
     font-weight: bold;
 }
 .image-item p {
-    margin-bottom: 70px; /* Ajusta el espacio entre la descripción y el precio según tus necesidades */
+    margin-bottom: 70px; /*el espacio entre la descripción y el precio*/
 }
 
 footer {
@@ -382,7 +382,7 @@ footer {
 
 
 
-/* Responsivitat - Ballant amb les mides! 📏🕺 */
+/* Responsivitat tant en pantalles petites com el ordinador */
 @media screen and (min-width: 789px) {
     .nav-toggle {
         background-color: var(--color-nav-toggle);
@@ -427,7 +427,7 @@ footer {
     }
 
 }
-/* Add the following CSS for responsiveness */
+
 @media only screen and (max-width: 768px) {
     .grid-container {
         padding: 10px;

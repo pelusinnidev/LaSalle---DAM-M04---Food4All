@@ -44,8 +44,8 @@ img {
 .description {
     color: #524848;
     line-height: 1.5;
-    margin: 20px auto; /* Alinea la descripción al centro horizontalmente */
-    width: 600px; /* Establece un ancho fijo en píxeles para la descripción */
+    margin: 20px auto;
+    width: 600px;
     font-size: 18px;
 }
 

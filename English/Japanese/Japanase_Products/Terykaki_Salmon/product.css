@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffe5c3;
-    
 }
 
 .product-container {
@@ -16,9 +15,7 @@ h1 {
     color: #1b160f;
 }
 
-
-/*ESTILS EN CAS QUE SIGUI UN VIDEO: */
-
+/*ESTILOS EN CASO QUE SIGA UN VIDEO: */
 .video-container {
     margin-top: 20px;
 }
@@ -28,7 +25,7 @@ video {
     border-radius: 10px;
 }
 
-/*ESTILS EN CAS QUE SIGUI UNA IMATGE: */
+/*ESTILOS EN CASO QUE SIGA UNA IMAGEN: */
 img {
     max-width: 100%;
     height: auto;
@@ -36,19 +33,14 @@ img {
     margin-top: 20px;
 }
 
-
-/*ESTILS DE LA DESCRIPCIÓ*/
-
-
-
+/*ESTILOS DE LA DESCRIPCIÓN*/
 .description {
     color: #524848;
     line-height: 1.5;
-    margin: 20px auto; /* Alinea la descripción al centro horizontalmente */
-    width: 600px; /* Establece un ancho fijo en píxeles para la descripción */
+    margin: 20px auto;
+    width: 600px;
     font-size: 18px;
 }
-
 
 h2 {
     color: #1b160f;
@@ -56,7 +48,7 @@ h2 {
     margin-top: 20px;
 }
 
-/*ESTILS DE LA LLISTA D'INGREDIENTS*/
+/*ESTILOS DE LA LISTA DE INGREDIENTES*/
 .ingredients-list {
     list-style-type: none;
     padding: 0;
@@ -77,7 +69,7 @@ h2 {
 }
 
 .ingredients-list li:hover {
-    background-color: #ffdbac; 
+    background-color: #ffdbac;
 }
 
 .ingredients-list li span {
@@ -85,23 +77,24 @@ h2 {
     font-size: 14px;
 }
 
-
 .alergenos {
     display: block;
     align-items: center;
 }
 
 .alergenos span {
-    margin-right: 10px; /* Ajusta según sea necesario */
+    margin-right: 10px; 
 }
 
 .alergenos img {
-    width: 20px; /* Ajusta el tamaño según sea necesario */
+    width: 20px; 
     height: 20px;
 }
 
-/*ESTILS DEL BOTÓ PAY NOW i BACK BUTTON*/
 
+
+
+/*ESTILOS DEL BOTÓN BACK Y BUY NOW*/
 .Back-button, .buy-button {
     background-color: #eaad68;
     color: #1b160f;
@@ -117,9 +110,7 @@ h2 {
     background-color: #ffdbac;
 }
 
-
 /* Estilos para pantallas pequeñas */
-
 @media only screen and (max-width: 480px) {
     .product-container {
         max-width: 100%;
@@ -132,12 +123,12 @@ h2 {
 
     video,
     img {
-        border-radius: 0; /* Eliminar el borde redondeado en las imágenes y videos */
+        border-radius: 0;
         margin-top: 10px;
     }
 
     .description {
-        width: 100%; /* Hacer que la descripción ocupe el ancho completo */
+        width: 100%;
         font-size: 16px;
     }
 
