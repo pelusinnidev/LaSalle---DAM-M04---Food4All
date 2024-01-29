@@ -13,7 +13,12 @@
     --box-shadow: rgba(0, 0, 0, 0.1);
     --gradient-start: #008C45;
     --gradient-end: #CD2E3A;
-  }
+    --card-background: #f4f4f4;
+    --button-background: linear-gradient(to right, #008C45, white, #CD2E3A);
+    --button-hover-background: linear-gradient(to right, #CD2E3A, white, #008C45);
+}
+
+
 
 /* Reset browser styles */
 body, div, h1, h2, p, ul {
@@ -46,15 +51,15 @@ color: white;
 
 .nav-link {
     text-decoration: none;
-    color: #333;
+    color: var(--text-gray);
     padding: 8px 16px;
     border-radius: 8px;
-    background-color: #333;
+    background-color: var(--text-gray);
     margin-top: 20px;
 }
 
 .nav-link:hover {
-    background-color: #ddd;
+    background-color: var(--nav-link-hover);
 }
 
 .nav-logo {
@@ -63,15 +68,15 @@ color: white;
 }
 
 .Pay {
-    background-color: beige;
-    color: black !important;
+    background-color: var(--background-beige);
+    color: var(--text-black) !important;
 }
 
 header {
-    color: black;
+    color: var(--text-black);
     text-align: center;
     padding: 20px 0;
-    background-color: bisque;
+    background-color: var(--background-bisque);
 }
 
 .content {
@@ -81,14 +86,14 @@ header {
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: var(--text-gray);
+    color: var(--text-white);
     text-align: center;
     padding: 10px 0;
 }
 
 body {
-    background-color: beige;
+    background-color: var(--background-beige);
 }
 
 
@@ -129,7 +134,7 @@ h4 {
 
 
 .menu {
-    background-color: #fff;
+    background-color: var(--menu-background);
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
@@ -147,19 +152,19 @@ h4 {
 }
 
 .menu-item h3 {
-    color: #333;
+    color: var(--text-gray);
     font-size: 24px;
     text-align: left;
 }
 
 .menu-item .price {
-    color: #ff5733;
+    color:var(--accent-orange);
     font-size: 20px;
     font-weight: bold;
 }
 
 .menu-item p {
-    color: #666;
+    color: var(--text-light);
     font-size: 18px;
     margin-top: 10px; /* Add top margin to separate the price from the text */
 }
@@ -180,10 +185,10 @@ h4 {
 
 
 .card {
-    background-color: #f4f4f4;
+    background-color: var(--card-background);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
 }
 
 section {
@@ -193,7 +198,7 @@ section {
 h3 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #333;
+    color: var(--text-gray);
 }
 
 .card__content {
@@ -204,7 +209,6 @@ h3 {
 }
 
 
-
 .text-container {
     width: 45%;
 }
@@ -212,14 +216,14 @@ h3 {
 h4 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--text-gray);
     margin-left: 250px;
 }
 
 p {
     font-size: 18px;
     line-height: 1.5;
-    color: #666;
+    color: var(--text-light);
     margin-left: 25px;
 }
 
@@ -230,13 +234,15 @@ p {
 .text-container {
     margin-left: 25px;
     text-align: left;
+    color: var(--text-black);
+
 
 }
 
 
 
 .price {
-    color: #e44d26;
+    color: var(--accent-red);
     font-weight: bold;
     margin-right: 5px;
 }
@@ -252,7 +258,7 @@ p {
 h5 {
     font-size: 18px;
     margin-bottom: 5px;
-    color: #333;
+    color: var(--text-gray);
 }
 
 .image-item{
@@ -301,23 +307,23 @@ h5 {
 .sub-menu-item h6 {
     font-size: 25px;
     margin-left: 25px;
-    color: #333;
+    color: var(--text-gray);
 }
 
 a.button {
-    background: linear-gradient(to right, #008C45, white, #CD2E3A);
+    background: var(--button-background);
     font-weight: bold;
     border-radius: 5px;
     border-width: 2px;
-    border-color: #CD2E3A;
-    color: white;
+    border-color: var(--gradient-end);
+    color: var(--text-white);
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     padding: 8px 12px; /* Ajusta el relleno para hacer el botón más estrecho */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
     width: 100px;
-    color: black;
+    color: var(--text-black);
     justify-content: center;
 }
 
@@ -329,8 +335,8 @@ a.button .flag-icon {
 
 
 a.button:hover {
-    background: linear-gradient(to right, #CD2E3A, white, #008C45);
-    color: black;
+    background: var(to right, #CD2E3A, white, #008C45);
+    color: var(--text-black);
 }
 
 
@@ -349,7 +355,6 @@ div img {
 
 .card__content img {
     width: 100%; /* Ajusta el ancho según tus necesidades */
-    animation: growShrink 3s infinite; /* 3 segundos, repetición infinita */
     float: right; /* Coloca la imagen a la derecha */
     margin-top: 20px; /* Ajusta el margen superior según sea necesario */
 }
@@ -401,7 +406,7 @@ body {
     display: block;
     margin: 20px auto; /* Auto para centrar horizontalmente */
     padding: 10px 20px;
-    background: linear-gradient(to right, #008C45, white, #CD2E3A); /* Colores de la bandera italiana en el botón */
+    background: var(--button-background); /* Colores de la bandera italiana en el botón */
     color: var(--text-black);
     border-radius: 5px;
     text-align: center;
@@ -488,3 +493,4 @@ body {
     height: auto;
     border-radius: 10px; /* Opcional: agrega bordes redondeados a la imagen */
 }
+
