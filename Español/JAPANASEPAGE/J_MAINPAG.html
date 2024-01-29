@@ -1,211 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Food4All - Japanese</title>
-        <link rel="stylesheet" href="../General_Reset.css">
-        <link rel="stylesheet" href="/Español/JAPANASEPAGE/J_MAINPAGE_Style.css">
-        <link rel="icon" type="image/x-icon" href="../../Resources/icono.png">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food4All - Japonés</title>
+    <link rel="stylesheet" href="../General_Reset.css">
+    <link rel="stylesheet" href="/Español/JAPANASEPAGE/J_MAINPAGE_Style.css">
+    <link rel="icon" type="image/x-icon" href="../../Resources/icono.png">
+</head>
 
-    <body>
+<body>
 
-        <nav>
-            <button class="nav-toggle">🍔 Menu</button>
-            <div class="navbar" id="navbar">
-                <img class="nav-logo" src="../../Resources/Logo.png" alt="Logo">
-                <a href="/Español/MAINPAGE.html" class="nav-link">Main Menu</a>
-                <a href="../../English/Italian/I_MAINPAG.html" class="nav-link">Italian Food</a>
-                <a href="../../English/American/A_MAINPAG.html" class="nav-link">American Food</a>
-                <a href="../../index.html" class="nav-link">Language Select</a>
-                <a href="../ContactPage/CONTACT_PAGE.html" class="nav-link">Contact Us</a>
-                <a href="../PayPage/PAYPAGE.html" class="nav-link Pay ultra">Pay</a>
-            </div>
+    <nav>
+        <button class="nav-toggle">🍔 Menú</button>
+        <div class="navbar" id="navbar">
+            <img class="nav-logo" src="../../Resources/Logo.png" alt="Logo">
+            <a href="/Español/MAINPAGE.html" class="nav-link">Menú Principal</a>
+            <a href="../../English/Italian/I_MAINPAG.html" class="nav-link">Comida Italiana</a>
+            <a href="../../English/American/A_MAINPAG.html" class="nav-link">Comida Americana</a>
+            <a href="../../index.html" class="nav-link">Seleccionar Idioma</a>
+            <a href="../ContactPage/CONTACT_PAGE.html" class="nav-link">Contáctanos</a>
+            <a href="../PayPage/PAYPAGE.html" class="nav-link Pay ultra">Pagar</a>
+        </div>
+    </nav>
 
-            <!-- JavaScript per a la barra de navegació desplegable -->
-            <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    var navToggle = document.querySelector('.nav-toggle');
-                    var navBar = document.getElementById('navbar');
-            
-                    navToggle.addEventListener('click', function() {
-                        navBar.classList.toggle('active');
-                    });
-                });
-            </script>
+    <header>
+        <h1>Bienvenido al Menú Japonés</h1>
+    </header>
 
-        </nav> 
+    <main class="grid-container">
+        <div class="content">
+            <h2>¡Descubre nuestro delicioso menú japonés!</h2>
+            <p>¡Sushi más vendido alrededor del mundo!</p>
+        </div>
 
-        <header>
-            <h1>Welcome to Japanese Menu!</h1>  
-        </header>
-        
-        <main class="grid-container">
-            <div class="content">
-                <h2>Discover Our Delicious Japanese Menu!</h2>
-                <p>Best-Selling Sushi around the world!</p>
-            </div>
-        
-            <div class="image-grid">
-                <div class="image-item">
-                    <a href="Japanase_Products/Maki_Rolls/product.html" class="price-link">
+        <div class="image-grid">
+            <div class="image-item">
+                <a href="Japanase_Products/Maki_Rolls/product.html" class="price-link">
                     <img src="https://images.pexels.com/photos/3687447/pexels-photo-3687447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Maki Rolls">
-                    <p>Indulge your senses in the exquisite world of <strong>Maki Rolls </strong>, a true masterpiece in the realm of Japanese cuisine. </p>
-                    
+                    <p>Disfruta de la exquisita mundo de los <strong>Maki Rolls</strong>, una verdadera obra maestra en el ámbito de la cocina japonesa.</p>
+
                     <div class="price-container">
-                            <span class="price"> Price 9.99€</span>
+                        <span class="price">Precio 9.99€</span>
                     </div>
-                    </a>
-                </div>
-        
-                <div class="image-item">
-                    <a href="Japanase_Products/Sushi_Nigiri/product.html" class="price-link">
+                </a>
+            </div>
+
+            <div class="image-item">
+                <a href="Japanase_Products/Sushi_Nigiri/product.html" class="price-link">
                     <img src="https://images.pexels.com/photos/8518854/pexels-photo-8518854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sushi Nigiri">
-                    <p>Embark on a culinary journey where simplicity meets sophistication with our exquisite <strong> Sushi Nigiri</strong> </p>
-                    
-                    
+                    <p>Embárcate en un viaje culinario donde la simplicidad se encuentra con la sofisticación con nuestro exquisito <strong>Sushi Nigiri</strong>.</p>
+
                     <div class="price-container">
-                            <span class="price"> Price 10.99€</span>   
+                        <span class="price">Precio 10.99€</span>
                     </div>
-                     </a>
-
-                </div>
-
-                <div class="image-item">
-                    <a href="Japanase_Products/Three Delights Rice/product.html" class="price-link">
-                    <img src="https://i2.wp.com/trucosdemamas.com/wp-content/uploads/2015/08/Arroz-frito-con-tres-delicias2.jpg?fit=1600%2C1063" alt="Three Delights Rice">
-                    <p>Our version of the classic <strong> Three Delights Rice</strong> is an ode to the fusion of flavors and textures.  creating a dish that will delight lovers of Asian cuisine.
-
-                    </p>
-                    
-                    <div class="price-container">
-                            <span class="price"> Price 7.99€</span>
-                    </div>
-                    </a>
-
-                </div>
-
-                
-
-            </div>
-
-            <div id="platosEstrella">
-                <h3>Today's Star Dishes:</h3>
-                <p>Discover our highlighted delights!</p>
-            </div>
-              
-        
-            <div class="image-grid">
-                <div class="image-item">
-
-                <a href="Japanase_Products/Udon_Noodles/product.html" class="price-link">
-                <img src="https://images.pexels.com/photos/2664216/pexels-photo-2664216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Udon Noodles">
-                <p>Embark on a journey of flavor with our <strong>Udon Noodles</strong>, a Japanese delight that promises a symphony of tastes in every bite. 
-                </p>
-                <div class="price-container">
-                        <span class="price"> Price 11.50€</span>
-                </div>
                 </a>
 
-                </div>
+            </div>
 
-                <div class="image-item">
-                    <a href="Japanase_Products/Bufelin_Tuna/product.html" class="price-link">
+            <div class="image-item">
+                <a href="Japanase_Products/Three Delights Rice/product.html" class="price-link">
+                    <img src="https://i2.wp.com/trucosdemamas.com/wp-content/uploads/2015/08/Arroz-frito-con-tres-delicias2.jpg?fit=1600%2C1063" alt="Three Delights Rice">
+                    <p>Nuestra versión del clásico <strong>Arroz de las Tres Delicias</strong> es un homenaje a la fusión de sabores y texturas, creando un plato que deleitará a los amantes de la cocina asiática.</p>
 
-                    <img src="https://i.pinimg.com/originals/e8/b6/0b/e8b60b6c17bafc2ea0ef28754f1c0329.jpg" alt="Bufelin Tuna">
-                    <p>Indulge in the epitome of oceanic excellence with our <strong> Bluefin Tuna</strong> Tuna. This prized fish takes center stage in the world of sushi and sashimi.
-
-                    </p>
-                    
                     <div class="price-container">
-                            <span class="price"> Price 12.75€</span>
+                        <span class="price">Precio 7.99€</span>
                     </div>
-                    </a>
-
-                </div>
-
-                <div class="image-item">
-
-                    <a href="Japanase_Products/Poke_Bowl/product.html" class="price-link">
-                    <img src="https://th.bing.com/th/id/OIP.xPIFUDREJ6aSLgZk_gxZNgHaFj?rs=1&pid=ImgDetMain" alt="Poke Bowl">
-                    <p>The <strong>Poke Bowl </strong>Savor the freshness of diced, raw fish—typically tuna or salmon—accentuated by a medley of colorful vegetables.
-                    </p>
-
-                    
-                    <div class="price-container">
-                            <span class="price"> Price 12.50€</span>
-                    </div>
-                    </a>
-
-                </div>
-
-                
+                </a>
 
             </div>
 
+        </div>
 
-        
-
-
-            <div id="decide" >
-                <h3>Still can't decide?</h3>
-               <p>Let us help you by suggesting our top 3 favorite dishes</p>
-               <p> And we have a EXCELENT OFFER: </p> 
-               <!-- MODAL-->
+        <div id="platosEstrella">
+            <h3>Platos Estrella de Hoy:</h3>
+            <p>¡Descubre nuestras delicias destacadas!</p>
+        </div>
 
 
-            <label for="combo-offer-toggle" class="combo-offer-trigger">Check out our Special Combo Offer!</label>
+        <div class="image-grid">
+            <div class="image-item">
+                <a href="Japanase_Products/Udon_Noodles/product.html" class="price-link">
+                    <img src="https://images.pexels.com/photos/2664216/pexels-photo-2664216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Udon Noodles">
+                    <p>Embárcate en un viaje de sabor con nuestros <strong>Fideos Udon</strong>, una delicia japonesa que promete una sinfonía de sabores en cada bocado.</p>
+                    <div class="price-container">
+                        <span class="price">Precio 11.50€</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="image-item">
+                <a href="Japanase_Products/Bufelin_Tuna/product.html" class="price-link">
+                    <img src="https://i.pinimg.com/originals/e8/b6/0b/e8b60b6c17bafc2ea0ef28754f1c0329.jpg" alt="Bufelin Tuna">
+                    <p>Indulge en la epitome de la excelencia oceánica con nuestro atún <strong>Bluefin</strong>. Este pez preciado toma el centro del escenario en el mundo del sushi y el sashimi.</p>
+
+                    <div class="price-container">
+                        <span class="price">Precio 12.75€</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="image-item">
+                <a href="Japanase_Products/Poke_Bowl/product.html" class="price-link">
+                    <img src="https://th.bing.com/th/id/OIP.xPIFUDREJ6aSLgZk_gxZNgHaFj?rs=1&pid=ImgDetMain" alt="Poke Bowl">
+                    <p>El <strong>Bowl Poke</strong> saborea la frescura del pescado crudo picado, típicamente atún o salmón, realzado por una mezcla de coloridas verduras.</p>
+
+                    <div class="price-container">
+                        <span class="price">Precio 12.50€</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div id="decide">
+            <h3>¿Todavía no puedes decidirte?</h3>
+            <p>Déjanos ayudarte sugiriéndote nuestros 3 platos favoritos.</p>
+            <p>¡Y tenemos una EXCELENTE OFERTA!</p>
+            <!-- MODAL-->
+
+            <label for="combo-offer-toggle" class="combo-offer-trigger">¡Echa un vistazo a nuestra Oferta Especial de Combo!</label>
 
             <!-- Combo Offer Modal Structure -->
             <input type="checkbox" id="combo-offer-toggle" hidden>
             <div class="modal">
                 <label for="combo-offer-toggle" class="modal-overlay"></label>
                 <div class="modal-content">
-                    <h2>Special Combo Offer</h2>
-                    <p>60 maki rolls of different combinations for just 29.99€</p>
-                    <img src="https://images.pexels.com/photos/1199979/pexels-photo-1199979.jpeg" alt="Combo Offer">
+                    <h2>Oferta Especial de Combo</h2>
+                    <p>60 Maki Rolls de diferentes combinaciones por solo 29.99€</p>
+                    <img src="https://images.pexels.com/photos/1199979/pexels-photo-1199979.jpeg" alt="Oferta Combo">
                     <label for="combo-offer-toggle" class="modal-close">&#10006;</label>
                 </div>
             </div>
 
-            
+        </div>
+
+        <div id="userPreferences">
 
 
-
-
-            </div>
-
-            <div id ="userPreferences">
-            
-
-               <div class="suggested-dish">
+            <div class="suggested-dish">
                 <img src="https://thumbs.dreamstime.com/b/udon-ramen-noodles-shrimps-tempura-japanese-food-style-udon-ramen-noodles-shrimps-tempura-150516968.jpg" alt="Tempura Noodles">
-                <p>Experience a delightful fusion of flavors with our <strong> Tempura Noodles</strong>. It has soy sauce. </p>
-                <h3><a href="Japanase_Products/Tempura_Noodles/product.html" class="dish-link">Price 13.00€</a></h3>
-                </div>
-
-
-                <div class="suggested-dish">
-                <img src="https://images.pexels.com/photos/725991/pexels-photo-725991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="terykaki salmon">
-                <p>Indulge in the perfect harmony of sweet and savory with our <strong> Teriyaki Salmon </strong>. </p>
-                <h3><a href="Japanase_Products/Terykaki_Salmon/product.html" class="dish-link">Price 9.99€</a></h3>
-                 </div>
-
-
-                <div class="suggested-dish">
-                <img src="https://i.pinimg.com/originals/56/4a/74/564a7410f8933ed699be50913985bbcb.png" alt="Salmon tartare">
-                <p>Embark on a journey of exquisite freshness with our <strong> Salmon Tartare</strong>. </p>
-                <h3><a href="Japanase_Products/Salmon_Tartare/product.html" class="dish-link">Price 11.99€</a></h3>
-                </div>
-        
+                <p>Vive una fusión encantadora de sabores con nuestros <strong>Fideos Tempura</strong>. Tiene salsa de soja.</p>
+                <h3><a href="Japanase_Products/Tempura_Noodles/product.html" class="dish-link">Precio 13.00€</a></h3>
             </div>
-            
-        </main>
 
-        <footer>
-            <p>&copy; 2023 - 2024 Food4All. All rights reserved.</p>
-        </footer>
-    </body>
+
+            <div class="suggested-dish">
+                <img src="https://images.pexels.com/photos/725991/pexels-photo-725991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Salmón Teriyaki">
+                <p>Indúlgate en la armonía perfecta de dulce y salado con nuestro <strong>Salmón Teriyaki</strong>.</p>
+                <h3><a href="Japanase_Products/Terykaki_Salmon/product.html" class="dish-link">Precio 9.99€</a></h3>
+            </div>
+
+
+            <div class="suggested-dish">
+                <img src="https://i.pinimg.com/originals/56/4a/74/564a7410f8933ed699be50913985bbcb.png" alt="Tártaro de Salmón">
+                <p>Embárcate en un viaje de exquisitez con nuestro <strong>Tártaro de Salmón</strong>.</p>
+                <h3><a href="Japanase_Products/Salmon_Tartare/product.html" class="dish-link">Precio 11.99€</a></h3>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 - 2024 Food4All. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
 </html>

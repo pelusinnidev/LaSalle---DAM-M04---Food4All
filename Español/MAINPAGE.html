@@ -24,7 +24,7 @@
     </nav>
 
     <button onclick="loadTranslations('en')">English</button>
-    <button onclick="loadTranslations('es')">Español</button>
+    <button onclick="loadTranslations('es')">Spanish</button>
     <button onclick="loadTranslations('cat')">Catalan</button>
 
     <header>
@@ -82,39 +82,44 @@
             document.querySelector('.navbar').classList.toggle('active');
         });
 
+        // Por defecto, carga el contenido en inglés
+        document.addEventListener('DOMContentLoaded', function () {
+            loadTranslations('en');
+        });
 
-    function loadTranslations(language) {
-        fetch("../JSON_MAINPAG/idiomes.json")
-    .then(response => response.json())
-    .then(data => {
-        const translations = data[language];
+        function loadTranslations(language) {
+            fetch("../JSON_MAINPAG/idiomes.json")
+                .then(response => response.json())
+                .then(data => {
+                    const translations = data[language];
 
-        document.getElementById('pageTitle').innerText = translations.pageTitle;
-        document.querySelector('.nav-toggle').innerText = translations.navToggle;
-        document.getElementById('americanLink').innerText = translations.americanLink;
-        document.getElementById('italianLink').innerText = translations.italianLink;
-        document.getElementById('japaneseLink').innerText = translations.japaneseLink;
-        document.getElementById('languageSelectLink').innerText = translations.languageLink; // Cambiado a 'languageLink'
-        document.getElementById('contactLink').innerText = translations.contactLink;
-        document.getElementById('payLink').innerText = translations.payLink;
+                    document.getElementById('pageTitle').innerText = translations.pageTitle;
+                    document.querySelector('.nav-toggle').innerText = translations.navToggle;
+                    document.getElementById('americanLink').innerText = translations.americanLink;
+                    document.getElementById('italianLink').innerText = translations.italianLink;
+                    document.getElementById('japaneseLink').innerText = translations.japaneseLink;
+                    document.getElementById('languageSelectLink').innerText = translations.languageLink; // Cambiado a 'languageLink'
+                    document.getElementById('contactLink').innerText = translations.contactLink;
+                    document.getElementById('payLink').innerText = translations.payLink;
 
-        document.getElementById('welcomeHeading').innerText = translations.welcomeHeading;
-        document.getElementById('welcomeText').innerText = translations.welcomeText;
+                    document.getElementById('welcomeHeading').innerText = translations.welcomeHeading;
+                    document.getElementById('welcomeText').innerText = translations.welcomeText;
 
-        document.getElementById('historyHeading').innerText = translations.historyHeading;
-        document.getElementById('historyText').innerText = translations.historyText;
+                    document.getElementById('historyHeading').innerText = translations.historyHeading;
+                    document.getElementById('historyText').innerText = translations.historyText;
 
-        document.getElementById('whoHeading').innerText = translations.whoHeading;
-        document.getElementById('whoText').innerText = translations.whoText;
+                    document.getElementById('whoHeading').innerText = translations.whoHeading;
+                    document.getElementById('whoText').innerText = translations.whoText;
 
-        document.getElementById('missionHeading').innerText = translations.missionHeading;
-        document.getElementById('missionText').innerText = translations.missionText;
+                    document.getElementById('missionHeading').innerText = translations.missionHeading;
+                    document.getElementById('missionText').innerText = translations.missionText;
 
-        document.getElementById('footerText').innerText = translations.footerText;
-        // Otros elementos que desees actualizar...
-    });
+                    document.getElementById('footerText').innerText = translations.footerText;
+                    // Otros elementos que desees actualizar...
+                });
         }
     </script>
 </body>
 
 </html>
+
