@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #ec1717;
+    --secondary-color: #f46042;
+    --background-color: #f6f6f6;
+    --text-color: #f44e42;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 0; /* Elimina el margen superior del h1 para un aspecto más limpio */
+}
+
+.nav-logo {
+    max-width: 50px; /* Ajusta el tamaño del logo según tus preferencias */
+}
+
+.ultra {
+    background-image: url('../../Resources/bkgrd.gif'); 
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    margin: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Añade este estilo para el contenedor del botón extra */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Ajusta según tus preferencias */
+}
+
+/* Puedes ajustar el estilo del botón extra según tus necesidades */
+.button-container button {
+    background-color: #cc4c33;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: var(--primary-color); /* Cambia el color al hacer hover */
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Utiliza los mismos estilos que el botón para el enlace "back" */
+.back {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block; /* Alinea el enlace junto al botón */
+    margin-top: 10px; /* Ajusta según tus preferencias */
+}
+
+.back:hover {
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food4All - Delicious Food Delivered</title>
+    <link rel="stylesheet" href="General_Reset.css">
+    <link rel="stylesheet" href="/Español/MAINPAGE_Style.css">
+    <meta name="robots" content="index"/> <!--per indexar la pagina-->
+    <meta name="robots" content="follow"/> <!--que reccorri els enllaços de la pagina-->
+    
+
+    <meta http-equiv="cache-control" content="no-cache"/> <!--per a que no es guardi a la caché-->
+    <meta http-equiv="expires" content="43200"/> <!--que es guardi pero durant 43200seg. o tambe li pots posar data "Sat, 07 Feb 2016 00:00:00 GMT"-->
+    
+
+<body>
+    <nav>
+        <button class="nav-toggle">🍔 Menu</button>
+        <div class="navbar">
+            <img class="nav-logo" src="../../Resources/Logo.png" alt="Logo">
+            <a href="American/A_MAINPAG.html" class="nav-link" id="americanLink">American Food</a>
+            <a href="Italian/I_MAINPAG.html" class="nav-link" id="italianLink">Italian Food</a>
+            <a href="/Español/JAPANASEPAGE/J_MAINPAG.html" class="nav-link" id="japaneseLink">Japanese Food</a>
+            <a href="../index.html" class="nav-link" id="languageSelectLink">Language Select</a>
+            <a href="/Español/ContactPage/CONTACT_PAGE.html" class="nav-link" id="contactLink">Contact Us</a>
+            <a href="PayPage/PAYPAGE.html" class="nav-link Pay" id="payLink">Pay</a>
+        </div>
+    </nav>
+
+    <button onclick="loadTranslations('en')">English</button>
+    <button onclick="loadTranslations('es')">Spanish</button>
+    <button onclick="loadTranslations('cat')">Catalan</button>
+
+    <header>
+        <h1><span id="pageTitle"></span></h1>
+    </header>
+
+    <main class="grid-container">
+        <section class="grid-item Welcome">
+            <div class="content">
+                <h2><span id="welcomeHeading"></span></h2>
+                <p><span id="welcomeText"></span></p>
+            </div>
+            <div class="image">
+                <img src="Resourcess/welcome_hamburger.webp" alt="Welcome Image" class="transicion">
+            </div>
+        </section>
+
+        <section class="grid-item History">
+            <div class="image">
+                <img src="Resourcess/history_book.webp" alt="History Image" class="transicion">
+            </div>
+            <div class="content">
+                <h2><span id="historyHeading"></span></h2>
+                <p><span id="historyText"></span></p>
+            </div>
+        </section>
+
+        <section class="grid-item Who">
+            <div class="content">
+                <h2><span id="whoHeading"></span></h2>
+                <p><span id="whoText"></span></p>
+            </div>
+            <div class="image">
+                <img src="Resourcess/who_person.webp" alt="Who We Are Image" class="transicion">
+            </div>
+        </section>
+
+        <section class="grid-item Mission">
+            <div class="image">
+                <img src="Resourcess/our_objective.webp" alt="Mission Image" class="transicion">
+            </div>
+            <div class="content">
+                <h2><span id="missionHeading"></span></h2>
+                <p><span id="missionText"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><span id="footerText"></span></p>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function () {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+
+        // Por defecto, carga el contenido en inglés
+        document.addEventListener('DOMContentLoaded', function () {
+            loadTranslations('en');
+        });
+
+        function loadTranslations(language) {
+            fetch("../JSON_MAINPAG/idiomes.json")
+                .then(response => response.json())
+                .then(data => {
+                    const translations = data[language];
+
+                    document.getElementById('pageTitle').innerText = translations.pageTitle;
+                    document.querySelector('.nav-toggle').innerText = translations.navToggle;
+                    document.getElementById('americanLink').innerText = translations.americanLink;
+                    document.getElementById('italianLink').innerText = translations.italianLink;
+                    document.getElementById('japaneseLink').innerText = translations.japaneseLink;
+                    document.getElementById('languageSelectLink').innerText = translations.languageLink; // Cambiado a 'languageLink'
+                    document.getElementById('contactLink').innerText = translations.contactLink;
+                    document.getElementById('payLink').innerText = translations.payLink;
+
+                    document.getElementById('welcomeHeading').innerText = translations.welcomeHeading;
+                    document.getElementById('welcomeText').innerText = translations.welcomeText;
+
+                    document.getElementById('historyHeading').innerText = translations.historyHeading;
+                    document.getElementById('historyText').innerText = translations.historyText;
+
+                    document.getElementById('whoHeading').innerText = translations.whoHeading;
+                    document.getElementById('whoText').innerText = translations.whoText;
+
+                    document.getElementById('missionHeading').innerText = translations.missionHeading;
+                    document.getElementById('missionText').innerText = translations.missionText;
+
+                    document.getElementById('footerText').innerText = translations.footerText;
+                    // Otros elementos que desees actualizar...
+                });
+        }
+    </script>
+</body>
+
+</html>
+
