@@ -158,7 +158,8 @@ header img {
 footer {
   position: fixed;
   width: 100%;
-  margin-bottom: 0%;
+  bottom: 0;
+  padding: 25px;
   text-align: center;
   font-size: 1em;
   color: var(--color-text-titol); /* Un color daurat com les estrelles brillants! ✨ */
