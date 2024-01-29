@@ -34,7 +34,7 @@ font-size: 30px;
 }
 
 .navbar {
-    background-color: bisque;
+    background-color: var(--background-bisque);
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
