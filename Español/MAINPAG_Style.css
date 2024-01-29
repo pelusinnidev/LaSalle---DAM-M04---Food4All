@@ -1,3 +1,11 @@
+/*
+:root {
+  --color-text: #010101;
+  --color-background: black;
+  --color-link: grey;
+  --color-link-hover: white;
+  --color-link-fons-hover: black;
+}*/
 body {
   font-family: 'Arial', sans-serif;
   font-size: 18px;
