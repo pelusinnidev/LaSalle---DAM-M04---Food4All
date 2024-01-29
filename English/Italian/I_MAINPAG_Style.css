@@ -494,3 +494,42 @@ body {
     border-radius: 10px; /* Opcional: agrega bordes redondeados a la imagen */
 }
 
+.nav-toggle {
+        visibility: hidden;
+}
+
+
+@media screen and (max-width: 480px) {
+    .nav-toggle {
+        display: block;
+        background-color: var(--background-bisque);
+        width: 100%;
+        color: var(--text-light);
+        padding: 10px 20px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+   
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--background-bisque);
+    }
+
+    .nav-link {
+        background-color: var(--text-gray);
+    }
+
+    .nav-link:hover {
+        background-color: var(--nav-link-hover);
+        color: var(--text-light);
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+

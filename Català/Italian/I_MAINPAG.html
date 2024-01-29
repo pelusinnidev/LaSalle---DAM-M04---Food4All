@@ -10,14 +10,30 @@
     <link rel="stylesheet" href="Make your own pizza/index.html">
 </head>
 <body>
-    <nav class="navbar">
-        <img class="nav-logo" src="../../Resources/Logo.png" alt="Logo">
-            <a href="../MAINPAG.html" class="nav-link">Menú principal</a>
-            <a href="../../English/Italian/I_MAINPAG.html" class="nav-link">Menú Italà</a>
-            <a href="../../English/Japanese/J_MAINPAG.html" class="nav-link">Menú japonès</a>
-            <a href="../../index.html" class="nav-link">Selector d'idiomes</a>
-            <a href="../ContactPage/CONTACT_PAGE.html" class="nav-link">Contacta amb nosaltres</a>
-            <a href="../PayPage/PAYPAGE.html" class="nav-link Pay ultra">Paga</a>
+    <nav>
+        <!-- Botó de menú: Més poderós que sembla, com una baguette màgica! -->
+        <button class="nav-toggle">🍔 Menu</button>
+        <div class="navbar" id="navbar">
+            <img class="nav-logo" src="../../Resources/Logo.png" alt="Logo">
+            <a href="../MAINPAG.html" class="nav-link">Menú Principal</a>
+            <a href="../../English/Italian/I_MAINPAG.html" class="nav-link">Menjar Italià</a>
+            <a href="../../English/Japanese/J_MAINPAG.html" class="nav-link">Menjar Japonès</a>
+            <a href="../../index.html" class="nav-link">Selecció Idiomes</a>
+            <a href="../ContactPage/CONTACT_PAGE.html" class="nav-link">Contacta'ns</a>
+            <a href="../PayPage/PAYPAGE.html" class="nav-link Pay ultra">Pagar</a>
+        </div>
+
+        <!-- El nostre petit truc de JavaScript per a una navegació màgica! 🎩✨ -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var navToggle = document.querySelector('.nav-toggle');
+                var navBar = document.getElementById('navbar');
+
+                navToggle.addEventListener('click', function() {
+                    navBar.classList.toggle('active');
+                });
+            });
+        </script>
     </nav>
 
     <header>
