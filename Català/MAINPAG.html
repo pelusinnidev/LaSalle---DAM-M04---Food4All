@@ -6,14 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food4All - Delicious Food Delivered</title>
     <link rel="stylesheet" href="General_Reset.css">
-    <link rel="stylesheet" href="MAINPAGE_Style.css">
-    <meta name="robots" content="index"/> <!--per indexar la pagina-->
-    <meta name="robots" content="follow"/> <!--que reccorri els enllaços de la pagina-->
-
-    <meta http-equiv="cache-control" content="no-cache"/> <!--per a que no es guardi a la caché-->
-    <meta http-equiv="expires" content="50.000"/> <!--que es guardi pero durant 43200seg. o tambe li pots posar data "Sat, 07 Feb 2016 00:00:00 GMT"-->
-    
-
+    <link rel="stylesheet" href="/Català/MAINPAG_Style.css">
 </head>
 
 <body>
@@ -29,6 +22,10 @@
             <a href="PayPage/PAYPAGE.html" class="nav-link Pay" id="payLink">Pay</a>
         </div>
     </nav>
+
+    <button onclick="loadTranslations('en')">English</button>
+    <button onclick="loadTranslations('es')">Spanish</button>
+    <button onclick="loadTranslations('cat')">Catalan</button>
 
     <header>
         <h1><span id="pageTitle"></span></h1>
@@ -91,7 +88,7 @@
         });
 
         function loadTranslations(language) {
-            fetch("../JSON_MAINPAG/idiomes.json")
+            fetch("/Català/MAINPAG.json")
                 .then(response => response.json())
                 .then(data => {
                     const translations = data[language];
@@ -118,12 +115,10 @@
                     document.getElementById('missionText').innerText = translations.missionText;
 
                     document.getElementById('footerText').innerText = translations.footerText;
-                    // Otros elementos que desees actualizar...
+                    
                 });
         }
     </script>
 </body>
 
 </html>
-
-
