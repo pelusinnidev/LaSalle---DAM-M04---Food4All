@@ -255,7 +255,7 @@ footer p {
 /* Pantalles Grans - Ordinadors */
 @media screen and (min-width: 789px) {
     .nav-toggle {
-        visibility: hidden;
+        display: none;
     }
 
     .navbar {

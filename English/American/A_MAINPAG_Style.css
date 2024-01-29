@@ -254,7 +254,7 @@ footer p {
 /* Large Screens - Desktops */
 @media screen and (min-width: 789px) {
     .nav-toggle {
-        visibility: hidden;
+        display: none;
     }
 
     .navbar {
