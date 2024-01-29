@@ -1,98 +1,116 @@
-/* Stylish body with a black background and white text */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
-}
-
-/* Fancy container for the product details */
-.product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Opaque red background */
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 800px;
-    width: 100%; /* Adjust to the width of the device */
-}
-
-/* Grandiose product title */
-.product-container h1 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-/* Impressive section title */
-.product-container h2 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-/* Container for the video with a rounded edge */
-.image-container {
-    overflow: hidden; /* Ensures the video doesn't exceed the border-radius */
-    border-radius: 10px; /* Matches the product container */
-    margin-bottom: 20px;
-}
-
-/* Video with rounded corners and full width */
-.image-container video {
-    width: 100%; /* Video takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for video */
-}
-
-/* Description that's as smooth as butter */
-.description {
-    text-align: justify;
-    margin: 20px 0;
-}
-
-/* Ingredients list that's neatly organized */
-.ingredients-list {
-    text-align: left;
-    list-style: inside;
-    margin: 10px 20px;
-}
-
-/* Container for action buttons with a touch of elegance */
-.button-container {
-    display: flex;
-    justify-content: center;
+/* CSS variable definitions in :root */
+:root {
+    --main-font: 'Arial', sans-serif; /* Main font */
+    --background-color: #000; /* Background color */
+    --text-color: #fff; /* Text color */
+    --primary-color: rgba(200, 16, 46, 0.6); /* Primary color */
+    --border-radius: 10px; /* Border radius for rounded corners */
+    --max-width: 800px; /* Maximum width */
+    --button-bg-color: #333; /* Button background color */
+    --button-text-color: #fff; /* Button text color */
+    --button-padding: 10px 20px; /* Button padding */
+    --button-font-size: 18px; /* Button font size */
+    --button-border-radius: 5px; /* Border radius for button rounded corners */
+    --button-hover-color: #444; /* Background color when hovering over buttons */
+    --ultra-background: url('../../../../Resources/bkgrd.gif'); /* Background image for .ultra */
+  }
+  
+  /* Global styles for the page body */
+  body {
+    font-family: var(--main-font); /* Use the main font */
+    background-color: var(--background-color); /* Use the defined background color */
+    color: var(--text-color); /* Use the defined text color */
+    text-align: center; /* Center the text */
+    display: flex; /* Use a flex display model */
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Center elements vertically */
+    min-height: 100vh; /* Ensure the body occupies at least the window's height */
+    margin: 0; /* Remove external margins */
+    padding: 20px; /* Add an inner padding of 20 pixels */
+  }
+  
+  /* Styles for the product container */
+  .product-container {
+    background-color: var(--primary-color); /* Use the defined primary color */
+    border-radius: var(--border-radius); /* Use the defined border radius for rounded corners */
+    padding: 20px; /* Add an inner padding of 20 pixels */
+    max-width: var(--max-width); /* Use the defined maximum width */
+    width: 100%; /* Occupy the full width of its container */
+  }
+  
+  /* Styles for h1 headings inside the product container */
+  .product-container h1 {
+    margin: 20px; /* External margin of 20 pixels */
+    margin-bottom: 30px; /* Additional bottom margin of 30 pixels */
+    font-size: 28px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+  }
+  
+  /* Styles for h2 headings inside the product container */
+  .product-container h2 {
+    margin: 20px; /* External margin of 20 pixels */
+    margin-bottom: 30px; /* Additional bottom margin of 30 pixels */
+    font-size: 20px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+  }
+  
+  /* Styles for the image container */
+  .image-container {
+    overflow: hidden; /* Ensure images do not exceed rounded corners */
+    border-radius: var(--border-radius); /* Use the defined border radius for rounded corners */
+    margin-bottom: 20px; /* Bottom margin of 20 pixels */
+  }
+  
+  /* Styles for videos inside the image container */
+  .image-container video {
+    width: 100%; /* Occupy the full width of its container */
+    height: auto; /* Maintain image aspect ratio */
+    border-radius: var(--border-radius); /* Use the defined border radius for rounded corners */
+  }
+  
+  /* Styles for the description */
+  .description {
+    text-align: justify; /* Justify the text */
+    margin: 20px 0; /* Top and bottom margin of 20 pixels, no left/right margin */
+  }
+  
+  /* Styles for the ingredients list */
+  .ingredients-list {
+    text-align: left; /* Left-align the text */
+    list-style: inside; /* Use lists with markers inside */
+    margin: 10px 20px; /* Top margin of 10 pixels and left/right margin of 20 pixels */
+  }
+  
+  /* Styles for the button container */
+  .button-container {
+    display: flex; /* Use a flex display model */
+    justify-content: center; /* Center elements horizontally */
     gap: 20px; /* Space between buttons */
-    margin-top: 20px;
-}
-
-/* Stylish action button with a hint of mystery */
-.action-button {
-    background-color: #333; /* Dark gray */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none; /* Removes underline from links */
-}
-
-/* Action button gets even cooler on hover */
-.action-button:hover {
-    background-color: #444; /* Slightly lighter gray */
-}
-
-/* Ultra button that's out of this world */
-.ultra {
-    background-image: url('../../../../Resources/bkgrd.gif'); 
-    color: black;
-    font-weight: bold;
-}
+    margin-top: 20px; /* Top margin of 20 pixels */
+  }
+  
+  /* Styles for buttons */
+  .action-button {
+    background-color: var(--button-bg-color); /* Use the defined button background color */
+    color: var(--button-text-color); /* Use the defined button text color */
+    border: none; /* No button border */
+    padding: var(--button-padding); /* Use the defined button padding */
+    font-size: var(--button-font-size); /* Use the defined button font size */
+    cursor: pointer; /* Change the cursor when hovering over buttons */
+    border-radius: var(--button-border-radius); /* Use the defined border radius for button rounded corners */
+    text-align: center; /* Center text within buttons */
+    text-decoration: none; /* No underline for button links */
+  }
+  
+  /* Styles for buttons when hovering over them */
+  .action-button:hover {
+    background-color: var(--button-hover-color); /* Change the background color when hovering */
+  }
+  
+  /* Styles for .ultra */
+  .ultra {
+    background-image: var(--ultra-background); /* Use the defined background image for .ultra */
+    color: black; /* Black text color */
+    font-weight: bold; /* Bold font weight */
+  }
+  

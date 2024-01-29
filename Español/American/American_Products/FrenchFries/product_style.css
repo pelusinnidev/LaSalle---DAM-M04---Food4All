@@ -1,98 +1,116 @@
-/* Estilo global de la página, ¡todo empieza aquí! */
-body {
-    font-family: 'Arial', sans-serif; /* Fuente elegante para el cuerpo de la página */
-    background-color: #000; /* Fondo negro como la noche */
-    color: #fff; /* Texto blanco como la nieve */
-    text-align: center; /* Todo centrado, ¡orden en la página! */
-    display: flex; /* Flexbox para la disposición mágica */
-    justify-content: center; /* Justificación centrada, ¡todos en fila! */
-    align-items: center; /* Alineación al centro, ¡nadie se queda atrás! */
-    min-height: 100vh; /* Altura mínima para llenar la pantalla */
-    margin: 0; /* Margen cero, ¡nada de espacio desperdiciado! */
-    padding: 20px; /* Relleno para dar un poco de espacio */
-}
-
-/* Contenedor principal del producto, ¡todo dentro! */
-.product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Fondo rojo con un toque de misterio */
-    border-radius: 10px; /* Bordes redondeados, ¡nada puntiagudo aquí! */
-    padding: 20px; /* Relleno para el contenido, cómodo y acogedor */
-    max-width: 800px; /* Ancho máximo para que no se desborde */
-    width: 100%; /* Ancho total, ¡ocupa todo el espacio! */
-}
-
-/* Título principal del producto, ¡destacando en grande! */
-.product-container h1 {
-    margin: 20px; /* Margen alrededor, ¡un poco de espacio de respiro! */
-    margin-bottom: 30px; /* Margen inferior extra, ¡impacto máximo! */
-    font-size: 28px; /* Tamaño de fuente grande, ¡llama la atención! */
-    font-weight: bold; /* Texto en negrita, ¡enérgico y valiente! */
-}
-
-/* Título secundario del producto, ¡la información importante! */
-.product-container h2 {
-    margin: 20px; /* Margen alrededor, ¡orden y espacio! */
-    margin-bottom: 30px; /* Margen inferior extra, ¡destacando! */
-    font-size: 20px; /* Tamaño de fuente más pequeño, ¡pero aún audaz! */
-    font-weight: bold; /* Texto en negrita, ¡no pasa desapercibido! */
-}
-
-/* Contenedor de la imagen o video, ¡una ventana al mundo! */
-.image-container {
-    overflow: hidden; /* Evita desbordamientos, ¡mantén todo en su lugar! */
-    border-radius: 10px; /* Bordes redondeados, ¡suavidad y elegancia! */
-    margin-bottom: 20px; /* Margen inferior para separación, ¡espacio ordenado! */
-}
-
-/* Video en el contenedor, ¡acción y entretenimiento! */
-.image-container video {
-    width: 100%; /* Ancho completo, ¡no te pierdas nada! */
-    height: auto; /* Altura automática, ¡proporciones perfectas! */
-    border-radius: 10px; /* Bordes redondeados para el video, ¡un marco elegante! */
-}
-
-/* Descripción del producto, ¡las palabras cuentan la historia! */
-.description {
-    text-align: justify; /* Alineación justificada, ¡todo en orden! */
-    margin: 20px 0; /* Margen arriba y abajo, ¡claro y ordenado! */
-}
-
-/* Lista de ingredientes, ¡los detalles son importantes! */
-.ingredients-list {
-    text-align: left; /* Alineación izquierda, ¡listo para la lista! */
-    list-style: inside; /* Estilo de lista, ¡cada detalle cuenta! */
-    margin: 10px 20px; /* Margen interno, ¡separación perfecta! */
-}
-
-/* Contenedor de botones, ¡acción y elección! */
-.button-container {
-    display: flex; /* Flexbox para organizar los botones */
-    justify-content: center; /* Justificación centrada, ¡todos en fila! */
-    gap: 20px; /* Espacio entre botones, ¡orden y estilo! */
-    margin-top: 20px; /* Margen superior, ¡espacio para respirar! */
-}
-
-/* Botón de acción principal, ¡haciendo que las cosas sucedan! */
-.action-button {
-    background-color: #333; /* Fondo gris oscuro, ¡serio y decidido! */
-    color: #fff; /* Texto blanco, ¡resalta en la oscuridad! */
-    border: none; /* Sin bordes, ¡simplicidad elegante! */
-    padding: 10px 20px; /* Relleno para el botón, ¡cómodo de usar! */
-    font-size: 18px; /* Tamaño de fuente, ¡información clara! */
-    cursor: pointer; /* Cursor interactivo, ¡listo para hacer clic! */
-    border-radius: 5px; /* Bordes redondeados, ¡suavidad en acción! */
-    text-align: center; /* Alineación centrada, ¡todo en el centro! */
-    text-decoration: none; /* Sin subrayado en los enlaces, ¡limpio y claro! */
-}
-
-/* Efecto hover del botón, ¡un toque de diversión! */
-.action-button:hover {
-    background-color: #444; /* Fondo gris un poco más claro, ¡interacción visual! */
-}
-
-/* Estilo ultra especial, ¡destacando en grande! */
-.ultra {
-    background-image: url('../../../../Resources/bkgrd.gif'); /* Fondo con estilo, ¡llamativo! */
-    color: black; /* Texto negro sobre el fondo especial, ¡contraste! */
-    font-weight: bold; /* Texto en negrita, ¡importante y audaz! */
-}
+/* Definición de variables CSS en :root */
+:root {
+    --main-font: 'Arial', sans-serif; /* Fuente principal */
+    --background-color: #000; /* Color de fondo */
+    --text-color: #fff; /* Color de texto */
+    --primary-color: rgba(200, 16, 46, 0.6); /* Color primario */
+    --border-radius: 10px; /* Radio de borde para esquinas redondeadas */
+    --max-width: 800px; /* Ancho máximo */
+    --button-bg-color: #333; /* Color de fondo de los botones */
+    --button-text-color: #fff; /* Color de texto de los botones */
+    --button-padding: 10px 20px; /* Relleno de los botones */
+    --button-font-size: 18px; /* Tamaño de fuente de los botones */
+    --button-border-radius: 5px; /* Radio de borde para esquinas redondeadas de los botones */
+    --button-hover-color: #444; /* Color de fondo al pasar el ratón sobre los botones */
+    --ultra-background: url('../../../../Resources/bkgrd.gif'); /* Imagen de fondo para .ultra */
+  }
+  
+  /* Estilos globales para el cuerpo de la página */
+  body {
+    font-family: var(--main-font); /* Utiliza la fuente principal */
+    background-color: var(--background-color); /* Utiliza el color de fondo definido */
+    color: var(--text-color); /* Utiliza el color de texto definido */
+    text-align: center; /* Centra el texto */
+    display: flex; /* Utiliza un modelo de visualización flex */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura de la ventana del navegador */
+    margin: 0; /* Elimina los márgenes externos */
+    padding: 20px; /* Agrega un relleno interior de 20 píxeles */
+  }
+  
+  /* Estilos para el contenedor de productos */
+  .product-container {
+    background-color: var(--primary-color); /* Utiliza el color primario definido */
+    border-radius: var(--border-radius); /* Utiliza el radio de borde definido para esquinas redondeadas */
+    padding: 20px; /* Agrega un relleno interior de 20 píxeles */
+    max-width: var(--max-width); /* Utiliza el ancho máximo definido */
+    width: 100%; /* Ocupa el ancho completo de su contenedor */
+  }
+  
+  /* Estilos para los títulos h1 dentro del contenedor de productos */
+  .product-container h1 {
+    margin: 20px; /* Margen externo de 20 píxeles */
+    margin-bottom: 30px; /* Margen inferior adicional de 30 píxeles */
+    font-size: 28px; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de fuente en negrita */
+  }
+  
+  /* Estilos para los títulos h2 dentro del contenedor de productos */
+  .product-container h2 {
+    margin: 20px; /* Margen externo de 20 píxeles */
+    margin-bottom: 30px; /* Margen inferior adicional de 30 píxeles */
+    font-size: 20px; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de fuente en negrita */
+  }
+  
+  /* Estilos para el contenedor de imágenes */
+  .image-container {
+    overflow: hidden; /* Asegura que las imágenes no superen las esquinas redondeadas */
+    border-radius: var(--border-radius); /* Utiliza el radio de borde definido para esquinas redondeadas */
+    margin-bottom: 20px; /* Margen inferior de 20 píxeles */
+  }
+  
+  /* Estilos para videos dentro del contenedor de imágenes */
+  .image-container video {
+    width: 100%; /* Ocupa el ancho completo de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: var(--border-radius); /* Utiliza el radio de borde definido para esquinas redondeadas */
+  }
+  
+  /* Estilos para la descripción */
+  .description {
+    text-align: justify; /* Justifica el texto */
+    margin: 20px 0; /* Margen superior e inferior de 20 píxeles, sin margen izquierdo/derecho */
+  }
+  
+  /* Estilos para la lista de ingredientes */
+  .ingredients-list {
+    text-align: left; /* Alinea el texto a la izquierda */
+    list-style: inside; /* Utiliza listas con marcadores en el interior */
+    margin: 10px 20px; /* Margen superior de 10 píxeles y margen izquierdo/derecho de 20 píxeles */
+  }
+  
+  /* Estilos para el contenedor de botones */
+  .button-container {
+    display: flex; /* Utiliza un modelo de visualización flex */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    gap: 20px; /* Espacio entre los botones */
+    margin-top: 20px; /* Margen superior de 20 píxeles */
+  }
+  
+  /* Estilos para los botones */
+  .action-button {
+    background-color: var(--button-bg-color); /* Utiliza el color de fondo de botones definido */
+    color: var(--button-text-color); /* Utiliza el color de texto de botones definido */
+    border: none; /* Sin borde de botón */
+    padding: var(--button-padding); /* Utiliza el relleno de botones definido */
+    font-size: var(--button-font-size); /* Utiliza el tamaño de fuente de botones definido */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre los botones */
+    border-radius: var(--button-border-radius); /* Utiliza el radio de borde definido para esquinas redondeadas de botones */
+    text-align: center; /* Centra el texto dentro de los botones */
+    text-decoration: none; /* Sin subrayado para enlaces de botones */
+  }
+  
+  /* Estilos para los botones al pasar el ratón sobre ellos */
+  .action-button:hover {
+    background-color: var(--button-hover-color); /* Cambia el color de fondo al pasar el ratón sobre ellos */
+  }
+  
+  /* Estilos para .ultra */
+  .ultra {
+    background-image: var(--ultra-background); /* Utiliza la imagen de fondo definida para .ultra */
+    color: black; /* Color de texto en negro */
+    font-weight: bold; /* Peso de fuente en negrita */
+  }
+  

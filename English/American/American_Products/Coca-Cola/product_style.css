@@ -1,94 +1,116 @@
-/* The Stylish Code Below: Buckle up, we're about to make this page look fabulous! 🎩👗 */
-body {
-    font-family: 'Arial', sans-serif; /* Using a fancy font, because why not? 🎩📜 */
-    background-color: #000; /* Setting the stage with a dark and mysterious background! 🌑 */
-    color: #fff; /* Making the text as bright as a star! 💫 */
-    text-align: center; /* Keeping things centered, just like a poised ballet dancer! 🩰 */
-    display: flex; /* Going flex mode! Because we're flexible developers, right? 😄 */
-    justify-content: center; /* Aligning horizontally at the center - perfect balance! 🤹‍♂️ */
-    align-items: center; /* Aligning vertically at the center - harmony in the air! 🎶 */
-    min-height: 100vh; /* Making sure we have a full-screen experience! 📺 */
-    margin: 0; /* Zero margin for a clean slate! 🧼 */
-    padding: 20px; /* Giving our content some breathing space! 💨 */
-}
-
-/* The Glamorous Product Container: Like a posh boutique for our content! 👗🛍️ */
-.product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* A dash of red for that luxurious touch! 🌹 */
-    border-radius: 10px; /* Rounded corners for a touch of elegance! ⚪ */
-    padding: 20px; /* Padding like a royal cushion! 👑 */
-    max-width: 800px; /* Keeping it classy with a maximum width! 📏 */
-    width: 100%; /* Expanding to the width of the device - versatility! 📱 */
-}
-
-/* The Majestic Product Titles: Fit for a king or queen! 👑👸 */
-.product-container h1 {
-    margin: 20px; /* Margin for a majestic entrance! 👑 */
-    margin-bottom: 30px; /* A grand exit requires more space! 👋 */
-    font-size: 28px; /* Font size as regal as a king's decree! 📜 */
-    font-weight: bold; /* Bold and confident, just like a leader! 💪 */
-}
-
-.product-container h2 {
-    margin: 20px; /* Margin for a grand announcement! 📣 */
-    margin-bottom: 30px; /* Making sure it's heard loud and clear! 📢 */
-    font-size: 20px; /* Font size, because details matter! 📋 */
-    font-weight: bold; /* Bold, because we're not here to be subtle! 💥 */
-}
-
-/* The Captivating Image Container: Where visuals speak louder than words! 🖼️ */
-.image-container {
-    overflow: hidden; /* Keeping it contained, like a treasure chest! 📦 */
-    border-radius: 10px; /* Curves to keep things interesting! 🔄 */
-    margin-bottom: 20px; /* Leaving room for a visual cliffhanger! 🤯 */
-}
-
-.image-container video {
-    width: 100%; /* Filling the screen, just like a blockbuster! 🎬 */
-    height: auto; /* Maintaining proportions - no distorted actors here! 📸 */
-    border-radius: 10px; /* Rounded corners for a cinematic touch! 🍿 */
-}
-
-/* The Engaging Description: Where words weave a tale! 📖 */
-.description {
-    text-align: justify; /* Justifying text, because neatness counts! ✍️ */
-    margin: 20px 0; /* Margin for a breathing space between paragraphs! 💨 */
-}
-
-/* The Tasty Ingredients List: Listed like a secret recipe! 📜🍰 */
-.ingredients-list {
-    text-align: left; /* Aligning text to the left, like a shopping list! 🛒 */
-    list-style: inside; /* Lists inside like a treasure map! 🗺️ */
-    margin: 10px 20px; /* Margins to keep the list neat and tidy! 🧹 */
-}
-
-/* The Button Ensemble: Ready to take action! 🛍️🚀 */
-.button-container {
-    display: flex; /* Flexing those button muscles! 💪 */
-    justify-content: center; /* Centering the stage for button performances! 🎭 */
-    gap: 20px; /* Space between buttons - a polite distance! 🕺 */
-    margin-top: 20px; /* Rising to the occasion! 🚀 */
-}
-
-.action-button {
-    background-color: #333; /* Dark gray like a secret agent's suit! 🕶️ */
-    color: #fff; /* Text as bright as a spotlight! 💡 */
-    border: none; /* No borders, because we're boundary-breaking! 🌐 */
-    padding: 10px 20px; /* Padding for button comfort! 🪑 */
-    font-size: 18px; /* Font size for readability! 📝 */
-    cursor: pointer; /* A pointer for point-and-click adventure! ☝️🎮 */
-    border-radius: 5px; /* A touch of roundness, like a friendly smile! 😊 */
-    text-align: center; /* Centering text within buttons - poised and confident! 🤵 */
-    text-decoration: none; /* Removing underlines - we're above the line! 📈 */
-}
-
-.action-button:hover {
-    background-color: #444; /* A subtle color change on hover - like a wink! 😉 */
-}
-
-/* The Ultra Button: Supercharged with background magic! ✨🚀 */
-.ultra {
-    background-image: url('../../../../Resources/bkgrd.gif'); /* An animated background - pure wizardry! 🪄 */
-    color: black; /* Text as dark as a moonless night! 🌚 */
-    font-weight: bold; /* Bold and daring, like a superhero! 💥 */
-}
+/* CSS variable definitions in :root */
+:root {
+    --main-font: 'Arial', sans-serif; /* Main font */
+    --background-color: #000; /* Background color */
+    --text-color: #fff; /* Text color */
+    --primary-color: rgba(200, 16, 46, 0.6); /* Primary color */
+    --border-radius: 10px; /* Border radius for rounded corners */
+    --max-width: 800px; /* Maximum width */
+    --button-bg-color: #333; /* Button background color */
+    --button-text-color: #fff; /* Button text color */
+    --button-padding: 10px 20px; /* Button padding */
+    --button-font-size: 18px; /* Button font size */
+    --button-border-radius: 5px; /* Border radius for button rounded corners */
+    --button-hover-color: #444; /* Background color when hovering over buttons */
+    --ultra-background: url('../../../../Resources/bkgrd.gif'); /* Background image for .ultra */
+  }
+  
+  /* Global styles for the page body */
+  body {
+    font-family: var(--main-font); /* Use the main font */
+    background-color: var(--background-color); /* Use the defined background color */
+    color: var(--text-color); /* Use the defined text color */
+    text-align: center; /* Center the text */
+    display: flex; /* Use a flex display model */
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Center elements vertically */
+    min-height: 100vh; /* Ensure the body occupies at least the window's height */
+    margin: 0; /* Remove external margins */
+    padding: 20px; /* Add an inner padding of 20 pixels */
+  }
+  
+  /* Styles for the product container */
+  .product-container {
+    background-color: var(--primary-color); /* Use the defined primary color */
+    border-radius: var(--border-radius); /* Use the defined border radius for rounded corners */
+    padding: 20px; /* Add an inner padding of 20 pixels */
+    max-width: var(--max-width); /* Use the defined maximum width */
+    width: 100%; /* Occupy the full width of its container */
+  }
+  
+  /* Styles for h1 headings inside the product container */
+  .product-container h1 {
+    margin: 20px; /* External margin of 20 pixels */
+    margin-bottom: 30px; /* Additional bottom margin of 30 pixels */
+    font-size: 28px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+  }
+  
+  /* Styles for h2 headings inside the product container */
+  .product-container h2 {
+    margin: 20px; /* External margin of 20 pixels */
+    margin-bottom: 30px; /* Additional bottom margin of 30 pixels */
+    font-size: 20px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+  }
+  
+  /* Styles for the image container */
+  .image-container {
+    overflow: hidden; /* Ensure images do not exceed rounded corners */
+    border-radius: var(--border-radius); /* Use the defined border radius for rounded corners */
+    margin-bottom: 20px; /* Bottom margin of 20 pixels */
+  }
+  
+  /* Styles for videos inside the image container */
+  .image-container video {
+    width: 100%; /* Occupy the full width of its container */
+    height: auto; /* Maintain image aspect ratio */
+    border-radius: var(--border-radius); /* Use the defined border radius for rounded corners */
+  }
+  
+  /* Styles for the description */
+  .description {
+    text-align: justify; /* Justify the text */
+    margin: 20px 0; /* Top and bottom margin of 20 pixels, no left/right margin */
+  }
+  
+  /* Styles for the ingredients list */
+  .ingredients-list {
+    text-align: left; /* Left-align the text */
+    list-style: inside; /* Use lists with markers inside */
+    margin: 10px 20px; /* Top margin of 10 pixels and left/right margin of 20 pixels */
+  }
+  
+  /* Styles for the button container */
+  .button-container {
+    display: flex; /* Use a flex display model */
+    justify-content: center; /* Center elements horizontally */
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Top margin of 20 pixels */
+  }
+  
+  /* Styles for buttons */
+  .action-button {
+    background-color: var(--button-bg-color); /* Use the defined button background color */
+    color: var(--button-text-color); /* Use the defined button text color */
+    border: none; /* No button border */
+    padding: var(--button-padding); /* Use the defined button padding */
+    font-size: var(--button-font-size); /* Use the defined button font size */
+    cursor: pointer; /* Change the cursor when hovering over buttons */
+    border-radius: var(--button-border-radius); /* Use the defined border radius for button rounded corners */
+    text-align: center; /* Center text within buttons */
+    text-decoration: none; /* No underline for button links */
+  }
+  
+  /* Styles for buttons when hovering over them */
+  .action-button:hover {
+    background-color: var(--button-hover-color); /* Change the background color when hovering */
+  }
+  
+  /* Styles for .ultra */
+  .ultra {
+    background-image: var(--ultra-background); /* Use the defined background image for .ultra */
+    color: black; /* Black text color */
+    font-weight: bold; /* Bold font weight */
+  }
+  

@@ -1,98 +1,116 @@
-/* Estilo global del cuerpo de la página */
-body {
-    font-family: 'Arial', sans-serif; /* Fuente elegante para el texto */
-    background-color: #000; /* Fondo negro como la noche */
-    color: #fff; /* Texto en blanco como la nieve */
-    text-align: center; /* Todo centrado, ¡como una obra maestra! */
-    display: flex; /* Haciendo flexibilidad */
-    justify-content: center; /* Justificando el contenido al centro */
-    align-items: center; /* Alineando elementos al centro */
-    min-height: 100vh; /* Altura mínima para ocupar toda la pantalla */
-    margin: 0; /* Sin margen para un aspecto pulido */
-    padding: 20px; /* Un poco de espacio interior */
-}
-
-/* Estilo del contenedor principal del producto */
-.product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Fondo rojo con un toque de misterio */
-    border-radius: 10px; /* Bordes suaves para el contenedor */
-    padding: 20px; /* Espacio interior para un ambiente acogedor */
-    max-width: 800px; /* Ancho máximo del contenedor */
-    width: 100%; /* Ancho total, se adapta a la pantalla */
-}
-
-/* Estilo del título principal */
-.product-container h1 {
-    margin: 20px; /* Un poco de espacio alrededor del título */
-    margin-bottom: 30px; /* Espacio extra abajo para un efecto dramático */
-    font-size: 28px; /* Un tamaño de fuente audaz */
-    font-weight: bold; /* Negrita para destacar */
-}
-
-/* Estilo del subtítulo */
-.product-container h2 {
-    margin: 20px; /* Espacio alrededor del subtítulo */
-    margin-bottom: 30px; /* Espacio extra abajo para un impacto adicional */
-    font-size: 20px; /* Tamaño de fuente grande y audaz */
-    font-weight: bold; /* Negrita para resaltar la importancia */
-}
-
-/* Estilo del contenedor de imágenes o videos */
-.image-container {
-    overflow: hidden; /* Oculta cualquier cosa que se salga de los límites */
-    border-radius: 10px; /* Bordes redondeados para un aspecto elegante */
-    margin-bottom: 20px; /* Espacio debajo para separar el contenido */
-}
-
-/* Estilo de los videos dentro del contenedor */
-.image-container video {
-    width: 100%; /* Video ocupa todo el ancho */
-    height: auto; /* Altura automática para mantener la proporción */
-    border-radius: 10px; /* Bordes redondeados para el video */
-}
-
-/* Estilo de la descripción del producto */
-.description {
-    text-align: justify; /* Texto justificado para una lectura suave */
-    margin: 20px 0; /* Margen superior e inferior para separación */
-}
-
-/* Estilo de la lista de ingredientes */
-.ingredients-list {
-    text-align: left; /* Texto alineado a la izquierda para la lista */
-    list-style: inside; /* Marcadores dentro de la lista para un aspecto ordenado */
-    margin: 10px 20px; /* Margen alrededor de la lista para un diseño limpio */
-}
-
-/* Estilo del contenedor de botones */
-.button-container {
-    display: flex; /* Mostrar botones en una fila */
-    justify-content: center; /* Centrar botones horizontalmente */
-    gap: 20px; /* Espacio entre botones para un aspecto limpio */
-    margin-top: 20px; /* Margen superior para separar del contenido anterior */
-}
-
-/* Estilo de los botones de acción */
-.action-button {
-    background-color: #333; /* Fondo gris oscuro para los botones */
-    color: #fff; /* Texto en blanco para un contraste claro */
-    border: none; /* Sin bordes para un diseño moderno */
-    padding: 10px 20px; /* Espaciado interior para un toque de elegancia */
-    font-size: 18px; /* Tamaño de fuente adecuado */
-    cursor: pointer; /* Cursor que cambia cuando pasas el ratón, ¡interactivo! */
-    border-radius: 5px; /* Bordes suaves para un aspecto atractivo */
-    text-align: center; /* Texto centrado en el botón */
-    text-decoration: none; /* Sin subrayado en los enlaces */
-}
-
-/* Efecto hover al pasar el ratón sobre los botones */
-.action-button:hover {
-    background-color: #444; /* Fondo un poco más claro al pasar el ratón */
-}
-
-/* Estilo ultra especial */
-.ultra {
-    background-image: url('../../../../Resources/bkgrd.gif'); /* Imagen de fondo para un toque extra de genialidad */
-    color: black; /* Texto en negro para destacar sobre la imagen de fondo */
-    font-weight: bold; /* ¡Negrita para un impacto máximo! */
-}
+/* Definición de variables CSS en :root */
+:root {
+    --main-font: 'Arial', sans-serif; /* Fuente principal */
+    --background-color: #000; /* Color de fondo */
+    --text-color: #fff; /* Color de texto */
+    --primary-color: rgba(200, 16, 46, 0.6); /* Color primario */
+    --border-radius: 10px; /* Radio de borde para esquinas redondeadas */
+    --max-width: 800px; /* Ancho máximo */
+    --button-bg-color: #333; /* Color de fondo de los botones */
+    --button-text-color: #fff; /* Color de texto de los botones */
+    --button-padding: 10px 20px; /* Relleno de los botones */
+    --button-font-size: 18px; /* Tamaño de fuente de los botones */
+    --button-border-radius: 5px; /* Radio de borde para esquinas redondeadas de los botones */
+    --button-hover-color: #444; /* Color de fondo al pasar el ratón sobre los botones */
+    --ultra-background: url('../../../../Resources/bkgrd.gif'); /* Imagen de fondo para .ultra */
+  }
+  
+  /* Estilos globales para el cuerpo de la página */
+  body {
+    font-family: var(--main-font); /* Utiliza la fuente principal */
+    background-color: var(--background-color); /* Utiliza el color de fondo definido */
+    color: var(--text-color); /* Utiliza el color de texto definido */
+    text-align: center; /* Centra el texto */
+    display: flex; /* Utiliza un modelo de visualización flex */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura de la ventana del navegador */
+    margin: 0; /* Elimina los márgenes externos */
+    padding: 20px; /* Agrega un relleno interior de 20 píxeles */
+  }
+  
+  /* Estilos para el contenedor de productos */
+  .product-container {
+    background-color: var(--primary-color); /* Utiliza el color primario definido */
+    border-radius: var(--border-radius); /* Utiliza el radio de borde definido para esquinas redondeadas */
+    padding: 20px; /* Agrega un relleno interior de 20 píxeles */
+    max-width: var(--max-width); /* Utiliza el ancho máximo definido */
+    width: 100%; /* Ocupa el ancho completo de su contenedor */
+  }
+  
+  /* Estilos para los títulos h1 dentro del contenedor de productos */
+  .product-container h1 {
+    margin: 20px; /* Margen externo de 20 píxeles */
+    margin-bottom: 30px; /* Margen inferior adicional de 30 píxeles */
+    font-size: 28px; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de fuente en negrita */
+  }
+  
+  /* Estilos para los títulos h2 dentro del contenedor de productos */
+  .product-container h2 {
+    margin: 20px; /* Margen externo de 20 píxeles */
+    margin-bottom: 30px; /* Margen inferior adicional de 30 píxeles */
+    font-size: 20px; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de fuente en negrita */
+  }
+  
+  /* Estilos para el contenedor de imágenes */
+  .image-container {
+    overflow: hidden; /* Asegura que las imágenes no superen las esquinas redondeadas */
+    border-radius: var(--border-radius); /* Utiliza el radio de borde definido para esquinas redondeadas */
+    margin-bottom: 20px; /* Margen inferior de 20 píxeles */
+  }
+  
+  /* Estilos para videos dentro del contenedor de imágenes */
+  .image-container video {
+    width: 100%; /* Ocupa el ancho completo de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: var(--border-radius); /* Utiliza el radio de borde definido para esquinas redondeadas */
+  }
+  
+  /* Estilos para la descripción */
+  .description {
+    text-align: justify; /* Justifica el texto */
+    margin: 20px 0; /* Margen superior e inferior de 20 píxeles, sin margen izquierdo/derecho */
+  }
+  
+  /* Estilos para la lista de ingredientes */
+  .ingredients-list {
+    text-align: left; /* Alinea el texto a la izquierda */
+    list-style: inside; /* Utiliza listas con marcadores en el interior */
+    margin: 10px 20px; /* Margen superior de 10 píxeles y margen izquierdo/derecho de 20 píxeles */
+  }
+  
+  /* Estilos para el contenedor de botones */
+  .button-container {
+    display: flex; /* Utiliza un modelo de visualización flex */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    gap: 20px; /* Espacio entre los botones */
+    margin-top: 20px; /* Margen superior de 20 píxeles */
+  }
+  
+  /* Estilos para los botones */
+  .action-button {
+    background-color: var(--button-bg-color); /* Utiliza el color de fondo de botones definido */
+    color: var(--button-text-color); /* Utiliza el color de texto de botones definido */
+    border: none; /* Sin borde de botón */
+    padding: var(--button-padding); /* Utiliza el relleno de botones definido */
+    font-size: var(--button-font-size); /* Utiliza el tamaño de fuente de botones definido */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre los botones */
+    border-radius: var(--button-border-radius); /* Utiliza el radio de borde definido para esquinas redondeadas de botones */
+    text-align: center; /* Centra el texto dentro de los botones */
+    text-decoration: none; /* Sin subrayado para enlaces de botones */
+  }
+  
+  /* Estilos para los botones al pasar el ratón sobre ellos */
+  .action-button:hover {
+    background-color: var(--button-hover-color); /* Cambia el color de fondo al pasar el ratón sobre ellos */
+  }
+  
+  /* Estilos para .ultra */
+  .ultra {
+    background-image: var(--ultra-background); /* Utiliza la imagen de fondo definida para .ultra */
+    color: black; /* Color de texto en negro */
+    font-weight: bold; /* Peso de fuente en negrita */
+  }
+  

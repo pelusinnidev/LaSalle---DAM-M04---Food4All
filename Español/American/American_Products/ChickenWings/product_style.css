@@ -1,98 +1,116 @@
-/* Estilo del cuerpo de la página */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #000; /* Fondo negro */
-    color: #fff; /* Texto blanco */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
-}
-
-/* Estilo del contenedor principal del producto */
-.product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Fondo rojo transparente */
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 800px;
-    width: 100%; /* Ajustado al ancho del dispositivo */
-}
-
-/* Estilo del título principal del producto */
-.product-container h1 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-/* Estilo de los subtítulos del producto */
-.product-container h2 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-/* Estilo del contenedor de la imagen o video */
-.image-container {
-    overflow: hidden; /* Evita que el video se desborde */
-    border-radius: 10px; /* Coincide con el contenedor del producto */
-    margin-bottom: 20px;
-}
-
-/* Estilo del video dentro del contenedor */
-.image-container video {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de aspecto */
-    border-radius: 10px; /* Bordes redondeados para el video */
-}
-
-/* Estilo del texto de descripción */
-.description {
-    text-align: justify;
-    margin: 20px 0;
-}
-
-/* Estilo de la lista de ingredientes */
-.ingredients-list {
-    text-align: left;
-    list-style: inside;
-    margin: 10px 20px;
-}
-
-/* Estilo del contenedor de botones */
-.button-container {
-    display: flex;
-    justify-content: center;
+/* Definición de variables CSS en :root */
+:root {
+    --main-font: 'Arial', sans-serif; /* Fuente principal */
+    --background-color: #000; /* Color de fondo */
+    --text-color: #fff; /* Color de texto */
+    --primary-color: rgba(200, 16, 46, 0.6); /* Color primario */
+    --border-radius: 10px; /* Radio de borde para esquinas redondeadas */
+    --max-width: 800px; /* Ancho máximo */
+    --button-bg-color: #333; /* Color de fondo de los botones */
+    --button-text-color: #fff; /* Color de texto de los botones */
+    --button-padding: 10px 20px; /* Relleno de los botones */
+    --button-font-size: 18px; /* Tamaño de fuente de los botones */
+    --button-border-radius: 5px; /* Radio de borde para esquinas redondeadas de los botones */
+    --button-hover-color: #444; /* Color de fondo al pasar el ratón sobre los botones */
+    --ultra-background: url('../../../../Resources/bkgrd.gif'); /* Imagen de fondo para .ultra */
+  }
+  
+  /* Estilos globales para el cuerpo de la página */
+  body {
+    font-family: var(--main-font); /* Utiliza la fuente principal */
+    background-color: var(--background-color); /* Utiliza el color de fondo definido */
+    color: var(--text-color); /* Utiliza el color de texto definido */
+    text-align: center; /* Centra el texto */
+    display: flex; /* Utiliza un modelo de visualización flex */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura de la ventana del navegador */
+    margin: 0; /* Elimina los márgenes externos */
+    padding: 20px; /* Agrega un relleno interior de 20 píxeles */
+  }
+  
+  /* Estilos para el contenedor de productos */
+  .product-container {
+    background-color: var(--primary-color); /* Utiliza el color primario definido */
+    border-radius: var(--border-radius); /* Utiliza el radio de borde definido para esquinas redondeadas */
+    padding: 20px; /* Agrega un relleno interior de 20 píxeles */
+    max-width: var(--max-width); /* Utiliza el ancho máximo definido */
+    width: 100%; /* Ocupa el ancho completo de su contenedor */
+  }
+  
+  /* Estilos para los títulos h1 dentro del contenedor de productos */
+  .product-container h1 {
+    margin: 20px; /* Margen externo de 20 píxeles */
+    margin-bottom: 30px; /* Margen inferior adicional de 30 píxeles */
+    font-size: 28px; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de fuente en negrita */
+  }
+  
+  /* Estilos para los títulos h2 dentro del contenedor de productos */
+  .product-container h2 {
+    margin: 20px; /* Margen externo de 20 píxeles */
+    margin-bottom: 30px; /* Margen inferior adicional de 30 píxeles */
+    font-size: 20px; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de fuente en negrita */
+  }
+  
+  /* Estilos para el contenedor de imágenes */
+  .image-container {
+    overflow: hidden; /* Asegura que las imágenes no superen las esquinas redondeadas */
+    border-radius: var(--border-radius); /* Utiliza el radio de borde definido para esquinas redondeadas */
+    margin-bottom: 20px; /* Margen inferior de 20 píxeles */
+  }
+  
+  /* Estilos para videos dentro del contenedor de imágenes */
+  .image-container video {
+    width: 100%; /* Ocupa el ancho completo de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: var(--border-radius); /* Utiliza el radio de borde definido para esquinas redondeadas */
+  }
+  
+  /* Estilos para la descripción */
+  .description {
+    text-align: justify; /* Justifica el texto */
+    margin: 20px 0; /* Margen superior e inferior de 20 píxeles, sin margen izquierdo/derecho */
+  }
+  
+  /* Estilos para la lista de ingredientes */
+  .ingredients-list {
+    text-align: left; /* Alinea el texto a la izquierda */
+    list-style: inside; /* Utiliza listas con marcadores en el interior */
+    margin: 10px 20px; /* Margen superior de 10 píxeles y margen izquierdo/derecho de 20 píxeles */
+  }
+  
+  /* Estilos para el contenedor de botones */
+  .button-container {
+    display: flex; /* Utiliza un modelo de visualización flex */
+    justify-content: center; /* Centra horizontalmente los elementos */
     gap: 20px; /* Espacio entre los botones */
-    margin-top: 20px;
-}
-
-/* Estilo de los botones de acción */
-.action-button {
-    background-color: #333; /* Gris oscuro */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-}
-
-/* Estilo de los botones de acción al pasar el cursor */
-.action-button:hover {
-    background-color: #444; /* Gris ligeramente más claro */
-}
-
-/* Estilo especial con fondo de imagen de fondo */
-.ultra {
-    background-image: url('../../../../Resources/bkgrd.gif'); 
-    color: black;
-    font-weight: bold;
-}
+    margin-top: 20px; /* Margen superior de 20 píxeles */
+  }
+  
+  /* Estilos para los botones */
+  .action-button {
+    background-color: var(--button-bg-color); /* Utiliza el color de fondo de botones definido */
+    color: var(--button-text-color); /* Utiliza el color de texto de botones definido */
+    border: none; /* Sin borde de botón */
+    padding: var(--button-padding); /* Utiliza el relleno de botones definido */
+    font-size: var(--button-font-size); /* Utiliza el tamaño de fuente de botones definido */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre los botones */
+    border-radius: var(--button-border-radius); /* Utiliza el radio de borde definido para esquinas redondeadas de botones */
+    text-align: center; /* Centra el texto dentro de los botones */
+    text-decoration: none; /* Sin subrayado para enlaces de botones */
+  }
+  
+  /* Estilos para los botones al pasar el ratón sobre ellos */
+  .action-button:hover {
+    background-color: var(--button-hover-color); /* Cambia el color de fondo al pasar el ratón sobre ellos */
+  }
+  
+  /* Estilos para .ultra */
+  .ultra {
+    background-image: var(--ultra-background); /* Utiliza la imagen de fondo definida para .ultra */
+    color: black; /* Color de texto en negro */
+    font-weight: bold; /* Peso de fuente en negrita */
+  }
+  

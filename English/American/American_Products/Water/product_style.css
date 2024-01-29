@@ -1,98 +1,116 @@
-/* Styling for the entire webpage - This is where the hydration happens! */
-body {
-    font-family: 'Arial', sans-serif; /* Using the fancy Arial font, because why not? */
-    background-color: #000; /* Black background - It's like diving into the deep ocean */
-    color: #fff; /* White text color - Like the frothy waves */
-    text-align: center; /* Keeping everything centered like a well-balanced water molecule */
-    display: flex; /* Flexbox for the flow of content */
-    justify-content: center; /* We're all about that centering life */
-    align-items: center; /* Everything aligns, just like water molecules in a glass */
-    min-height: 100vh; /* Aiming for the sky (or 100% viewport height) */
-    margin: 0; /* No margin means no water spillage */
-    padding: 20px; /* A splash of padding for comfort */
-}
-
-/* Styling for the product container - Where the liquid magic resides */
-.product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Opaque red background - Because water can be dramatic too */
-    border-radius: 10px; /* Rounded corners for added elegance */
-    padding: 20px; /* Padding to keep things comfy for the water */
-    max-width: 800px; /* Keeping it within the confines of a glass */
-    width: 100%; /* Adjusting to the device's width - water adapts */
-}
-
-/* Styling for the product container's title - It's all about the purity */
-.product-container h1 {
-    margin: 20px; /* Margin for some breathing room */
-    margin-bottom: 30px; /* Even more space at the bottom for emphasis */
-    font-size: 28px; /* Big and bold, just like the ocean */
-    font-weight: bold; /* Because water deserves attention */
-}
-
-/* Styling for the product container's subtitle - A sip of luxury */
-.product-container h2 {
-    margin: 20px; /* Margin for more breathing room */
-    margin-bottom: 30px; /* Even more space at the bottom for added intrigue */
-    font-size: 20px; /* Slightly smaller, but still bold */
-    font-weight: bold; /* Because the details matter */
-}
-
-/* Styling for the image container - Where the liquid visuals flow */
-.image-container {
-    overflow: hidden; /* Hiding anything that tries to splash out */
-    border-radius: 10px; /* Matching the product container's style */
-    margin-bottom: 20px; /* Some space to breathe below */
-}
-
-/* Styling for videos within the image container - The liquid motion */
-.image-container video {
-    width: 100%; /* Videos taking up the whole stage */
-    height: auto; /* Maintaining their aspect ratio - no stretching allowed */
-    border-radius: 10px; /* Rounded corners for cinematic flair */
-}
-
-/* Styling for the product description - The water story */
-.description {
-    text-align: justify; /* Justifying text for a polished look */
-    margin: 20px 0; /* Margin to create some distance */
-}
-
-/* Styling for the ingredients list - A recipe for hydration */
-.ingredients-list {
-    text-align: left; /* Aligning to the left - ingredients like their own space */
-    list-style: inside; /* List items have an inside marker */
-    margin: 10px 20px; /* Margins for list items - not too close, not too far */
-}
-
-/* Styling for the button container - Where the liquid buttons wait */
-.button-container {
-    display: flex; /* Flexbox for button alignment */
-    justify-content: center; /* Centering those buttons like a well-balanced glass */
-    gap: 20px; /* Spacing between buttons - they need personal space too */
-    margin-top: 20px; /* A little margin to lift them up */
-}
-
-/* Styling for action buttons - The buttons that make orders flow */
-.action-button {
-    background-color: #333; /* Dark gray background - Serious business! */
-    color: #fff; /* White text - It stands out like a drop in the desert */
-    border: none; /* No borders, because water knows no boundaries */
-    padding: 10px 20px; /* Padding for comfort during button clicks */
-    font-size: 18px; /* A decent font size - not too big, not too small */
-    cursor: pointer; /* A pointing hand for clickable delight */
-    border-radius: 5px; /* Slightly rounded edges for a touch of elegance */
-    text-align: center; /* Text centered in the button like a well-crafted ice cube */
-    text-decoration: none; /* No underlines - these buttons are confident */
-}
-
-/* Styling for action buttons on hover - When things get even more refreshing */
-.action-button:hover {
-    background-color: #444; /* Slightly lighter gray background - Hovering is fun! */
-}
-
-/* Ultra styling for special occasions - Because sometimes, we go all out! */
-.ultra {
-    background-image: url('../../../../Resources/bkgrd.gif'); /* A background image for pure spectacle */
-    color: black; /* Contrasting text for visibility */
-    font-weight: bold; /* Because 'ultra' means serious business */
-}
+/* CSS variable definitions in :root */
+:root {
+    --main-font: 'Arial', sans-serif; /* Main font */
+    --background-color: #000; /* Background color */
+    --text-color: #fff; /* Text color */
+    --primary-color: rgba(200, 16, 46, 0.6); /* Primary color */
+    --border-radius: 10px; /* Border radius for rounded corners */
+    --max-width: 800px; /* Maximum width */
+    --button-bg-color: #333; /* Button background color */
+    --button-text-color: #fff; /* Button text color */
+    --button-padding: 10px 20px; /* Button padding */
+    --button-font-size: 18px; /* Button font size */
+    --button-border-radius: 5px; /* Border radius for button rounded corners */
+    --button-hover-color: #444; /* Background color when hovering over buttons */
+    --ultra-background: url('../../../../Resources/bkgrd.gif'); /* Background image for .ultra */
+  }
+  
+  /* Global styles for the page body */
+  body {
+    font-family: var(--main-font); /* Use the main font */
+    background-color: var(--background-color); /* Use the defined background color */
+    color: var(--text-color); /* Use the defined text color */
+    text-align: center; /* Center the text */
+    display: flex; /* Use a flex display model */
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Center elements vertically */
+    min-height: 100vh; /* Ensure the body occupies at least the window's height */
+    margin: 0; /* Remove external margins */
+    padding: 20px; /* Add an inner padding of 20 pixels */
+  }
+  
+  /* Styles for the product container */
+  .product-container {
+    background-color: var(--primary-color); /* Use the defined primary color */
+    border-radius: var(--border-radius); /* Use the defined border radius for rounded corners */
+    padding: 20px; /* Add an inner padding of 20 pixels */
+    max-width: var(--max-width); /* Use the defined maximum width */
+    width: 100%; /* Occupy the full width of its container */
+  }
+  
+  /* Styles for h1 headings inside the product container */
+  .product-container h1 {
+    margin: 20px; /* External margin of 20 pixels */
+    margin-bottom: 30px; /* Additional bottom margin of 30 pixels */
+    font-size: 28px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+  }
+  
+  /* Styles for h2 headings inside the product container */
+  .product-container h2 {
+    margin: 20px; /* External margin of 20 pixels */
+    margin-bottom: 30px; /* Additional bottom margin of 30 pixels */
+    font-size: 20px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+  }
+  
+  /* Styles for the image container */
+  .image-container {
+    overflow: hidden; /* Ensure images do not exceed rounded corners */
+    border-radius: var(--border-radius); /* Use the defined border radius for rounded corners */
+    margin-bottom: 20px; /* Bottom margin of 20 pixels */
+  }
+  
+  /* Styles for videos inside the image container */
+  .image-container video {
+    width: 100%; /* Occupy the full width of its container */
+    height: auto; /* Maintain image aspect ratio */
+    border-radius: var(--border-radius); /* Use the defined border radius for rounded corners */
+  }
+  
+  /* Styles for the description */
+  .description {
+    text-align: justify; /* Justify the text */
+    margin: 20px 0; /* Top and bottom margin of 20 pixels, no left/right margin */
+  }
+  
+  /* Styles for the ingredients list */
+  .ingredients-list {
+    text-align: left; /* Left-align the text */
+    list-style: inside; /* Use lists with markers inside */
+    margin: 10px 20px; /* Top margin of 10 pixels and left/right margin of 20 pixels */
+  }
+  
+  /* Styles for the button container */
+  .button-container {
+    display: flex; /* Use a flex display model */
+    justify-content: center; /* Center elements horizontally */
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Top margin of 20 pixels */
+  }
+  
+  /* Styles for buttons */
+  .action-button {
+    background-color: var(--button-bg-color); /* Use the defined button background color */
+    color: var(--button-text-color); /* Use the defined button text color */
+    border: none; /* No button border */
+    padding: var(--button-padding); /* Use the defined button padding */
+    font-size: var(--button-font-size); /* Use the defined button font size */
+    cursor: pointer; /* Change the cursor when hovering over buttons */
+    border-radius: var(--button-border-radius); /* Use the defined border radius for button rounded corners */
+    text-align: center; /* Center text within buttons */
+    text-decoration: none; /* No underline for button links */
+  }
+  
+  /* Styles for buttons when hovering over them */
+  .action-button:hover {
+    background-color: var(--button-hover-color); /* Change the background color when hovering */
+  }
+  
+  /* Styles for .ultra */
+  .ultra {
+    background-image: var(--ultra-background); /* Use the defined background image for .ultra */
+    color: black; /* Black text color */
+    font-weight: bold; /* Bold font weight */
+  }
+  

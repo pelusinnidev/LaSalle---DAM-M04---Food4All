@@ -1,100 +1,116 @@
-/* Stylish and hilarious CSS */
-
-/* General styling for the entire page */
-body {
-    font-family: 'Arial', sans-serif; /* Because Comic Sans was too tempting! */
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    text-align: center; /* Centered text for ultimate enlightenment */
-    display: flex; /* Flexing the developer muscles */
-    justify-content: center; /* Justifying the universe */
-    align-items: center; /* Aligning with destiny */
-    min-height: 100vh; /* Minimum height for maximum impact */
-    margin: 0; /* Zero margin, maximum impact */
-    padding: 20px; /* Padding for the grand finale */
-}
-
-/* Styling for the product container */
-.product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Opaque red background */
-    border-radius: 10px; /* Keeping it rounded, like nuggets */
-    padding: 20px; /* Padding for comfort */
-    max-width: 800px; /* Width limited to 800px, but dreams have no limits */
-    width: 100%; /* Adjust to the width of the device */
-}
-
-/* Styling for the product title */
-.product-container h1 {
-    margin: 20px; /* Margin for error (but hopefully none) */
-    margin-bottom: 30px; /* A little extra margin for the extraordinary */
-    font-size: 28px; /* Font size for the title, not for reading minds */
-    font-weight: bold; /* Because nuggets deserve boldness */
-}
-
-/* Styling for the secondary title */
-.product-container h2 {
-    margin: 20px; /* Margin for appreciation */
-    margin-bottom: 30px; /* A little extra margin for the exceptional */
-    font-size: 20px; /* Font size for the subtitle, not for writing novels */
-    font-weight: bold; /* Because ingredients are the unsung heroes */
-}
-
-/* Styling for the image container */
-.image-container {
-    overflow: hidden; /* Keeping it all together, no leaks allowed */
-    border-radius: 10px; /* Rounded corners for extra style */
-    margin-bottom: 20px; /* Margin for visual pleasure */
-}
-
-/* Styling for the video within the image container */
-.image-container video {
-    width: 100%; /* Video takes full width, like nuggets take all attention */
-    height: auto; /* Maintaining aspect ratio, no video stretching allowed */
-    border-radius: 10px; /* Rounded corners for video, because corners are sharp */
-}
-
-/* Styling for the product description */
-.description {
-    text-align: justify; /* Justifying the text for a rational description */
-    margin: 20px 0; /* Margin for contemplation */
-}
-
-/* Styling for the list of ingredients */
-.ingredients-list {
-    text-align: left; /* Because ingredients like to be straightforward */
-    list-style: inside; /* Lists are like treasure chests, but inside-out */
-    margin: 10px 20px; /* Margin for listing greatness */
-}
-
-/* Styling for the button container */
-.button-container {
-    display: flex; /* Flexing the button's muscles */
-    justify-content: center; /* Because centering is an art */
-    gap: 20px; /* Space between buttons, because space matters */
-    margin-top: 20px; /* Margin for button enthusiasm */
-}
-
-/* Styling for the action buttons */
-.action-button {
-    background-color: #333; /* Dark gray, like the mysteries of nuggets */
-    color: #fff; /* Text color as bright as nugget dreams */
-    border: none; /* No borders, just like nuggets roam free */
-    padding: 10px 20px; /* Padding for button comfort */
-    font-size: 18px; /* Font size for action, not for inaction */
-    cursor: pointer; /* The cursor is pointing at deliciousness */
-    border-radius: 5px; /* Rounded corners for button style */
-    text-align: center; /* Text alignment for alignment enthusiasts */
-    text-decoration: none; /* Removes underline from links, but not from cravings */
-}
-
-/* Hover effect for action buttons */
-.action-button:hover {
-    background-color: #444; /* Slightly lighter gray, because a hint of mystery */
-}
-
-/* Styling for the 'ultra' class, because it's ultra-awesome */
-.ultra {
-    background-image: url('../../../../Resources/bkgrd.gif'); /* The background image, like nugget dreams in motion */
-    color: black; /* Text color as dark as the night sky */
-    font-weight: bold; /* Bold and beautiful, just like nuggets */
-}
+/* CSS variable definitions in :root */
+:root {
+    --main-font: 'Arial', sans-serif; /* Main font */
+    --background-color: #000; /* Background color */
+    --text-color: #fff; /* Text color */
+    --primary-color: rgba(200, 16, 46, 0.6); /* Primary color */
+    --border-radius: 10px; /* Border radius for rounded corners */
+    --max-width: 800px; /* Maximum width */
+    --button-bg-color: #333; /* Button background color */
+    --button-text-color: #fff; /* Button text color */
+    --button-padding: 10px 20px; /* Button padding */
+    --button-font-size: 18px; /* Button font size */
+    --button-border-radius: 5px; /* Border radius for button rounded corners */
+    --button-hover-color: #444; /* Background color when hovering over buttons */
+    --ultra-background: url('../../../../Resources/bkgrd.gif'); /* Background image for .ultra */
+  }
+  
+  /* Global styles for the page body */
+  body {
+    font-family: var(--main-font); /* Use the main font */
+    background-color: var(--background-color); /* Use the defined background color */
+    color: var(--text-color); /* Use the defined text color */
+    text-align: center; /* Center the text */
+    display: flex; /* Use a flex display model */
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Center elements vertically */
+    min-height: 100vh; /* Ensure the body occupies at least the window's height */
+    margin: 0; /* Remove external margins */
+    padding: 20px; /* Add an inner padding of 20 pixels */
+  }
+  
+  /* Styles for the product container */
+  .product-container {
+    background-color: var(--primary-color); /* Use the defined primary color */
+    border-radius: var(--border-radius); /* Use the defined border radius for rounded corners */
+    padding: 20px; /* Add an inner padding of 20 pixels */
+    max-width: var(--max-width); /* Use the defined maximum width */
+    width: 100%; /* Occupy the full width of its container */
+  }
+  
+  /* Styles for h1 headings inside the product container */
+  .product-container h1 {
+    margin: 20px; /* External margin of 20 pixels */
+    margin-bottom: 30px; /* Additional bottom margin of 30 pixels */
+    font-size: 28px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+  }
+  
+  /* Styles for h2 headings inside the product container */
+  .product-container h2 {
+    margin: 20px; /* External margin of 20 pixels */
+    margin-bottom: 30px; /* Additional bottom margin of 30 pixels */
+    font-size: 20px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+  }
+  
+  /* Styles for the image container */
+  .image-container {
+    overflow: hidden; /* Ensure images do not exceed rounded corners */
+    border-radius: var(--border-radius); /* Use the defined border radius for rounded corners */
+    margin-bottom: 20px; /* Bottom margin of 20 pixels */
+  }
+  
+  /* Styles for videos inside the image container */
+  .image-container video {
+    width: 100%; /* Occupy the full width of its container */
+    height: auto; /* Maintain image aspect ratio */
+    border-radius: var(--border-radius); /* Use the defined border radius for rounded corners */
+  }
+  
+  /* Styles for the description */
+  .description {
+    text-align: justify; /* Justify the text */
+    margin: 20px 0; /* Top and bottom margin of 20 pixels, no left/right margin */
+  }
+  
+  /* Styles for the ingredients list */
+  .ingredients-list {
+    text-align: left; /* Left-align the text */
+    list-style: inside; /* Use lists with markers inside */
+    margin: 10px 20px; /* Top margin of 10 pixels and left/right margin of 20 pixels */
+  }
+  
+  /* Styles for the button container */
+  .button-container {
+    display: flex; /* Use a flex display model */
+    justify-content: center; /* Center elements horizontally */
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Top margin of 20 pixels */
+  }
+  
+  /* Styles for buttons */
+  .action-button {
+    background-color: var(--button-bg-color); /* Use the defined button background color */
+    color: var(--button-text-color); /* Use the defined button text color */
+    border: none; /* No button border */
+    padding: var(--button-padding); /* Use the defined button padding */
+    font-size: var(--button-font-size); /* Use the defined button font size */
+    cursor: pointer; /* Change the cursor when hovering over buttons */
+    border-radius: var(--button-border-radius); /* Use the defined border radius for button rounded corners */
+    text-align: center; /* Center text within buttons */
+    text-decoration: none; /* No underline for button links */
+  }
+  
+  /* Styles for buttons when hovering over them */
+  .action-button:hover {
+    background-color: var(--button-hover-color); /* Change the background color when hovering */
+  }
+  
+  /* Styles for .ultra */
+  .ultra {
+    background-image: var(--ultra-background); /* Use the defined background image for .ultra */
+    color: black; /* Black text color */
+    font-weight: bold; /* Bold font weight */
+  }
+  
