@@ -1,0 +1,485 @@
+
+:root {
+    --background-beige: beige;
+    --background-bisque: bisque;
+    --text-black: black;
+    --text-white: white;
+    --text-gray: #333;
+    --text-light: #666;
+    --accent-orange: #ff5733;
+    --accent-red: #e44d26;
+    --nav-link-hover: #ddd;
+    --menu-background: #fff;
+    --box-shadow: rgba(0, 0, 0, 0.1);
+    --gradient-start: #008C45;
+    --gradient-end: #CD2E3A;
+  }
+
+/* Reset browser styles */
+body, div, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header{
+font-weight: bold;
+font-size: 30px;
+
+}
+
+.navbar {
+    background-color: var(--background-bisque);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.navbar a {
+color: white;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #333;
+    margin-top: 20px;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+}
+
+.nav-logo {
+    width: 60px;
+    height: auto;
+}
+
+.Pay {
+    background-color: beige;
+    color: black !important;
+}
+
+header {
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    background-color: bisque;
+}
+
+.content {
+    margin: 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+body {
+    background-color: beige;
+}
+
+
+
+.card__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.card__content img {
+    max-width: 50%;
+    height: auto;
+    margin-left: 75px; /* Ajusta el margen según tus necesidades */
+    margin-bottom: 25px;
+}
+
+.card__content div {
+    flex: 1;
+}
+
+.card__content h3,
+.card__content p {
+    margin-top: 5px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+h3 {
+
+    text-align: center;
+    font-size: 30px;
+}
+
+h4 {
+
+    margin-left: 500px;
+}
+
+
+.menu {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center; /* Optional: Center align the menu items */
+}
+
+.menu h1 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.menu-item h3 {
+    color: #333;
+    font-size: 24px;
+    text-align: left;
+}
+
+.menu-item .price {
+    color: #ff5733;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-item p {
+    color: #666;
+    font-size: 18px;
+    margin-top: 10px; /* Add top margin to separate the price from the text */
+}
+
+.menu-items {
+    width: 70%; /* Adjust the width of the main menu as needed */
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    text-align: center;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+}
+
+img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.text-container {
+    width: 45%;
+}
+
+h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    margin-left: 250px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    margin-left: 25px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.text-container {
+    margin-left: 25px;
+    text-align: left;
+
+}
+
+
+
+.price {
+    color: #e44d26;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.sub-menu {
+    margin-top: 10px;
+}
+
+.sub-menu-item {
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.image-item{
+
+    font-weight: bold;
+}
+
+
+.menu-item {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos de la sección como columna */
+    text-align: left;
+    margin-left: 25px;
+}
+
+.menu-item h3,
+.menu-item .price,
+.menu-item p {
+    text-align: left; /* Alinea el texto a la izquierda */
+    
+}
+
+.sub-menu {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos de la subsección como columna */
+}
+
+.sub-menu-item {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.sub-menu-item h5,
+.sub-menu-item h4
+.sub-menu-item .price,
+.sub-menu-item p {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 25px;
+}
+
+.sub-menu-item h5{
+
+ margin-bottom: 50px;
+ font-size: 25px;
+}
+.sub-menu-item h6 {
+    font-size: 25px;
+    margin-left: 25px;
+    color: #333;
+}
+
+a.button {
+    background: linear-gradient(to right, #008C45, white, #CD2E3A);
+    font-weight: bold;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #CD2E3A;
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px; /* Ajusta el relleno para hacer el botón más estrecho */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    color: black;
+    justify-content: center;
+}
+
+a.button .flag-icon {
+    font-size: 18px; /* Ajusta el tamaño del emoji o ícono */
+    margin-right: 4px;
+    
+}
+
+
+a.button:hover {
+    background: linear-gradient(to right, #CD2E3A, white, #008C45);
+    color: black;
+}
+
+
+/* Aplica la animación a la imagen */
+div img {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    animation: growShrink 3s infinite; /* 3 segundos, repetición infinita */
+}
+
+.image-container img {
+    width: 100%;
+    animation: growShrink 3s infinite;
+    float: right; /* Coloca la imagen a la derecha */
+}
+
+
+
+
+div img {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    animation: growShrink 3s infinite; /* 3 segundos, repetición infinita */
+    float: right; /* Coloca la imagen a la derecha */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.menu-image {
+    width: 100%;
+    animation: growShrink 3s infinite;
+    float: right; /* Coloca la imagen a la derecha */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-item {
+    text-align: center;
+}
+
+.image-item img {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.image-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Estilos para el botón que activa el modal */
+.combo-offer-trigger {
+    cursor: pointer;
+    display: block;
+    margin: 20px auto; /* Auto para centrar horizontalmente */
+    padding: 10px 20px;
+    background: linear-gradient(to right, #008C45, white, #CD2E3A); /* Colores de la bandera italiana en el botón */
+    color: var(--text-black);
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1; /* Asegura que el botón esté por encima del modal de fondo */
+    max-width: 200px; /* Establece un ancho máximo para el botón */
+    width: 100%; /* Hace que el ancho sea relativo al contenedor */
+}
+
+
+/* Estilos para el fondo del modal que se muestra detrás */
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background-beige); /* Color de fondo de la bandera italiana */
+    opacity: 0.8; /* Opacidad para permitir ver lo de atrás */
+    z-index: 0; /* Coloca el fondo detrás del contenido del modal */
+}
+
+/* Estilos para el modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Mostrar el modal cuando el Checkbox está marcado */
+#combo-offer-toggle:checked + .modal {
+    display: flex;
+}
+
+/* Estilos para el contenido dentro del modal */
+.modal-content {
+    position: relative;
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end)); /* Gradiente con colores de la bandera italiana */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 70%; /* Ajustado el ancho para una mejor responsividad */
+    max-width: 500px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: var(--text-black);
+    cursor: pointer;
+}
+
+/* Estilos para el contenido dentro del modal */
+.modal-content h2 {
+    color: var(--text-white); /* Texto en color blanco */
+}
+
+.modal-content p {
+    color: var(--text-white); /* Texto en color blanco */
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-right: 100px;
+}
+
+.menu-imatge {
+     float: right; /* Coloca la imagen a la derecha */
+    margin-left: 20px; /* Ajusta el margen izquierdo para separar la imagen del menú */
+}
+
+.menu-imatge img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Opcional: agrega bordes redondeados a la imagen */
+}
