@@ -168,6 +168,17 @@ h4 {
     width: 70%; /* Adjust the width of the main menu as needed */
 }
 
+.menu1 img{
+
+    float: right;
+    max-width: 30%;
+    margin-right: 100px;
+    border-radius: 10px;
+
+}
+
+
+
 .card {
     background-color: #f4f4f4;
     padding: 20px;
@@ -192,10 +203,7 @@ h3 {
     text-align: center;
 }
 
-img {
-    max-width: 50%;
-    border-radius: 10px;
-}
+
 
 .text-container {
     width: 45%;
@@ -329,19 +337,17 @@ a.button:hover {
 /* Aplica la animación a la imagen */
 div img {
     width: 100%; /* Ajusta el ancho según tus necesidades */
-    animation: growShrink 3s infinite; /* 3 segundos, repetición infinita */
-}
+   }
 
 .image-container img {
     width: 100%;
-    animation: growShrink 3s infinite;
     float: right; /* Coloca la imagen a la derecha */
 }
 
 
 
 
-div img {
+.card__content img {
     width: 100%; /* Ajusta el ancho según tus necesidades */
     animation: growShrink 3s infinite; /* 3 segundos, repetición infinita */
     float: right; /* Coloca la imagen a la derecha */
@@ -350,7 +356,6 @@ div img {
 
 .menu-image {
     width: 100%;
-    animation: growShrink 3s infinite;
     float: right; /* Coloca la imagen a la derecha */
     margin-top: 20px; /* Ajusta el margen superior según sea necesario */
 }
