@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="CONTACT_PAGE.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="CONTACT_PAGE.css">
-</head>
-
-<body>
-    <header>
-        <div class="header-content">
-            <h1>Contact Us</h1>
-            <img class="nav-logo" src="../../Resources/Logo.png" alt="Logo">
-        </div>
-    </header>
-
-
-    <main class="contact-form">
-        <form action="#" method="post">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <div class="button-container">
-                <a href="../MAINPAG.html" class="back">Back</a>
-                <a href="CONTACT_SEND.html" class="back ultra">Send Message</a>
+    <body>
+        <header>
+            <div class="header-content">
+                <h1>Contact Us</h1>
+                <img class="nav-logo" src="../../Resources/Logo.png" alt="Logo">
             </div>
-            
-        </form>
-    </main>
+        </header>
 
-    <footer>
-        <p>&copy; 2023 - 2024 Food4All. All rights reserved.</p>
-    </footer>
-</body>
+        <main class="contact-form">
+            <form name="contact" method="POST" data-netlify="true">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
 
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <div class="button-container">
+                    <a href="../MAINPAG.html" class="back">Back</a>
+                    <button type="submit" class="back ultra">Send Message</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 - 2024 Food4All. All rights reserved.</p>
+        </footer>
+    </body>
 </html>
