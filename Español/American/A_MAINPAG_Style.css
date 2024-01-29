@@ -1,40 +1,40 @@
-/* Definició de variables de color */
+/* Definición de variables de color */
 :root {
-    --color-fons-general: #000;
-    --color-text-general: #fff;
-    --color-link: #fff;
-    --color-link-hover: #0056b3;
-    --color-link-fons: #ff4500;
-    --color-link-fons-hover: #fff;
-    --color-pay: red;
-    --color-ultra-text: black;
-    --color-grid-container: rgba(200, 16, 46, 0.6);
-    --color-grid-item: rgba(200, 16, 47, 0.416);
-    --color-nav-toggle: #272727;
-    --color-grid-item-text: black;
-    --color-footer: #000;
-    --color-modal-fons: #fff;
-    --color-modal-text: #333;
-    --color-modal-overlay: rgba(0, 0, 0, 0.7); 
-    --color-modal-close: #333;
-    --color-modal-trigger: #ff4500;
+    --color-fons-general: #000; /* Color de fondo general */
+    --color-text-general: #fff; /* Color de texto general */
+    --color-link: #fff; /* Color de los enlaces */
+    --color-link-hover: #0056b3; /* Color de los enlaces al pasar el ratón */
+    --color-link-fons: #ff4500; /* Color de fondo de los enlaces */
+    --color-link-fons-hover: #fff; /* Color de fondo de los enlaces al pasar el ratón */
+    --color-pay: red; /* Color de pago */
+    --color-ultra-text: black; /* Color de texto ultra */
+    --color-grid-container: rgba(200, 16, 46, 0.6); /* Color de fondo del contenedor de cuadrícula */
+    --color-grid-item: rgba(200, 16, 47, 0.416); /* Color de fondo de los elementos de la cuadrícula */
+    --color-nav-toggle: #272727; /* Color del botón de alternar navegación */
+    --color-grid-item-text: black; /* Color de texto de los elementos de la cuadrícula */
+    --color-footer: #000; /* Color de fondo del pie de página */
+    --color-modal-fons: #fff; /* Color de fondo del modal */
+    --color-modal-text: #333; /* Color de texto del modal */
+    --color-modal-overlay: rgba(0, 0, 0, 0.7); /* Color de superposición del modal */
+    --color-modal-close: #333; /* Color del botón de cerrar del modal */
+    --color-modal-trigger: #ff4500; /* Color del gatillo del modal */
 }
 
-/* Estil general - La base de la nostra obra mestra! 🎨 */
+/* Estilo general - La base de nuestra obra maestra! 🎨 */
 body {
     font-family: 'Arial', sans-serif;
     font-size: 18px;
     margin: 0;
     padding: 0 0 20px 0;
     text-align: center;
-    background-color: var(--color-fons-general);
-    color: var(--color-text-general);
+    background-color: var(--color-fons-general); /* Color de fondo general */
+    color: var(--color-text-general); /* Color de texto general */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Animació del títol - Balla, títol, balla! 💃 */
+/* Animación del título - ¡Baila, título, baila! 💃 */
 @keyframes pulse {
     0%, 100% {
         transform: scale(1);
@@ -44,7 +44,7 @@ body {
     }
 }
 
-/* Capçalera - La corona de la nostra pàgina! 👑 */
+/* Cabecera - La corona de nuestra página! 👑 */
 header {
     animation: pulse 3s infinite !important;
     margin: 50px;
@@ -56,7 +56,7 @@ header h1 {
     font-weight: bold;
 }
 
-/* Títols de secció - Els herois sense capa! 🦸 */
+/* Títulos de sección - Los héroes sin capa! 🦸 */
 h2 {
     font-size: 26px;
     font-weight: bold;
@@ -64,7 +64,7 @@ h2 {
     padding-bottom: 20px;
 }
 
-/* Navegació - El camí cap a l'aventura! 🧭 */
+/* Navegación - El camino hacia la aventura! 🧭 */
 .nav-logo {
     width: 60px;
     height: auto;
@@ -103,7 +103,7 @@ h2 {
     font-weight: bold;
 }
 
-/* Imatges dels plats - Un festí per a la vista! 🍔 */
+/* Imágenes de los platos - ¡Un festín para la vista! 🍔 */
 .grid-item img {
     width: 100%;
     height: 380px;
@@ -116,7 +116,7 @@ h2 {
     transform: rotate(5deg);
 }
 
-/* Text dels items - Parlem del deliciós! 🗣️ */
+/* Texto de los elementos - ¡Hablemos delicioso! 🗣️ */
 .grid-item-text {
     padding: 10px;
     background-color: var(--color-grid-item-text);
@@ -137,7 +137,7 @@ h2 {
     color: orange;
 }
 
-/* Peu de pàgina - L'epíleg de la nostra història! 📚 */
+/* Pie de página - El epílogo de nuestra historia! 📚 */
 footer {
     background-color: var(--color-footer);
     padding: 20px;
@@ -151,7 +151,7 @@ footer p {
     margin: 0;
 }
 
-/* Estil del disparador del modal - El botó que revela l'oferta especial! 🎉 */
+/* Estilo del disparador del modal - ¡El botón que revela la oferta especial! 🎉 */
 .combo-offer-trigger {
     cursor: pointer;
     display: inline-block;
@@ -163,7 +163,7 @@ footer p {
     text-align: center;
 }
 
-/* Estil bàsic del modal - Un escenari per a la nostra oferta estel·lar! 🌟 */
+/* Estilo básico del modal - ¡Un escenario para nuestra oferta estelar! 🌟 */
 .modal {
     position: fixed;
     top: 0;
@@ -176,7 +176,7 @@ footer p {
     z-index: 1000;
 }
 
-/* Mostra el modal quan el Checkbox està marcat */
+/* Mostrar el modal cuando el Checkbox está marcado */
 #combo-offer-toggle:checked + .modal {
     display: flex;
 }
@@ -196,7 +196,7 @@ footer p {
     padding: 20px;
     border-radius: 5px;
     text-align: center;
-    width: 70%; /* Adjusted width for better responsiveness */
+    width: 70%; /* Ancho ajustado para una mejor respuesta */
     max-width: 500px;
 }
 
@@ -209,7 +209,7 @@ footer p {
     cursor: pointer;
 }
 
-/* Estil per al contingut dins del modal */
+/* Estilo para el contenido dentro del modal */
 .modal-content h2 {
     color: var(--color-modal-text);
 }
@@ -225,7 +225,7 @@ footer p {
     border-radius: 5px;
 }
 
-/* Estil del grid - El tauler del nostre joc! 🎲 */
+/* Estilo del grid - El tablero de nuestro juego! 🎲 */
 .grid-container {
     background-color: var(--color-grid-container);
     border-radius: 10px;
@@ -250,7 +250,7 @@ footer p {
     transform: scale(1.05);
 }
 
-/* Responsivitat - Ballant amb les mides! 📏🕺 */
+/* Responsividad - Bailando con las dimensiones! 📏🕺 */
 @media screen and (min-width: 789px) {
     .nav-toggle {
         background-color: var(--color-nav-toggle);
@@ -272,7 +272,7 @@ footer p {
     }
 }
 
-/* Si aplico aquest media query funciona el mòbl en horitzontal pero no en vertical, i si el tinc en comentàris funciona viceversa...
+/* Si aplico este media query funciona el móvil en horizontal pero no en vertical, y si lo tengo en comentarios funciona viceversa...
 @media screen and (max-height: 500px) {
     .nav-toggle {
         display: block;
@@ -311,6 +311,7 @@ footer p {
     .modal-content img {
         width: 32%;
         height: auto;
+    }
 }
 */
 

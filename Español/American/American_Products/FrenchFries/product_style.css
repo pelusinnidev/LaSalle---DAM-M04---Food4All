@@ -1,86 +1,98 @@
+/* Estilo global de la página, ¡todo empieza aquí! */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Fuente elegante para el cuerpo de la página */
+    background-color: #000; /* Fondo negro como la noche */
+    color: #fff; /* Texto blanco como la nieve */
+    text-align: center; /* Todo centrado, ¡orden en la página! */
+    display: flex; /* Flexbox para la disposición mágica */
+    justify-content: center; /* Justificación centrada, ¡todos en fila! */
+    align-items: center; /* Alineación al centro, ¡nadie se queda atrás! */
+    min-height: 100vh; /* Altura mínima para llenar la pantalla */
+    margin: 0; /* Margen cero, ¡nada de espacio desperdiciado! */
+    padding: 20px; /* Relleno para dar un poco de espacio */
 }
 
+/* Contenedor principal del producto, ¡todo dentro! */
 .product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Opaque red background */
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 800px;
-    width: 100%; /* Adjust to the width of the device */
+    background-color: rgba(200, 16, 46, 0.6); /* Fondo rojo con un toque de misterio */
+    border-radius: 10px; /* Bordes redondeados, ¡nada puntiagudo aquí! */
+    padding: 20px; /* Relleno para el contenido, cómodo y acogedor */
+    max-width: 800px; /* Ancho máximo para que no se desborde */
+    width: 100%; /* Ancho total, ¡ocupa todo el espacio! */
 }
 
+/* Título principal del producto, ¡destacando en grande! */
 .product-container h1 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 28px;
-    font-weight: bold;
+    margin: 20px; /* Margen alrededor, ¡un poco de espacio de respiro! */
+    margin-bottom: 30px; /* Margen inferior extra, ¡impacto máximo! */
+    font-size: 28px; /* Tamaño de fuente grande, ¡llama la atención! */
+    font-weight: bold; /* Texto en negrita, ¡enérgico y valiente! */
 }
 
+/* Título secundario del producto, ¡la información importante! */
 .product-container h2 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: bold;
+    margin: 20px; /* Margen alrededor, ¡orden y espacio! */
+    margin-bottom: 30px; /* Margen inferior extra, ¡destacando! */
+    font-size: 20px; /* Tamaño de fuente más pequeño, ¡pero aún audaz! */
+    font-weight: bold; /* Texto en negrita, ¡no pasa desapercibido! */
 }
 
+/* Contenedor de la imagen o video, ¡una ventana al mundo! */
 .image-container {
-    overflow: hidden; /* Ensures the video doesn't exceed the border-radius */
-    border-radius: 10px; /* Matches the product container */
-    margin-bottom: 20px;
+    overflow: hidden; /* Evita desbordamientos, ¡mantén todo en su lugar! */
+    border-radius: 10px; /* Bordes redondeados, ¡suavidad y elegancia! */
+    margin-bottom: 20px; /* Margen inferior para separación, ¡espacio ordenado! */
 }
 
+/* Video en el contenedor, ¡acción y entretenimiento! */
 .image-container video {
-    width: 100%; /* Video takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for video */
+    width: 100%; /* Ancho completo, ¡no te pierdas nada! */
+    height: auto; /* Altura automática, ¡proporciones perfectas! */
+    border-radius: 10px; /* Bordes redondeados para el video, ¡un marco elegante! */
 }
 
+/* Descripción del producto, ¡las palabras cuentan la historia! */
 .description {
-    text-align: justify;
-    margin: 20px 0;
+    text-align: justify; /* Alineación justificada, ¡todo en orden! */
+    margin: 20px 0; /* Margen arriba y abajo, ¡claro y ordenado! */
 }
 
+/* Lista de ingredientes, ¡los detalles son importantes! */
 .ingredients-list {
-    text-align: left;
-    list-style: inside;
-    margin: 10px 20px;
+    text-align: left; /* Alineación izquierda, ¡listo para la lista! */
+    list-style: inside; /* Estilo de lista, ¡cada detalle cuenta! */
+    margin: 10px 20px; /* Margen interno, ¡separación perfecta! */
 }
 
+/* Contenedor de botones, ¡acción y elección! */
 .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between buttons */
-    margin-top: 20px;
+    display: flex; /* Flexbox para organizar los botones */
+    justify-content: center; /* Justificación centrada, ¡todos en fila! */
+    gap: 20px; /* Espacio entre botones, ¡orden y estilo! */
+    margin-top: 20px; /* Margen superior, ¡espacio para respirar! */
 }
 
+/* Botón de acción principal, ¡haciendo que las cosas sucedan! */
 .action-button {
-    background-color: #333; /* Dark gray */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none; /* Removes underline from links */
+    background-color: #333; /* Fondo gris oscuro, ¡serio y decidido! */
+    color: #fff; /* Texto blanco, ¡resalta en la oscuridad! */
+    border: none; /* Sin bordes, ¡simplicidad elegante! */
+    padding: 10px 20px; /* Relleno para el botón, ¡cómodo de usar! */
+    font-size: 18px; /* Tamaño de fuente, ¡información clara! */
+    cursor: pointer; /* Cursor interactivo, ¡listo para hacer clic! */
+    border-radius: 5px; /* Bordes redondeados, ¡suavidad en acción! */
+    text-align: center; /* Alineación centrada, ¡todo en el centro! */
+    text-decoration: none; /* Sin subrayado en los enlaces, ¡limpio y claro! */
 }
 
+/* Efecto hover del botón, ¡un toque de diversión! */
 .action-button:hover {
-    background-color: #444; /* Slightly lighter gray */
+    background-color: #444; /* Fondo gris un poco más claro, ¡interacción visual! */
 }
 
+/* Estilo ultra especial, ¡destacando en grande! */
 .ultra {
-    background-image: url('../../../../Resources/bkgrd.gif');
-    color: black;
-    font-weight: bold;
+    background-image: url('../../../../Resources/bkgrd.gif'); /* Fondo con estilo, ¡llamativo! */
+    color: black; /* Texto negro sobre el fondo especial, ¡contraste! */
+    font-weight: bold; /* Texto en negrita, ¡importante y audaz! */
 }

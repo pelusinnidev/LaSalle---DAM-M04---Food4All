@@ -1,86 +1,98 @@
+/* Styling for the entire webpage - This is where the hydration happens! */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Using the fancy Arial font, because why not? */
+    background-color: #000; /* Black background - It's like diving into the deep ocean */
+    color: #fff; /* White text color - Like the frothy waves */
+    text-align: center; /* Keeping everything centered like a well-balanced water molecule */
+    display: flex; /* Flexbox for the flow of content */
+    justify-content: center; /* We're all about that centering life */
+    align-items: center; /* Everything aligns, just like water molecules in a glass */
+    min-height: 100vh; /* Aiming for the sky (or 100% viewport height) */
+    margin: 0; /* No margin means no water spillage */
+    padding: 20px; /* A splash of padding for comfort */
 }
 
+/* Styling for the product container - Where the liquid magic resides */
 .product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Opaque red background */
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 800px;
-    width: 100%; /* Adjust to the width of the device */
+    background-color: rgba(200, 16, 46, 0.6); /* Opaque red background - Because water can be dramatic too */
+    border-radius: 10px; /* Rounded corners for added elegance */
+    padding: 20px; /* Padding to keep things comfy for the water */
+    max-width: 800px; /* Keeping it within the confines of a glass */
+    width: 100%; /* Adjusting to the device's width - water adapts */
 }
 
+/* Styling for the product container's title - It's all about the purity */
 .product-container h1 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 28px;
-    font-weight: bold;
+    margin: 20px; /* Margin for some breathing room */
+    margin-bottom: 30px; /* Even more space at the bottom for emphasis */
+    font-size: 28px; /* Big and bold, just like the ocean */
+    font-weight: bold; /* Because water deserves attention */
 }
 
+/* Styling for the product container's subtitle - A sip of luxury */
 .product-container h2 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: bold;
+    margin: 20px; /* Margin for more breathing room */
+    margin-bottom: 30px; /* Even more space at the bottom for added intrigue */
+    font-size: 20px; /* Slightly smaller, but still bold */
+    font-weight: bold; /* Because the details matter */
 }
 
+/* Styling for the image container - Where the liquid visuals flow */
 .image-container {
-    overflow: hidden; /* Ensures the video doesn't exceed the border-radius */
-    border-radius: 10px; /* Matches the product container */
-    margin-bottom: 20px;
+    overflow: hidden; /* Hiding anything that tries to splash out */
+    border-radius: 10px; /* Matching the product container's style */
+    margin-bottom: 20px; /* Some space to breathe below */
 }
 
+/* Styling for videos within the image container - The liquid motion */
 .image-container video {
-    width: 100%; /* Video takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for video */
+    width: 100%; /* Videos taking up the whole stage */
+    height: auto; /* Maintaining their aspect ratio - no stretching allowed */
+    border-radius: 10px; /* Rounded corners for cinematic flair */
 }
 
+/* Styling for the product description - The water story */
 .description {
-    text-align: justify;
-    margin: 20px 0;
+    text-align: justify; /* Justifying text for a polished look */
+    margin: 20px 0; /* Margin to create some distance */
 }
 
+/* Styling for the ingredients list - A recipe for hydration */
 .ingredients-list {
-    text-align: left;
-    list-style: inside;
-    margin: 10px 20px;
+    text-align: left; /* Aligning to the left - ingredients like their own space */
+    list-style: inside; /* List items have an inside marker */
+    margin: 10px 20px; /* Margins for list items - not too close, not too far */
 }
 
+/* Styling for the button container - Where the liquid buttons wait */
 .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between buttons */
-    margin-top: 20px;
+    display: flex; /* Flexbox for button alignment */
+    justify-content: center; /* Centering those buttons like a well-balanced glass */
+    gap: 20px; /* Spacing between buttons - they need personal space too */
+    margin-top: 20px; /* A little margin to lift them up */
 }
 
+/* Styling for action buttons - The buttons that make orders flow */
 .action-button {
-    background-color: #333; /* Dark gray */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none; /* Removes underline from links */
+    background-color: #333; /* Dark gray background - Serious business! */
+    color: #fff; /* White text - It stands out like a drop in the desert */
+    border: none; /* No borders, because water knows no boundaries */
+    padding: 10px 20px; /* Padding for comfort during button clicks */
+    font-size: 18px; /* A decent font size - not too big, not too small */
+    cursor: pointer; /* A pointing hand for clickable delight */
+    border-radius: 5px; /* Slightly rounded edges for a touch of elegance */
+    text-align: center; /* Text centered in the button like a well-crafted ice cube */
+    text-decoration: none; /* No underlines - these buttons are confident */
 }
 
+/* Styling for action buttons on hover - When things get even more refreshing */
 .action-button:hover {
-    background-color: #444; /* Slightly lighter gray */
+    background-color: #444; /* Slightly lighter gray background - Hovering is fun! */
 }
 
+/* Ultra styling for special occasions - Because sometimes, we go all out! */
 .ultra {
-    background-image: url('../../../../Resources/bkgrd.gif');  
-    color: black;
-    font-weight: bold;
+    background-image: url('../../../../Resources/bkgrd.gif'); /* A background image for pure spectacle */
+    color: black; /* Contrasting text for visibility */
+    font-weight: bold; /* Because 'ultra' means serious business */
 }

@@ -1,23 +1,23 @@
 /* Definició de variables de color */
 :root {
-    --color-fons-general: #000;
-    --color-text-general: #fff;
-    --color-link: #fff;
-    --color-link-hover: #0056b3;
-    --color-link-fons: #ff4500;
-    --color-link-fons-hover: #fff;
-    --color-pay: red;
-    --color-ultra-text: black;
-    --color-grid-container: rgba(200, 16, 46, 0.6);
-    --color-grid-item: rgba(200, 16, 47, 0.416);
-    --color-nav-toggle: #272727;
-    --color-grid-item-text: black;
-    --color-footer: #000;
-    --color-modal-fons: #fff;
-    --color-modal-text: #333;
-    --color-modal-overlay: rgba(0, 0, 0, 0.7); 
-    --color-modal-close: #333;
-    --color-modal-trigger: #ff4500;
+    --color-fons-general: #000; /* Fons general - Tan fosc com la nit! 🌌 */
+    --color-text-general: #fff; /* Text general - Tan blanc com la neu! ☃️ */
+    --color-link: #fff; /* Enllaços - Com estrelles a la nit! ✨ */
+    --color-link-hover: #0056b3; /* Enllaços al passar per sobre - Un toc de blau! 🌀 */
+    --color-link-fons: #ff4500; /* Fons d'enllaços - Com una flama ardenta! 🔥 */
+    --color-link-fons-hover: #fff; /* Fons d'enllaços al passar per sobre - Blau i brillant! 💙✨ */
+    --color-pay: red; /* Color especial per al pagament - Com una senyal d'alarma! 🚨 */
+    --color-ultra-text: black; /* Text ultra - Profunditat tenebrosa! 🕳️ */
+    --color-grid-container: rgba(200, 16, 46, 0.6); /* Fons del tauler - Un toc de transparència! 🌆 */
+    --color-grid-item: rgba(200, 16, 47, 0.416); /* Fons dels elements del tauler - Encara més transparència! 🌆 */
+    --color-nav-toggle: #272727; /* Color del botó de navegació - Com l'ombra de la nit! 🌚 */
+    --color-grid-item-text: black; /* Text dels elements del tauler - Tan fosc com la nit! 🌃 */
+    --color-footer: #000; /* Peu de pàgina - Com el fons de la foscor! 🌑 */
+    --color-modal-fons: #fff; /* Fons del modal - Com una llibreta en blanc! 📔 */
+    --color-modal-text: #333; /* Text del modal - Tan fosc com l'atzar! 🎲 */
+    --color-modal-overlay: rgba(0, 0, 0, 0.7); /* Capa de superposició del modal - Una mica de misteri! 🌟 */
+    --color-modal-close: #333; /* Color de tancar el modal - Misteriós i elegant! 🚪 */
+    --color-modal-trigger: #ff4500; /* Color del disparador del modal - Com una emergència! 🚑 */
 }
 
 /* Estil general - La base de la nostra obra mestra! 🎨 */
@@ -196,7 +196,7 @@ footer p {
     padding: 20px;
     border-radius: 5px;
     text-align: center;
-    width: 70%; /* Adjusted width for better responsiveness */
+    width: 70%; /* Amplada ajustada per a millor responsivitat */
     max-width: 500px;
 }
 
@@ -251,6 +251,8 @@ footer p {
 }
 
 /* Responsivitat - Ballant amb les mides! 📏🕺 */
+
+/* Estil per a resolucions mitjanes (789px o més ampla) */
 @media screen and (min-width: 789px) {
     .nav-toggle {
         background-color: var(--color-nav-toggle);
@@ -272,48 +274,7 @@ footer p {
     }
 }
 
-/* Si aplico aquest media query funciona el mòbl en horitzontal pero no en vertical, i si el tinc en comentàris funciona viceversa...
-@media screen and (max-height: 500px) {
-    .nav-toggle {
-        display: block;
-        background-color: var(--color-nav-toggle);
-        width: 100%;
-        color: var(--color-text-general);
-        padding: 10px 20px;
-        border: none;
-        font-size: 20px;
-        cursor: pointer;
-    }
-
-    .navbar {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--color-nav-toggle);
-    }
-
-    .nav-link {
-        background-color: var(--color-fons-general);
-        padding: 8px;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    .modal {
-        align-self: center;
-        margin-top: 15%;
-        width: 50%;
-        height: 50%;
-    }
-
-    .modal-content img {
-        width: 32%;
-        height: auto;
-}
-*/
-
+/* Estil per a resolucions petites (menys de 789px d'amplada) */
 @media screen and (max-width: 768px) {
     .nav-toggle {
         display: block;
@@ -355,6 +316,7 @@ footer p {
         font-size: 20px;
     }
 
+    /* Animació de pulsió adaptada a resolucions petites */
     @keyframes pulse {
         0%, 100% {
           transform: scale(1);
@@ -365,6 +327,7 @@ footer p {
     }
 }
 
+/* Estil per a resolucions molt petites (menys de 480px d'amplada) */
 @media screen and (max-width: 480px) {
     .nav-toggle {
         display: block;
@@ -406,6 +369,7 @@ footer p {
         font-size: 20px;
     }
 
+    /* Animació de pulsió adaptada a resolucions molt petites */
     @keyframes pulse {
         0%, 100% {
           transform: scale(1);
