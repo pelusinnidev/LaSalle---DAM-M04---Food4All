@@ -498,8 +498,21 @@ body {
         visibility: hidden;
 }
 
-
+/* Mobile Versions */
 @media screen and (max-width: 480px) {
+
+    /* Compact Navigation Bar */
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--background-bisque);
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
     .nav-toggle {
         display: block;
         background-color: var(--background-bisque);
@@ -510,17 +523,11 @@ body {
         font-size: 20px;
         cursor: pointer;
     }
-   
 
-    .navbar {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--background-bisque);
-    }
-
+    /* Adjust Nav Links for Touch Interaction */
     .nav-link {
         background-color: var(--text-gray);
+        padding: 12px 20px; /* Increase padding for easier touch */
     }
 
     .nav-link:hover {
@@ -528,8 +535,27 @@ body {
         color: var(--text-light);
     }
 
-    .navbar.active {
-        display: flex;
+    /* Responsive Image Layout */
+    .image-container {
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid for smaller screen */
     }
-}
 
+    /* Font and Text Adjustments */
+    header, .content, .menu h1, .card__content h3, h4, h5, p {
+        font-size: smaller; /* Adjust font size for smaller screens */
+    }
+
+    /* Button and Link Adjustments */
+    a.button {
+        padding: 10px 15px; /* Increase padding for easier touch */
+        font-size: larger; /* Increase font size for visibility */
+    }
+
+    /* Adjust Layout and Padding */
+    .card__content, .menu-item, .sub-menu-item {
+        padding: 10px; /* Adjust padding for space efficiency */
+        margin: 10px 0; /* Adjust margins for compact layout */
+    }
+
+    /* Additional adjustments as needed... */
+}
