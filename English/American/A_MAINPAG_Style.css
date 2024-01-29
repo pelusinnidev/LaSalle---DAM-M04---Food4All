@@ -251,126 +251,44 @@ footer p {
     transform: scale(1.05);
 }
 
-/* Responsiveness - Dancing with dimensions! 📏🕺 */
+/* Large Screens - Desktops */
 @media screen and (min-width: 789px) {
     .nav-toggle {
-        background-color: var(--color-nav-toggle);
-        color: var(--color-nav-toggle);
-        border-color: var(--color-nav-toggle);
-        border-width: 0px;
         visibility: hidden;
     }
 
-    .modal {
-        align-self: center;
-        width: 50%;
-        height: 50%;
-    }
-
-    .modal-content {
-        width: 50%;
-        height: 50%;
-    }
-}
-
-/* If I apply this media query, it works for horizontal mobile but not for vertical, and if I have it in comments, it works vice versa...
-@media screen and (max-height: 500px) {
-    .nav-toggle {
-        display: block;
-        background-color: var(--color-nav-toggle);
-        width: 100%;
-        color: var(--color-text-general);
-        padding: 10px 20px;
-        border: none;
-        font-size: 20px;
-        cursor: pointer;
-    }
-
     .navbar {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--color-nav-toggle);
-    }
-
-    .nav-link {
-        background-color: var(--color-fons-general);
-        padding: 8px;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    .modal {
-        align-self: center;
-        margin-top: 15%;
-        width: 50%;
-        height: 50%;
-    }
-
-    .modal-content img {
-        width: 32%;
-        height: auto;
+        /* Your existing styles for desktop navigation */
     }
 }
 
+/* Medium Screens - Tablets */
 @media screen and (max-width: 768px) {
     .nav-toggle {
-        display: block;
-        background-color: var(--color-nav-toggle);
-        width: 100%;
-        color: var(--color-text-general);
-        padding: 10px 20px;
-        border: none;
-        font-size: 20px;
-        cursor: pointer;
+        /* Styles for nav-toggle on tablets */
     }
 
     .navbar {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--color-nav-toggle);
-    }
-
-    .nav-link {
-        background-color: var(--color-fons-general);
-        padding: 8px;
-    }
-
-    .navbar.active {
-        display: flex;
+        /* Adjusted styles for navbar on tablets */
     }
 
     .grid-container {
-        grid-template-columns: 2fr;
-    }
-
-    .modal {
-        align-self: center;
-        width: 100%;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        padding: 10px;
     }
 
     header h1, h2 {
-        font-size: 20px;
-    }
-
-    @keyframes pulse {
-        0%, 100% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.25);
-        }
+        font-size: 24px; /* Adjusted font size for readability */
     }
 }
 
+/* Small Screens - Mobile Devices */
 @media screen and (max-width: 480px) {
     .nav-toggle {
         display: block;
-        background-color: #272727;
-        color: white;
+        background-color: var(--color-nav-toggle);
+        width: 100%;
+        color: var(--color-text-general);
         padding: 10px 20px;
         border: none;
         font-size: 20px;
@@ -381,38 +299,30 @@ footer p {
         display: none;
         flex-direction: column;
         align-items: center;
-        background-color: #272727;
-    }
-
-    .navbar.active {
-        display: flex;
+        background-color: var(--color-nav-toggle);
     }
 
     .nav-link {
         display: block;
         margin: 5px;
-        background-color: black;
+        background-color: var(--color-link-fons);
+        padding: 8px;
+        color: var(--color-text-general);
+    }
+
+    .navbar.active {
+        display: flex;
     }
 
     .grid-container {
-        grid-template-columns: 1fr;
-    }
-
-    .modal {
-        align-self: center;
-        width: 100%;
+        grid-template-columns: 1fr; /* Single column layout for mobile */
     }
 
     header h1, h2 {
-        font-size: 20px;
+        font-size: 20px; /* Adjusted font size for mobile screens */
     }
 
-    @keyframes pulse {
-        0%, 100% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.25);
-        }
+    .modal-content, .modal {
+        width: 90%; /* Modal width adjusted for mobile screens */
     }
 }

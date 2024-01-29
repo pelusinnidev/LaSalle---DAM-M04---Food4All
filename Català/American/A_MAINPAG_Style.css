@@ -250,32 +250,41 @@ footer p {
     transform: scale(1.05);
 }
 
-/* Responsivitat - Ballant amb les mides! 📏🕺 */
+/* Consultes de mitjans millorades per al disseny responsive */
 
-/* Estil per a resolucions mitjanes (789px o més ampla) */
+/* Pantalles Grans - Ordinadors */
 @media screen and (min-width: 789px) {
     .nav-toggle {
-        background-color: var(--color-nav-toggle);
-        color: var(--color-nav-toggle);
-        border-color: var(--color-nav-toggle);
-        border-width: 0px;
         visibility: hidden;
     }
 
-    .modal {
-        align-self: center;
-        width: 50%;
-        height: 50%;
-    }
-
-    .modal-content {
-        width: 50%;
-        height: 50%;
+    .navbar {
+        /* Els teus estils existents per a la navegació d'escriptori */
     }
 }
 
-/* Estil per a resolucions petites (menys de 789px d'amplada) */
+/* Pantalles Mitjanes - Tauletes */
 @media screen and (max-width: 768px) {
+    .nav-toggle {
+        /* Estils per a nav-toggle en tauletes */
+    }
+
+    .navbar {
+        /* Estils ajustats per a navbar en tauletes */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnes per a tauletes */
+        padding: 10px;
+    }
+
+    header h1, h2 {
+        font-size: 24px; /* Mida de lletra ajustada per a llegibilitat */
+    }
+}
+
+/* Pantalles Petites - Dispositius Mòbils */
+@media screen and (max-width: 480px) {
     .nav-toggle {
         display: block;
         background-color: var(--color-nav-toggle);
@@ -295,87 +304,26 @@ footer p {
     }
 
     .nav-link {
-        background-color: var(--color-fons-general);
-        padding: 8px;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    .grid-container {
-        grid-template-columns: 2fr;
-    }
-
-    .modal {
-        align-self: center;
-        width: 100%;
-    }
-
-    header h1, h2 {
-        font-size: 20px;
-    }
-
-    /* Animació de pulsió adaptada a resolucions petites */
-    @keyframes pulse {
-        0%, 100% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.25);
-        }
-    }
-}
-
-/* Estil per a resolucions molt petites (menys de 480px d'amplada) */
-@media screen and (max-width: 480px) {
-    .nav-toggle {
-        display: block;
-        background-color: #272727;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        font-size: 20px;
-        cursor: pointer;
-    }
-
-    .navbar {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: #272727;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    .nav-link {
         display: block;
         margin: 5px;
-        background-color: black;
+        background-color: var(--color-link-fons);
+        padding: 8px;
+        color: var(--color-text-general);
+    }
+
+    .navbar.active {
+        display: flex;
     }
 
     .grid-container {
-        grid-template-columns: 1fr;
-    }
-
-    .modal {
-        align-self: center;
-        width: 100%;
+        grid-template-columns: 1fr; /* Disseny de columna única per a mòbils */
     }
 
     header h1, h2 {
-        font-size: 20px;
+        font-size: 20px; /* Mida de lletra ajustada per a pantalles mòbils */
     }
 
-    /* Animació de pulsió adaptada a resolucions molt petites */
-    @keyframes pulse {
-        0%, 100% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.25);
-        }
+    .modal-content, .modal {
+        width: 90%; /* Amplada del modal ajustada per a pantalles mòbils */
     }
 }
