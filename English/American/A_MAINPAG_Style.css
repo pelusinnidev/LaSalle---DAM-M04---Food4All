@@ -323,6 +323,6 @@ footer p {
     }
 
     .modal-content, .modal {
-        width: 90%; /* Modal width adjusted for mobile screens */
+        width: 100%; /* Modal width adjusted for mobile screens */
     }
 }
