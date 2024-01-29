@@ -1,86 +1,98 @@
+/* Styling for the entire webpage - This is where the magic happens! */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Using the fancy Arial font, because why not? */
+    background-color: #000; /* Black background - It's like the void of space, but on your screen */
+    color: #fff; /* White text color - To keep it visible on the dark background */
+    text-align: center; /* Making sure everything is perfectly centered */
+    display: flex; /* Flexbox for the win! */
+    justify-content: center; /* We're all about that centering life */
+    align-items: center; /* Even the items are aligning themselves! */
+    min-height: 100vh; /* Aiming for the sky (or 100% viewport height) */
+    margin: 0; /* No margin means no wasted space */
+    padding: 20px; /* Just a touch of padding for a cozy feel */
 }
 
+/* Styling for the product container - Where the magic products reside */
 .product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Opaque red background */
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 800px;
-    width: 100%; /* Adjust to the width of the device */
+    background-color: rgba(200, 16, 46, 0.6); /* Opaque red background - Because products are red hot */
+    border-radius: 10px; /* Rounded corners for added elegance */
+    padding: 20px; /* Padding to keep things comfy for the products */
+    max-width: 800px; /* Products like to stay in line */
+    width: 100%; /* Adjusting to the device's width - products are adaptable */
 }
 
+/* Styling for the product container's title - It's all about the name */
 .product-container h1 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 28px;
-    font-weight: bold;
+    margin: 20px; /* Margin for some breathing room */
+    margin-bottom: 30px; /* Even more space at the bottom for emphasis */
+    font-size: 28px; /* Big and bold, just like the products */
+    font-weight: bold; /* Because products demand attention */
 }
 
+/* Styling for the product container's subtitle - A sneak peek of the goods */
 .product-container h2 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: bold;
+    margin: 20px; /* Margin for more breathing room */
+    margin-bottom: 30px; /* Even more space at the bottom for added intrigue */
+    font-size: 20px; /* Slightly smaller, but still bold */
+    font-weight: bold; /* Because the details matter */
 }
 
+/* Styling for the image container - Where the visuals come alive */
 .image-container {
-    overflow: hidden; /* Ensures the video doesn't exceed the border-radius */
-    border-radius: 10px; /* Matches the product container */
-    margin-bottom: 20px;
+    overflow: hidden; /* Hiding anything that tries to escape */
+    border-radius: 10px; /* Matching the product container's style */
+    margin-bottom: 20px; /* Some space to breathe below */
 }
 
+/* Styling for videos within the image container - The moving pictures */
 .image-container video {
-    width: 100%; /* Video takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for video */
+    width: 100%; /* Videos taking up the whole stage */
+    height: auto; /* Maintaining their aspect ratio - no stretching allowed */
+    border-radius: 10px; /* Rounded corners for cinematic flair */
 }
 
+/* Styling for the product description - The story behind the products */
 .description {
-    text-align: justify;
-    margin: 20px 0;
+    text-align: justify; /* Justifying text for a polished look */
+    margin: 20px 0; /* Margin to create some distance */
 }
 
+/* Styling for the ingredients list - A recipe for success */
 .ingredients-list {
-    text-align: left;
-    list-style: inside;
-    margin: 10px 20px;
+    text-align: left; /* Aligning to the left - ingredients like their own space */
+    list-style: inside; /* List items have an inside marker */
+    margin: 10px 20px; /* Margins for list items - not too close, not too far */
 }
 
+/* Styling for the button container - Where the magic buttons wait */
 .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between buttons */
-    margin-top: 20px;
+    display: flex; /* Flexbox for button alignment */
+    justify-content: center; /* Centering those buttons */
+    gap: 20px; /* Spacing between buttons - they need personal space too */
+    margin-top: 20px; /* A little margin to lift them up */
 }
 
+/* Styling for action buttons - The buttons that make things happen */
 .action-button {
-    background-color: #333; /* Dark gray */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none; /* Removes underline from links */
+    background-color: #333; /* Dark gray background - Serious business! */
+    color: #fff; /* White text - It stands out */
+    border: none; /* No borders, because who needs boundaries? */
+    padding: 10px 20px; /* Padding for comfort during button clicks */
+    font-size: 18px; /* A decent font size - not too big, not too small */
+    cursor: pointer; /* A pointing hand for clickable delight */
+    border-radius: 5px; /* Slightly rounded edges for a touch of elegance */
+    text-align: center; /* Text centered in the button */
+    text-decoration: none; /* No underlines - these buttons are confident */
 }
 
+/* Styling for action buttons on hover - When things get even more exciting */
 .action-button:hover {
-    background-color: #444; /* Slightly lighter gray */
+    background-color: #444; /* Slightly lighter gray background - Hovering is fun! */
 }
 
+/* Ultra styling for special occasions - Because sometimes, we go all out! */
 .ultra {
-    background-image: url('../../../../Resources/bkgrd.gif'); 
-    color: black;
-    font-weight: bold;
+    background-image: url('../../../../Resources/bkgrd.gif'); /* A background image for pure spectacle */
+    color: black; /* Contrasting text for visibility */
+    font-weight: bold; /* Because 'ultra' means serious business */
 }

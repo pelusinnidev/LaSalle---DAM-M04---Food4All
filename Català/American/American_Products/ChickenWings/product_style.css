@@ -1,86 +1,86 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Font del text principal - Arial, sans-serif! */
+    background-color: #000; /* Color de fons negre - Com l'espai exterior! 🌌 */
+    color: #fff; /* Color del text blanc - Com la neu impoluta! ☃️ */
+    text-align: center; /* Text centrat - L'ordre és important! 🎯 */
+    display: flex; /* Flexbox - Flexibilitat total! 🤸 */
+    justify-content: center; /* Justificació al centre - Per a la simetria! 🎯 */
+    align-items: center; /* Alineació al centre - Per a la harmonia! 🎯 */
+    min-height: 100vh; /* Alçada mínima de la vista - No hi ha límits! 🚀 */
+    margin: 0; /* Cap marge - Ni un pixel de més! 🚫 */
+    padding: 20px; /* Espaiat intern - Comoditat afegida! 🧘 */
 }
 
 .product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Opaque red background */
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 800px;
-    width: 100%; /* Adjust to the width of the device */
+    background-color: rgba(200, 16, 46, 0.6); /* Fons vermell opac - Com un vi bo! 🍷 */
+    border-radius: 10px; /* Cantons arrodonits - Amable i elegant! 🎩 */
+    padding: 20px; /* Espaiat intern - Espai per a la delícia! 🍰 */
+    max-width: 800px; /* Ample màxim - Optimitza l'experiència! 📏 */
+    width: 100%; /* Amplada total - S'adapta a tots els dispositius! 📱 */
 }
 
 .product-container h1 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 28px;
-    font-weight: bold;
+    margin: 20px; /* Marge exterior - Espai per a la grandesa! 🧘 */
+    margin-bottom: 30px; /* Marge inferior - Espai per a la grandesa! 🧘 */
+    font-size: 28px; /* Mida del text - Majestuós! 📏 */
+    font-weight: bold; /* Pes del text - Sòlid com una roca! 💪 */
 }
 
 .product-container h2 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: bold;
+    margin: 20px; /* Marge exterior - Espai per a la grandesa! 🧘 */
+    margin-bottom: 30px; /* Marge inferior - Espai per a la grandesa! 🧘 */
+    font-size: 20px; /* Mida del text - Elegant! 📏 */
+    font-weight: bold; /* Pes del text - Sòlid com una roca! 💪 */
 }
 
 .image-container {
-    overflow: hidden; /* Ensures the video doesn't exceed the border-radius */
-    border-radius: 10px; /* Matches the product container */
-    margin-bottom: 20px;
+    overflow: hidden; /* Desbordament ocult - Control perfecte! 👀 */
+    border-radius: 10px; /* Cantons arrodonits - Un toc de classe! 🎩 */
+    margin-bottom: 20px; /* Marge inferior - Espai per a la grandesa! 🧘 */
 }
 
 .image-container video {
-    width: 100%; /* Video takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for video */
+    width: 100%; /* Amplada total - Sense pèrdua de detall! 📏 */
+    height: auto; /* Alçada automàtica - Manté l'aspecte! 📐 */
+    border-radius: 10px; /* Cantons arrodonits - Un toc de suavitat! 🎩 */
 }
 
 .description {
-    text-align: justify;
-    margin: 20px 0;
+    text-align: justify; /* Text justificat - Llegibilitat superior! 📜 */
+    margin: 20px 0; /* Marge superior i inferior - Espai per a la llegenda! 📜 */
 }
 
 .ingredients-list {
-    text-align: left;
-    list-style: inside;
-    margin: 10px 20px;
+    text-align: left; /* Text a l'esquerra - Llista ordenada! 📃 */
+    list-style: inside; /* Estil de la llista - Dins del text! 📃 */
+    margin: 10px 20px; /* Marge superior i inferior - Espai per als ingredients! 🍳 */
 }
 
 .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between buttons */
-    margin-top: 20px;
+    display: flex; /* Flexbox - Flexibilitat total! 🤸 */
+    justify-content: center; /* Justificació al centre - Per a la cohesió! 🎯 */
+    gap: 20px; /* Espai entre botons - Per a l'accessibilitat! 🛤️ */
+    margin-top: 20px; /* Marge superior - Cap a la victòria! 🏆 */
 }
 
 .action-button {
-    background-color: #333; /* Dark gray */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none; /* Removes underline from links */
+    background-color: #333; /* Gris fosc - Un toc d'elegància! 🎩 */
+    color: #fff; /* Text blanc - Com l'espuma de les ones! 🌊 */
+    border: none; /* Cap vora - Neteja i simplicitat! 🚿 */
+    padding: 10px 20px; /* Espaiat interior - Comoditat afegida! 🧘 */
+    font-size: 18px; /* Mida del text - Perfectament llegible! 📏 */
+    cursor: pointer; /* Cursor apuntador - Acció imminent! 👆 */
+    border-radius: 5px; /* Cantons arrodonits - Amable i acollidor! 🤗 */
+    text-align: center; /* Text centrat - L'ordre és important! 🎯 */
+    text-decoration: none; /* Sense subratllat - La simplicitat és clau! 🗝️ */
 }
 
 .action-button:hover {
-    background-color: #444; /* Slightly lighter gray */
+    background-color: #444; /* Gris lleugerament més clar - Un toc de dinamisme! ⚡ */
 }
 
 .ultra {
-    background-image: url('../../../../Resources/bkgrd.gif'); 
-    color: black;
-    font-weight: bold;
+    background-image: url('../../../../Resources/bkgrd.gif'); /* Imatge de fons - Un toc d'animació! 🌟 */
+    color: black; /* Text negre - Contraste impecable! ⚫ */
+    font-weight: bold; /* Pes del text - Destaca! 💪 */
 }

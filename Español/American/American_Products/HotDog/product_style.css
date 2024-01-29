@@ -1,86 +1,100 @@
+/* STILOS CON SWING */
+
+/* El cuerpo de toda la fiesta */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
+    font-family: 'Arial', sans-serif; /* El texto de la fiesta, sin chistes de Comic Sans */
+    background-color: #000; /* Fondo de fiesta - ¡Todo en negro! */
+    color: #fff; /* Color del texto - Blanco, para que destaque */
+    text-align: center; /* Todos en fila, alineados en el centro */
+    display: flex; /* Modo fiesta: flex */
+    justify-content: center; /* El centro de atención */
+    align-items: center; /* Todos en la pista de baile */
+    min-height: 100vh; /* Altura mínima para la máxima diversión */
+    margin: 0; /* Margen cero para una fiesta apretada */
+    padding: 20px; /* Un toque de comodidad para todos */
 }
 
+/* El contenedor principal donde ocurre la magia */
 .product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Opaque red background */
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 800px;
-    width: 100%; /* Adjust to the width of the device */
+    background-color: rgba(200, 16, 46, 0.6); /* Fondo de fiesta con una capa roja translúcida */
+    border-radius: 10px; /* Con bordes redondeados, ¡como un pastel! */
+    padding: 20px; /* Añadiendo un poco de sabor al contenido */
+    max-width: 800px; /* No te pases de la raya, máximo 800px */
+    width: 100%; /* Ajustándose al ritmo del dispositivo */
 }
 
+/* El título principal, la estrella del show */
 .product-container h1 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 28px;
-    font-weight: bold;
+    margin: 20px; /* Un poco de espacio para respirar */
+    margin-bottom: 30px; /* Pero no demasiado, ¡la fiesta continúa! */
+    font-size: 28px; /* Un tamaño de fuente con actitud */
+    font-weight: bold; /* ¡Este título tiene presencia! */
 }
 
+/* Los subtítulos, apoyando al protagonista */
 .product-container h2 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: bold;
+    margin: 20px; /* Más espacio para todos */
+    margin-bottom: 30px; /* Porque cada sección merece su momento de fama */
+    font-size: 20px; /* Tamaño de fuente con un toque de elegancia */
+    font-weight: bold; /* Un toque de peso, para mantenerlo en el suelo */
 }
 
+/* La zona donde la magia visual se reproduce */
 .image-container {
-    overflow: hidden; /* Ensures the video doesn't exceed the border-radius */
-    border-radius: 10px; /* Matches the product container */
-    margin-bottom: 20px;
+    overflow: hidden; /* Para que nada se desborde de la pantalla */
+    border-radius: 10px; /* Borde redondeado, como un escenario elegante */
+    margin-bottom: 20px; /* Haciendo espacio para la próxima acto */
 }
 
+/* El video, ¡un actor en su mejor momento! */
 .image-container video {
-    width: 100%; /* Video takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for video */
+    width: 100%; /* Ocupando todo el escenario */
+    height: auto; /* Manteniendo la proporción, ¡nadie quiere verse aplastado! */
+    border-radius: 10px; /* Un actor con bordes suaves */
 }
 
+/* La descripción, un discurso emocionante */
 .description {
-    text-align: justify;
-    margin: 20px 0;
+    text-align: justify; /* Todos los párrafos están en sincronía */
+    margin: 20px 0; /* Espacio arriba y abajo, para dar aire al discurso */
 }
 
+/* La lista de ingredientes, ¡la lista de invitados! */
 .ingredients-list {
-    text-align: left;
-    list-style: inside;
-    margin: 10px 20px;
+    text-align: left; /* Un toque de diversidad en la alineación */
+    list-style: inside; /* Todos dentro de la fiesta, ¡listos para la diversión! */
+    margin: 10px 20px; /* Espacio en el backstage */
 }
 
+/* El área de botones, ¡donde se toma acción! */
 .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between buttons */
-    margin-top: 20px;
+    display: flex; /* Un equipo bien coordinado */
+    justify-content: center; /* Todos enfocados en el centro del escenario */
+    gap: 20px; /* Espacio entre actos para hacer espacio para los aplausos */
+    margin-top: 20px; /* Espacio para la llegada estelar */
 }
 
+/* Los botones de acción, listos para moverse */
 .action-button {
-    background-color: #333; /* Dark gray */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none; /* Removes underline from links */
+    background-color: #333; /* Un toque de misterio en el botón */
+    color: #fff; /* Texto en blanco para que todos lo vean */
+    border: none; /* Sin fronteras, ¡todos son bienvenidos! */
+    padding: 10px 20px; /* Comodidad para hacer clic con estilo */
+    font-size: 18px; /* Un tamaño de fuente que todos puedan leer */
+    cursor: pointer; /* Un cursor listo para la acción */
+    border-radius: 5px; /* Con bordes suaves, ¡nadie se lastima! */
+    text-align: center; /* Todos alineados y listos para la coreografía */
+    text-decoration: none; /* Sin adornos innecesarios, ¡estamos en la pista de baile! */
 }
 
+/* Cuando el botón se ilumina, la multitud aplaude */
 .action-button:hover {
-    background-color: #444; /* Slightly lighter gray */
+    background-color: #444; /* Un toque más brillante, como una ovación de pie */
 }
 
+/* El ultra fondo, ¡donde las luces se apagan! */
 .ultra {
-    background-image: url('../../../../Resources/bkgrd.gif');
-    color: black;
-    font-weight: bold;
+    background-image: url('../../../../Resources/bkgrd.gif'); /* El telón de fondo animado */
+    color: black; /* Texto en negro, para el misterio */
+    font-weight: bold; /* Con un toque de autoridad, ¡como un director de escena! */
 }

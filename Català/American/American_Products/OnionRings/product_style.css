@@ -1,7 +1,8 @@
+/* Estil del cos de la pàgina */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
+    background-color: #000; /* Fons negre */
+    color: #fff; /* Color del text blanc */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -11,14 +12,16 @@ body {
     padding: 20px;
 }
 
+/* Estil del contenidor del producte */
 .product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Opaque red background */
+    background-color: rgba(200, 16, 46, 0.6); /* Fons vermell opac */
     border-radius: 10px;
     padding: 20px;
     max-width: 800px;
-    width: 100%; /* Adjust to the width of the device */
+    width: 100%; /* S'ajusta a l'amplada del dispositiu */
 }
 
+/* Estil del títol principal */
 .product-container h1 {
     margin: 20px;
     margin-bottom: 30px;
@@ -26,6 +29,7 @@ body {
     font-weight: bold;
 }
 
+/* Estil del subtítol */
 .product-container h2 {
     margin: 20px;
     margin-bottom: 30px;
@@ -33,38 +37,44 @@ body {
     font-weight: bold;
 }
 
+/* Estil del contenidor de la imatge o vídeo */
 .image-container {
-    overflow: hidden; /* Ensures the video doesn't exceed the border-radius */
-    border-radius: 10px; /* Matches the product container */
+    overflow: hidden; /* Evita que el vídeo excedeixi el radi de la capa */
+    border-radius: 10px; /* Coincideix amb el radi del contenidor del producte */
     margin-bottom: 20px;
 }
 
+/* Estil del vídeo */
 .image-container video {
-    width: 100%; /* Video takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for video */
+    width: 100%; /* El vídeo ocupa tot l'ample del seu contenidor */
+    height: auto; /* Manté la relació d'aspecte */
+    border-radius: 10px; /* Cantons arrodonits per al vídeo */
 }
 
+/* Estil de la descripció del producte */
 .description {
     text-align: justify;
     margin: 20px 0;
 }
 
+/* Estil de la llista d'ingredients */
 .ingredients-list {
     text-align: left;
     list-style: inside;
     margin: 10px 20px;
 }
 
+/* Estil del contenidor dels botons */
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between buttons */
+    gap: 20px; /* Espai entre botons */
     margin-top: 20px;
 }
 
+/* Estil dels botons d'acció */
 .action-button {
-    background-color: #333; /* Dark gray */
+    background-color: #333; /* Gris fosc */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -72,13 +82,15 @@ body {
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
-    text-decoration: none; /* Removes underline from links */
+    text-decoration: none; /* Elimina la subratllat dels enllaços */
 }
 
+/* Estil dels botons d'acció quan es passa el ratolí sobre ells */
 .action-button:hover {
-    background-color: #444; /* Slightly lighter gray */
+    background-color: #444; /* Gris lleugerament més clar */
 }
 
+/* Estil especial 'ultra' amb imatge de fons */
 .ultra {
     background-image: url('../../../../Resources/bkgrd.gif');
     color: black;

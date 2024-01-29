@@ -1,24 +1,27 @@
+/* Estilos generales para el cuerpo de la página */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Color del texto blanco */
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; /* Altura mínima de la vista del dispositivo */
     margin: 0;
     padding: 20px;
 }
 
+/* Estilos para el contenedor principal del producto */
 .product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Opaque red background */
+    background-color: rgba(200, 16, 46, 0.6); /* Fondo rojo con transparencia */
     border-radius: 10px;
     padding: 20px;
     max-width: 800px;
-    width: 100%; /* Adjust to the width of the device */
+    width: 100%; /* Ancho ajustado al dispositivo */
 }
 
+/* Estilos para el título principal */
 .product-container h1 {
     margin: 20px;
     margin-bottom: 30px;
@@ -26,6 +29,7 @@ body {
     font-weight: bold;
 }
 
+/* Estilos para subtítulos */
 .product-container h2 {
     margin: 20px;
     margin-bottom: 30px;
@@ -33,38 +37,44 @@ body {
     font-weight: bold;
 }
 
+/* Estilos para el contenedor de imágenes/videos */
 .image-container {
-    overflow: hidden; /* Ensures the video doesn't exceed the border-radius */
-    border-radius: 10px; /* Matches the product container */
+    overflow: hidden; /* Evita que el video exceda el borde redondeado */
+    border-radius: 10px; /* Coincide con el contenedor del producto */
     margin-bottom: 20px;
 }
 
+/* Estilos para videos dentro del contenedor */
 .image-container video {
-    width: 100%; /* Video takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for video */
+    width: 100%; /* Video ocupa todo el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de aspecto */
+    border-radius: 10px; /* Bordes redondeados para el video */
 }
 
+/* Estilos para la descripción */
 .description {
     text-align: justify;
     margin: 20px 0;
 }
 
+/* Estilos para la lista de ingredientes */
 .ingredients-list {
     text-align: left;
     list-style: inside;
     margin: 10px 20px;
 }
 
+/* Estilos para el contenedor de botones */
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between buttons */
+    gap: 20px; /* Espacio entre botones */
     margin-top: 20px;
 }
 
+/* Estilos para los botones de acción */
 .action-button {
-    background-color: #333; /* Dark gray */
+    background-color: #333; /* Gris oscuro */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -72,13 +82,15 @@ body {
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
-    text-decoration: none; /* Removes underline from links */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
 }
 
+/* Estilos para el estado hover de los botones */
 .action-button:hover {
-    background-color: #444; /* Slightly lighter gray */
+    background-color: #444; /* Gris ligeramente más claro */
 }
 
+/* Estilos para elementos con la clase "ultra" */
 .ultra {
     background-image: url('../../../../Resources/bkgrd.gif'); 
     color: black;

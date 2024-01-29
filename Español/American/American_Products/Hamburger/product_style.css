@@ -1,86 +1,98 @@
+/* ¡Hora de estilizar la página! */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
+    font-family: 'Arial', sans-serif; /* La fuente de la elegancia */
+    background-color: #000; /* Fondo negro como la noche */
+    color: #fff; /* Texto blanco como la nieve */
+    text-align: center; /* Centro de atención */
+    display: flex; /* Modo flex para alinear y justificar */
+    justify-content: center; /* Justificar contenido al centro */
+    align-items: center; /* Alinea elementos al centro */
+    min-height: 100vh; /* Altura mínima de la pantalla */
+    margin: 0; /* Sin márgenes para una experiencia sin obstáculos */
+    padding: 20px; /* Espacio alrededor del contenido */
 }
 
+/* El contenedor de nuestro producto estrella */
 .product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Opaque red background */
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 800px;
-    width: 100%; /* Adjust to the width of the device */
+    background-color: rgba(200, 16, 46, 0.6); /* Fondo rojo con un toque de misterio */
+    border-radius: 10px; /* Esquinas redondeadas para dar un abrazo de bienvenida */
+    padding: 20px; /* Espacio para el contenido principal */
+    max-width: 800px; /* Ancho máximo para una lectura cómoda */
+    width: 100%; /* Se adapta al ancho del dispositivo */
 }
 
+/* El título principal de nuestro producto */
 .product-container h1 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 28px;
-    font-weight: bold;
+    margin: 20px; /* Respira un poco, margen externo */
+    margin-bottom: 30px; /* Espacio extra abajo para destacar */
+    font-size: 28px; /* Fuente grande para un gran producto */
+    font-weight: bold; /* Negrita para que se destaque */
 }
 
+/* El subtítulo de nuestro producto */
 .product-container h2 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: bold;
+    margin: 20px; /* Respira un poco, margen externo */
+    margin-bottom: 30px; /* Espacio extra abajo para destacar */
+    font-size: 20px; /* Fuente un poco más pequeña, pero aún audaz */
+    font-weight: bold; /* Negrita para que se note */
 }
 
+/* El contenedor de nuestra imagen o video */
 .image-container {
-    overflow: hidden; /* Ensures the video doesn't exceed the border-radius */
-    border-radius: 10px; /* Matches the product container */
-    margin-bottom: 20px;
+    overflow: hidden; /* Asegura que el video no se desborde */
+    border-radius: 10px; /* Coincide con el contenedor del producto */
+    margin-bottom: 20px; /* Un espacio extra abajo para respirar */
 }
 
+/* Ajustando el tamaño del video para adaptarse al contenedor */
 .image-container video {
-    width: 100%; /* Video takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for video */
+    width: 100%; /* El video ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 10px; /* Bordes redondeados para el video */
 }
 
+/* Descripción del producto */
 .description {
-    text-align: justify;
-    margin: 20px 0;
+    text-align: justify; /* Alineado justificado para una lectura elegante */
+    margin: 20px 0; /* Margen arriba y abajo */
 }
 
+/* Lista de ingredientes */
 .ingredients-list {
-    text-align: left;
-    list-style: inside;
-    margin: 10px 20px;
+    text-align: left; /* Alineación a la izquierda para la lista */
+    list-style: inside; /* Marcadores dentro de la lista */
+    margin: 10px 20px; /* Margen arriba y abajo, y un poco a los lados */
 }
 
+/* Contenedor de botones */
 .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between buttons */
-    margin-top: 20px;
+    display: flex; /* Modo flex para alinear botones */
+    justify-content: center; /* Justificar al centro */
+    gap: 20px; /* Espacio entre los botones */
+    margin-top: 20px; /* Margen arriba para separar del contenido */
 }
 
+/* Estilo de botón normal */
 .action-button {
-    background-color: #333; /* Dark gray */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none; /* Removes underline from links */
+    background-color: #333; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Relleno para un tamaño cómodo */
+    font-size: 18px; /* Tamaño de fuente */
+    cursor: pointer; /* Un cursor que invita a hacer clic */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Texto centrado */
+    text-decoration: none; /* Sin subrayado en los enlaces */
 }
 
+/* Cambio de color al pasar el mouse sobre el botón */
 .action-button:hover {
-    background-color: #444; /* Slightly lighter gray */
+    background-color: #444; /* Gris ligeramente más claro */
 }
 
+/* Estilo de botón ultra especial */
 .ultra {
-    background-image: url('../../../../Resources/bkgrd.gif');
-    color: black;
-    font-weight: bold;
+    background-image: url('../../../../Resources/bkgrd.gif'); /* Imagen de fondo divertida */
+    color: black; /* Texto en negro */
+    font-weight: bold; /* Negrita para hacerlo destacar */
 }

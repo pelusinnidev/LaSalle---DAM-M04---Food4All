@@ -1,3 +1,4 @@
+/* Stylish body with a black background and white text */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #000; /* Black background */
@@ -11,6 +12,7 @@ body {
     padding: 20px;
 }
 
+/* Fancy container for the product details */
 .product-container {
     background-color: rgba(200, 16, 46, 0.6); /* Opaque red background */
     border-radius: 10px;
@@ -19,6 +21,7 @@ body {
     width: 100%; /* Adjust to the width of the device */
 }
 
+/* Grandiose product title */
 .product-container h1 {
     margin: 20px;
     margin-bottom: 30px;
@@ -26,6 +29,7 @@ body {
     font-weight: bold;
 }
 
+/* Impressive section title */
 .product-container h2 {
     margin: 20px;
     margin-bottom: 30px;
@@ -33,29 +37,34 @@ body {
     font-weight: bold;
 }
 
+/* Container for the video with a rounded edge */
 .image-container {
     overflow: hidden; /* Ensures the video doesn't exceed the border-radius */
     border-radius: 10px; /* Matches the product container */
     margin-bottom: 20px;
 }
 
+/* Video with rounded corners and full width */
 .image-container video {
     width: 100%; /* Video takes full width of its container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Rounded corners for video */
 }
 
+/* Description that's as smooth as butter */
 .description {
     text-align: justify;
     margin: 20px 0;
 }
 
+/* Ingredients list that's neatly organized */
 .ingredients-list {
     text-align: left;
     list-style: inside;
     margin: 10px 20px;
 }
 
+/* Container for action buttons with a touch of elegance */
 .button-container {
     display: flex;
     justify-content: center;
@@ -63,6 +72,7 @@ body {
     margin-top: 20px;
 }
 
+/* Stylish action button with a hint of mystery */
 .action-button {
     background-color: #333; /* Dark gray */
     color: #fff;
@@ -75,10 +85,12 @@ body {
     text-decoration: none; /* Removes underline from links */
 }
 
+/* Action button gets even cooler on hover */
 .action-button:hover {
     background-color: #444; /* Slightly lighter gray */
 }
 
+/* Ultra button that's out of this world */
 .ultra {
     background-image: url('../../../../Resources/bkgrd.gif'); 
     color: black;

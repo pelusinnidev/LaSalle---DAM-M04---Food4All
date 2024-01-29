@@ -1,86 +1,100 @@
+/* Stylish and hilarious CSS */
+
+/* General styling for the entire page */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* Because Comic Sans was too tempting! */
     background-color: #000; /* Black background */
     color: #fff; /* White text color */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
+    text-align: center; /* Centered text for ultimate enlightenment */
+    display: flex; /* Flexing the developer muscles */
+    justify-content: center; /* Justifying the universe */
+    align-items: center; /* Aligning with destiny */
+    min-height: 100vh; /* Minimum height for maximum impact */
+    margin: 0; /* Zero margin, maximum impact */
+    padding: 20px; /* Padding for the grand finale */
 }
 
+/* Styling for the product container */
 .product-container {
     background-color: rgba(200, 16, 46, 0.6); /* Opaque red background */
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 800px;
+    border-radius: 10px; /* Keeping it rounded, like nuggets */
+    padding: 20px; /* Padding for comfort */
+    max-width: 800px; /* Width limited to 800px, but dreams have no limits */
     width: 100%; /* Adjust to the width of the device */
 }
 
+/* Styling for the product title */
 .product-container h1 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 28px;
-    font-weight: bold;
+    margin: 20px; /* Margin for error (but hopefully none) */
+    margin-bottom: 30px; /* A little extra margin for the extraordinary */
+    font-size: 28px; /* Font size for the title, not for reading minds */
+    font-weight: bold; /* Because nuggets deserve boldness */
 }
 
+/* Styling for the secondary title */
 .product-container h2 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: bold;
+    margin: 20px; /* Margin for appreciation */
+    margin-bottom: 30px; /* A little extra margin for the exceptional */
+    font-size: 20px; /* Font size for the subtitle, not for writing novels */
+    font-weight: bold; /* Because ingredients are the unsung heroes */
 }
 
+/* Styling for the image container */
 .image-container {
-    overflow: hidden; /* Ensures the video doesn't exceed the border-radius */
-    border-radius: 10px; /* Matches the product container */
-    margin-bottom: 20px;
+    overflow: hidden; /* Keeping it all together, no leaks allowed */
+    border-radius: 10px; /* Rounded corners for extra style */
+    margin-bottom: 20px; /* Margin for visual pleasure */
 }
 
+/* Styling for the video within the image container */
 .image-container video {
-    width: 100%; /* Video takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for video */
+    width: 100%; /* Video takes full width, like nuggets take all attention */
+    height: auto; /* Maintaining aspect ratio, no video stretching allowed */
+    border-radius: 10px; /* Rounded corners for video, because corners are sharp */
 }
 
+/* Styling for the product description */
 .description {
-    text-align: justify;
-    margin: 20px 0;
+    text-align: justify; /* Justifying the text for a rational description */
+    margin: 20px 0; /* Margin for contemplation */
 }
 
+/* Styling for the list of ingredients */
 .ingredients-list {
-    text-align: left;
-    list-style: inside;
-    margin: 10px 20px;
+    text-align: left; /* Because ingredients like to be straightforward */
+    list-style: inside; /* Lists are like treasure chests, but inside-out */
+    margin: 10px 20px; /* Margin for listing greatness */
 }
 
+/* Styling for the button container */
 .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between buttons */
-    margin-top: 20px;
+    display: flex; /* Flexing the button's muscles */
+    justify-content: center; /* Because centering is an art */
+    gap: 20px; /* Space between buttons, because space matters */
+    margin-top: 20px; /* Margin for button enthusiasm */
 }
 
+/* Styling for the action buttons */
 .action-button {
-    background-color: #333; /* Dark gray */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none; /* Removes underline from links */
+    background-color: #333; /* Dark gray, like the mysteries of nuggets */
+    color: #fff; /* Text color as bright as nugget dreams */
+    border: none; /* No borders, just like nuggets roam free */
+    padding: 10px 20px; /* Padding for button comfort */
+    font-size: 18px; /* Font size for action, not for inaction */
+    cursor: pointer; /* The cursor is pointing at deliciousness */
+    border-radius: 5px; /* Rounded corners for button style */
+    text-align: center; /* Text alignment for alignment enthusiasts */
+    text-decoration: none; /* Removes underline from links, but not from cravings */
 }
 
+/* Hover effect for action buttons */
 .action-button:hover {
-    background-color: #444; /* Slightly lighter gray */
+    background-color: #444; /* Slightly lighter gray, because a hint of mystery */
 }
 
+/* Styling for the 'ultra' class, because it's ultra-awesome */
 .ultra {
-    background-image: url('../../../../Resources/bkgrd.gif'); 
-    color: black;
-    font-weight: bold;
+    background-image: url('../../../../Resources/bkgrd.gif'); /* The background image, like nugget dreams in motion */
+    color: black; /* Text color as dark as the night sky */
+    font-weight: bold; /* Bold and beautiful, just like nuggets */
 }

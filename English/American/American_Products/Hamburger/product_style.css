@@ -1,7 +1,9 @@
+/* Styling to make your website look fabulous! 💁‍♂️ */
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
+    background-color: #000; /* It's as black as midnight, just without the stars 🌌 */
+    color: #fff; /* Because white is the new black! ⚪️ */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -12,11 +14,11 @@ body {
 }
 
 .product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Opaque red background */
+    background-color: rgba(200, 16, 46, 0.6); /* A dash of red to spice things up! 🌶️ */
     border-radius: 10px;
     padding: 20px;
     max-width: 800px;
-    width: 100%; /* Adjust to the width of the device */
+    width: 100%; /* Adapts like a chameleon! 🦎 */
 }
 
 .product-container h1 {
@@ -34,15 +36,15 @@ body {
 }
 
 .image-container {
-    overflow: hidden; /* Ensures the video doesn't exceed the border-radius */
-    border-radius: 10px; /* Matches the product container */
+    overflow: hidden; /* Like a secret treasure chest! 🏴‍☠️ */
+    border-radius: 10px; /* Because square corners are so last season! 😎 */
     margin-bottom: 20px;
 }
 
 .image-container video {
-    width: 100%; /* Video takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for video */
+    width: 100%; /* Expands to fit like stretchy pants after a big meal! 🍔 */
+    height: auto; /* Maintains its cool like the Fonz 🕶️ */
+    border-radius: 10px; /* Curves in all the right places! 😏 */
 }
 
 .description {
@@ -59,12 +61,12 @@ body {
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between buttons */
+    gap: 20px; /* Gives buttons some breathing space, because even buttons need air! 🌬️ */
     margin-top: 20px;
 }
 
 .action-button {
-    background-color: #333; /* Dark gray */
+    background-color: #333; /* As dark as the secrets you never tell! 🤫 */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -72,11 +74,11 @@ body {
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
-    text-decoration: none; /* Removes underline from links */
+    text-decoration: none; /* Removes the unnecessary frills! 🚫🎀 */
 }
 
 .action-button:hover {
-    background-color: #444; /* Slightly lighter gray */
+    background-color: #444; /* Slightly lighter gray, because we like gradients! 🌈 */
 }
 
 .ultra {

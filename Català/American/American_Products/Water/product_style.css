@@ -1,86 +1,110 @@
+/* Estil de la pàgina web */
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Font global per al text */
+    background-color: #000; /* Fons negre */
+    color: #fff; /* Color de text blanc */
+    text-align: center; /* Centrat el text */
+    display: flex; /* Utilitzat per a l'element principal flexbox */
+    justify-content: center; /* Centrat horitzontal */
+    align-items: center; /* Centrat vertical */
+    min-height: 100vh; /* Alçada mínima del viewport */
+    margin: 0; /* Elimina els marges predeterminats */
+    padding: 20px; /* Espaiat interior */
 }
+
+/* Estil del contenidor del producte */
 
 .product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Opaque red background */
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 800px;
-    width: 100%; /* Adjust to the width of the device */
+    background-color: rgba(200, 16, 46, 0.6); /* Fons vermell opac */
+    border-radius: 10px; /* Cantons arrodonits */
+    padding: 20px; /* Espaiat interior */
+    max-width: 800px; /* Ample màxim */
+    width: 100%; /* Ajusta's a l'ample del dispositiu */
 }
+
+/* Estil del títol principal del producte */
 
 .product-container h1 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 28px;
-    font-weight: bold;
+    margin: 20px; /* Marge exterior */
+    margin-bottom: 30px; /* Marge inferior addicional */
+    font-size: 28px; /* Mida de la font */
+    font-weight: bold; /* Text en negreta */
 }
+
+/* Estil del subtítol del producte */
 
 .product-container h2 {
-    margin: 20px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: bold;
+    margin: 20px; /* Marge exterior */
+    margin-bottom: 30px; /* Marge inferior addicional */
+    font-size: 20px; /* Mida de la font */
+    font-weight: bold; /* Text en negreta */
 }
+
+/* Estil del contenidor d'imatges */
 
 .image-container {
-    overflow: hidden; /* Ensures the video doesn't exceed the border-radius */
-    border-radius: 10px; /* Matches the product container */
-    margin-bottom: 20px;
+    overflow: hidden; /* Assegura que el vídeo no superi els cantons arrodonits */
+    border-radius: 10px; /* Iguala el cantó arrodonit del contenidor de productes */
+    margin-bottom: 20px; /* Marge inferior */
 }
+
+/* Estil del vídeo */
 
 .image-container video {
-    width: 100%; /* Video takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for video */
+    width: 100%; /* El vídeo ocupa tot l'ample del seu contenidor */
+    height: auto; /* Manté la proporció d'imatge original */
+    border-radius: 10px; /* Cantons arrodonits per al vídeo */
 }
+
+/* Estil de la descripció */
 
 .description {
-    text-align: justify;
-    margin: 20px 0;
+    text-align: justify; /* Justifica el text */
+    margin: 20px 0; /* Marge superior i inferior */
 }
+
+/* Estil de la llista d'ingredients */
 
 .ingredients-list {
-    text-align: left;
-    list-style: inside;
-    margin: 10px 20px;
+    text-align: left; /* Alinea el text a l'esquerra */
+    list-style: inside; /* Posició de la marcatge dins la llista */
+    margin: 10px 20px; /* Marge superior i inferior, i marge esquerra i dreta */
 }
+
+/* Estil del contenidor de botons */
 
 .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between buttons */
-    margin-top: 20px;
+    display: flex; /* Utilitzat per als botons */
+    justify-content: center; /* Centrat horitzontal dels botons */
+    gap: 20px; /* Espai entre els botons */
+    margin-top: 20px; /* Marge superior */
 }
+
+/* Estil del botó d'acció */
 
 .action-button {
-    background-color: #333; /* Dark gray */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none; /* Removes underline from links */
+    background-color: #333; /* Fons fosc gris */
+    color: #fff; /* Color de text blanc */
+    border: none; /* Sense vores */
+    padding: 10px 20px; /* Espaiat interior */
+    font-size: 18px; /* Mida de la font */
+    cursor: pointer; /* Canvia el cursor al passar per sobre */
+    border-radius: 5px; /* Cantons arrodonits */
+    text-align: center; /* Centra el text */
+    text-decoration: none; /* Elimina el subratllat dels enllaços */
 }
+
+/* Estil del botó d'acció quan el punter està sobre ell */
 
 .action-button:hover {
-    background-color: #444; /* Slightly lighter gray */
+    background-color: #444; /* Fons gris lleugerament més clar */
 }
 
+/* Estil de l'element amb la classe "ultra" */
+
 .ultra {
-    background-image: url('../../../../Resources/bkgrd.gif');  
-    color: black;
-    font-weight: bold;
+    background-image: url('../../../../Resources/bkgrd.gif'); /* Imatge de fons */
+    color: black; /* Color de text negre */
+    font-weight: bold; /* Text en negreta */
 }

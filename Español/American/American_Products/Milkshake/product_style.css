@@ -1,86 +1,98 @@
+/* Estilo global del cuerpo de la fiesta */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    text-align: center;
+    background-color: #000; /* ¡Fondo negro como la noche! */
+    color: #fff; /* Texto blanco como la nieve */
+    text-align: center; /* ¡Todos centrados y listos para la diversión! */
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    padding: 20px;
+    padding: 20px; /* Un poco de espacio para respirar */
 }
 
+/* El envase del producto, ¡donde se guarda la delicia! */
 .product-container {
-    background-color: rgba(200, 16, 46, 0.6); /* Opaque red background */
+    background-color: rgba(200, 16, 46, 0.6); /* Un toque de rojo transparente */
     border-radius: 10px;
     padding: 20px;
     max-width: 800px;
-    width: 100%; /* Adjust to the width of the device */
+    width: 100%; /* Ajustado a la medida de la fiesta */
 }
 
+/* El título principal, ¡la estrella de la noche! */
 .product-container h1 {
     margin: 20px;
     margin-bottom: 30px;
     font-size: 28px;
-    font-weight: bold;
+    font-weight: bold; /* ¡Nada menos que negritas para el protagonista! */
 }
 
+/* El subtítulo, para dar más detalles */
 .product-container h2 {
     margin: 20px;
     margin-bottom: 30px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bold; /* Otro toque de negritas para destacar */
 }
 
+/* El contenedor de la imagen o video, ¡la muestra visual! */
 .image-container {
-    overflow: hidden; /* Ensures the video doesn't exceed the border-radius */
-    border-radius: 10px; /* Matches the product container */
+    overflow: hidden; /* Asegurándonos de que todo esté en el marco */
+    border-radius: 10px; /* ¡Forma bonita y redondeada! */
     margin-bottom: 20px;
 }
 
+/* El video, ¡el alma de la fiesta en movimiento! */
 .image-container video {
-    width: 100%; /* Video takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for video */
+    width: 100%; /* Ocupa todo el espacio disponible */
+    height: auto; /* Mantiene la proporción correcta */
+    border-radius: 10px; /* Más redondez para el video */
 }
 
+/* La descripción, para tentar a los invitados */
 .description {
-    text-align: justify;
+    text-align: justify; /* ¡Todos los detalles justos y parejos! */
     margin: 20px 0;
 }
 
+/* La lista de ingredientes, ¡los actores secundarios! */
 .ingredients-list {
-    text-align: left;
-    list-style: inside;
+    text-align: left; /* Alineación izquierda para los ingredientes */
+    list-style: inside; /* ¡Detalles dentro de la lista! */
     margin: 10px 20px;
 }
 
+/* El contenedor de botones, ¡la acción comienza aquí! */
 .button-container {
     display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between buttons */
+    justify-content: center; /* Todo centrado en la acción */
+    gap: 20px; /* Espacio entre botones para comodidad */
     margin-top: 20px;
 }
 
+/* Los botones de acción, ¡para tomar decisiones! */
 .action-button {
-    background-color: #333; /* Dark gray */
-    color: #fff;
+    background-color: #333; /* Un toque oscuro pero elegante */
+    color: #fff; /* Texto blanco para resaltar */
     border: none;
-    padding: 10px 20px;
+    padding: 10px 20px; /* Espacio para hacer clic cómodamente */
     font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
+    cursor: pointer; /* ¡Apunta hacia la diversión! */
+    border-radius: 5px; /* Bordes suaves y amigables */
     text-align: center;
-    text-decoration: none; /* Removes underline from links */
+    text-decoration: none; /* Quitando subrayado de enlaces */
 }
 
+/* Efecto hover para los botones, ¡se iluminan! */
 .action-button:hover {
-    background-color: #444; /* Slightly lighter gray */
+    background-color: #444; /* Un poco más claro al pasar el mouse */
 }
 
+/* Clase ultra especial, ¡con fondo animado! */
 .ultra {
-    background-image: url('../../../../Resources/bkgrd.gif'); 
-    color: black;
-    font-weight: bold;
+    background-image: url('../../../../Resources/bkgrd.gif'); /* Fondo animado para destacar */
+    color: black; /* Texto en negro sobre fondo especial */
+    font-weight: bold; /* ¡Negritas para la ocasión especial! */
 }
