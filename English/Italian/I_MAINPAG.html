@@ -25,6 +25,9 @@
     </header>
 
     <main>
+
+        <label for="combo-offer-toggle" class="combo-offer-trigger">Check out our Special Combo Offer!</label>
+        
         <section class="content">
             <h2>Discover Our Delicious Italian Menu!</h2>
             <p>Best-Selling Pasta around the world!</p>
@@ -84,6 +87,11 @@
                 <span class="price">€19.99</span>
                 <p>Enjoy making your own pizza with your favourite flavors.</p>
             </div>
+
+            <div class="menu-item">
+               <img src="https://images.pexels.com/photos/4057736/pexels-photo-4057736.jpeg" alt="">
+            </div>
+
         </section>
 
         <section class="special-menu">
@@ -124,6 +132,18 @@
                 </div>
             </div>
         </section>
+
+                    <!-- Combo Offer Modal Structure -->
+                    <input type="checkbox" id="combo-offer-toggle" hidden>
+                    <div class="modal">
+                        <label for="combo-offer-toggle" class="modal-overlay"></label>
+                        <div class="modal-content">
+                            <h2>Special Combo Offer</h2>
+                            <p>Enjoy our delicious combo: 2X1 in pizza for just 14.99€</p>
+                            <img src="https://s3.eu-west-1.amazonaws.com/cdn.spydeals.nl/images/uploads/nxGTTzBVFjAVpgAgPw7bDnhKKuoaXVExv8txQ6F3.png" alt="Combo Offer">
+                            <label for="combo-offer-toggle" class="modal-close">&#10006;</label>
+                        </div>
+                    </div>
     </main>
 
     <footer>

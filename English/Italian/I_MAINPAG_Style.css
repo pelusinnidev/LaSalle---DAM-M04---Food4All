@@ -27,6 +27,12 @@ body {
     line-height: 1.6;
 }
 
+header{
+font-weight: bold;
+font-size: 30px;
+
+}
+
 .navbar {
     background-color: bisque;
     display: flex;
@@ -70,6 +76,8 @@ header {
 
 .content {
     margin: 20px;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 footer {
@@ -81,28 +89,6 @@ footer {
 
 body {
     background-color: beige;
-}
-
-section h2 {
-    font-size: medium;
-}
-
-.container-videos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px; /* Ajusta el espacio entre los videos según sea necesario */
-    justify-content: space-around;
-}
-
-.video-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.video-container video {
-    width: 100%;
-    height: auto;
 }
 
 
@@ -147,10 +133,12 @@ h4 {
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
+    text-align: center; /* Optional: Center align the menu items */
 }
 
 .menu h1 {
-    font-size: 36px;
+    font-size: 35px;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
@@ -173,36 +161,11 @@ h4 {
 .menu-item p {
     color: #666;
     font-size: 18px;
-    margin-top: 10px; /* Añade margen superior para separar el precio del texto */
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-
-    
+    margin-top: 10px; /* Add top margin to separate the price from the text */
 }
 
 .menu-items {
-    width: 70%; /* Ajusta el ancho del menú principal según tus necesidades */
-}
-
-.menu-item {
-    margin-bottom: 20px;
-}
-
-.menu-image {
-    width: 25%; 
-    margin-right: 300px;
-    margin-top: 50px;
-    
-    
-}
-
-.menu-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    width: 70%; /* Adjust the width of the main menu as needed */
 }
 
 .card {
@@ -284,7 +247,10 @@ h5 {
     color: #333;
 }
 
+.image-item{
 
+    font-weight: bold;
+}
 
 
 .menu-item {
@@ -424,6 +390,96 @@ body {
     font-size: 14px;
 }
 
+/* Estilos para el botón que activa el modal */
+.combo-offer-trigger {
+    cursor: pointer;
+    display: block;
+    margin: 20px auto; /* Auto para centrar horizontalmente */
+    padding: 10px 20px;
+    background: linear-gradient(to right, #008C45, white, #CD2E3A); /* Colores de la bandera italiana en el botón */
+    color: var(--text-black);
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1; /* Asegura que el botón esté por encima del modal de fondo */
+    max-width: 200px; /* Establece un ancho máximo para el botón */
+    width: 100%; /* Hace que el ancho sea relativo al contenedor */
+}
 
 
-  
+/* Estilos para el fondo del modal que se muestra detrás */
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background-beige); /* Color de fondo de la bandera italiana */
+    opacity: 0.8; /* Opacidad para permitir ver lo de atrás */
+    z-index: 0; /* Coloca el fondo detrás del contenido del modal */
+}
+
+/* Estilos para el modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Mostrar el modal cuando el Checkbox está marcado */
+#combo-offer-toggle:checked + .modal {
+    display: flex;
+}
+
+/* Estilos para el contenido dentro del modal */
+.modal-content {
+    position: relative;
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end)); /* Gradiente con colores de la bandera italiana */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 70%; /* Ajustado el ancho para una mejor responsividad */
+    max-width: 500px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: var(--text-black);
+    cursor: pointer;
+}
+
+/* Estilos para el contenido dentro del modal */
+.modal-content h2 {
+    color: var(--text-white); /* Texto en color blanco */
+}
+
+.modal-content p {
+    color: var(--text-white); /* Texto en color blanco */
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-right: 100px;
+}
+
+.menu-imatge {
+     float: right; /* Coloca la imagen a la derecha */
+    margin-left: 20px; /* Ajusta el margen izquierdo para separar la imagen del menú */
+}
+
+.menu-imatge img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Opcional: agrega bordes redondeados a la imagen */
+}
