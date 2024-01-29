@@ -83,21 +83,26 @@
         </footer>
 
         <script>
-            document.querySelector('.nav-toggle').addEventListener('click', function () {
+            // Función para manejar la apertura y cierre de la barra de navegación
+            function toggleNavbar() {
                 document.querySelector('.navbar').classList.toggle('active');
-            });
-    
+            }
+        
+            // Agregando eventos tanto de clic como táctiles para dispositivos móviles
+            document.querySelector('.nav-toggle').addEventListener('click', toggleNavbar);
+            document.querySelector('.nav-toggle').addEventListener('touchstart', toggleNavbar);
+        
             // Por defecto, carga el contenido en inglés
             document.addEventListener('DOMContentLoaded', function () {
                 loadTranslations('en');
             });
-    
+        
             function loadTranslations(language) {
-                fetch("/Español/MAINPAG.json")
+                fetch("/English/MAINPAG.json")
                     .then(response => response.json())
                     .then(data => {
                         const translations = data[language];
-    
+        
                         document.getElementById('pageTitle').innerText = translations.pageTitle;
                         document.querySelector('.nav-toggle').innerText = translations.navToggle;
                         document.getElementById('americanLink').innerText = translations.americanLink;
@@ -120,10 +125,13 @@
                         document.getElementById('missionText').innerText = translations.missionText;
     
                         document.getElementById('footerText').innerText = translations.footerText;
+                    })
+                    .catch(error => {
+                        console.error('Error al cargar el JSON:', error);
                     });
             }
         </script>
-        
+                
     </body>
 </html>
 
