@@ -1,0 +1,323 @@
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navegació - El camí cap a l'aventura! 🧭 */
+
+.nav-toggle{
+  display: none;
+}
+
+.nav-logo {
+  width: 60px;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-link);
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: grey;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--color-link-hover);
+  background-color: var(--color-link-fons-hover);
+}
+
+.Pay {
+  background-image: url(../Resources/bkgrd.gif) !important;
+}
+
+.ultra {
+  background-image: url('../../Resources/bkgrd.gif'); 
+  color: white;
+  font-weight: bold;
+}
+
+header {
+  background-color: black;
+  padding: 20px;
+  margin-top: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Botons JSON*/
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Estilos cuando el mouse pasa sobre los botones */
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos específicos para cada botón */
+button:nth-child(1) {
+  background-color: #2ecc71; /* Color verde para el botón de English */
+}
+
+button:nth-child(2) {
+  background-color: #e74c3c; /* Color rojo para el botón de Español */
+}
+
+button:nth-child(3) {
+  background-color: #f39c12; /* Color amarillo para el botón de Catalan */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  animation: pulse 2s infinite;
+}
+
+main .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  flex-grow: 1;
+  background-image: url('../SelectorIdiomes/Resources/bkgrd.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-container .grid-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.grid-item .content, .grid-item .image {
+  padding: 20px;
+}
+
+.grid-container .Welcome {
+  background-color: #1e1e1e;
+}
+
+.grid-container .History {
+  background-color: #c8ad7f;
+}
+
+.grid-container .Who {
+  background-color: #000;
+}
+
+.grid-container .Mission {
+  background-color: #c8ad7f;
+}
+
+.grid-item h2, .grid-item p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.grid-item h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.grid-item p {
+  font-size: 24px;
+}
+
+.image img.transicion {
+  transition: transform 0.5s ease;
+}
+
+.image img.transicion:hover {
+  transform: scale(1.2);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.grid-item {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.grid-item p:hover {
+  animation: shake 1s ease-in-out;
+}
+
+/* Responsivitat - Ballant amb les mides! 📏🕺 */
+@media screen and (max-width: 1024px) {
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+      grid-template-columns: 1fr;
+  }
+
+  .grid-item .content, .grid-item .image {
+      padding: 10px;
+  }
+
+  header h1, .grid-item h2 {
+      font-size: 32px;
+  }
+
+  .grid-item p {
+      font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-toggle {
+      display: block;
+      background-color: #272727;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+  }
+
+  .navbar {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: #272727;
+  }
+
+  .navbar.active {
+      display: flex;
+  }
+
+  .nav-link {
+      display: block;
+      margin: 5px;
+      background-color: black;
+  }
+
+  header h1, .grid-item h2 {
+      font-size: 24px;
+  }
+
+  .grid-item p {
+      font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjust styles for very small screens, such as smaller font sizes */
+}
+
+footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/* Responsivitat - Ballant amb les mides! 📏🕺 */
+/* Responsividad para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+  .nav-toggle {
+    display: block;
+    background-color: #272727;
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #272727;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .nav-link {
+    display: block;
+    margin: 5px;
+    background-color: black;
+  }
+
+  header h1, .grid-item h2 {
+    font-size: 24px;
+  }
+
+  .grid-item p {
+    font-size: 16px;
+  }
+
+  .image img.transicion {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Ajustes adicionales según sea necesario para pantallas pequeñas */
+}
