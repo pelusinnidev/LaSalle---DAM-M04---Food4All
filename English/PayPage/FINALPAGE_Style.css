@@ -38,11 +38,26 @@ p {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
     padding: 10px;
     background-color: black;
     color: white;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reducir el relleno para pantallas más pequeñas */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Reducir el tamaño del título */
+    }
+
+    .back-button {
+        padding: 8px 16px; /* Reducir el relleno del botón */
+    }
 }
