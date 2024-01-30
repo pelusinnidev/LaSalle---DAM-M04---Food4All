@@ -7,13 +7,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Establece una altura mínima */
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header img {
+    width: 100%; /* Hace que la imagen del encabezado ocupe todo el ancho */
+    max-width: 400px; /* Establece un ancho máximo para la imagen */
+    height: auto; /* Mantiene la proporción original de la imagen */
 }
 
 .container {
     text-align: center;
     padding: 20px;
+    flex-grow: 1;
 }
 
 h1 {
@@ -45,18 +52,54 @@ footer {
     color: white;
 }
 
-
 /* Estilos responsivos */
 @media screen and (max-width: 768px) {
     .container {
-        padding: 10px; /* Reducir el relleno para pantallas más pequeñas */
+        padding: 10px;
     }
 
     h1 {
-        font-size: 1.5em; /* Reducir el tamaño del título */
+        font-size: 1.5em;
     }
 
     .back-button {
-        padding: 8px 16px; /* Reducir el relleno del botón */
+        padding: 8px 16px;
+    }
+
+    footer {
+        padding: 5px; /* Ajustar el padding del footer para pantallas más pequeñas */
+    }
+}
+
+/* Nuevas consultas de medios para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+    header img {
+        max-width: 300px; /* Reducir el ancho máximo de la imagen para pantallas más pequeñas */
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .back-button {
+        padding: 6px 12px;
+    }
+
+    footer {
+        padding: 3px; /* Ajustar el padding del footer para pantallas más pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header img {
+        max-width: 250px; /* Reducir aún más el ancho máximo de la imagen para pantallas más pequeñas */
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    .back-button {
+        padding: 5px 10px;
     }
 }
