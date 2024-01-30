@@ -532,8 +532,8 @@ body {
     /* Ajustes adicionales para el contenido de la tarjeta en dispositivos móviles */
     .card__content {
         flex-direction: column; /* Ajustar la dirección del contenedor flex a columna */
-        align-items: flex-start; /* Alinear elementos a la izquierda */
-        text-align: left; /* Alinear el texto a la izquierda */
+        align-items: center; /* Centrar elementos en el contenedor */
+        text-align: center; /* Alinear el texto al centro */
     }
 
     .card__content img {
@@ -547,13 +547,14 @@ body {
 
     h4 {
         margin-left: 0; /* Eliminar el margen izquierdo */
-        text-align: left; /* Alinear el texto a la izquierda */
+        text-align: center; /* Alinear el texto al centro */
     }
 
     /* Ajustes adicionales para el modal en dispositivos móviles */
     .modal-content {
         width: 80%;
         max-width: 400px;
+        margin: auto; /* Centrar el modal horizontalmente */
     }
 
     .modal-close {
@@ -569,11 +570,8 @@ body {
     .menu1 {
         margin-left: 0;
     }
-}
 
-
-/* Media queries para dispositivos con un ancho máximo de 480px */
-@media screen and (max-width: 480px) {
+    /* Ajustes adicionales para el botón de navegación en dispositivos móviles */
     .nav-toggle {
         display: block;
         background-color: var(--background-bisque);
@@ -583,6 +581,7 @@ body {
         border: none;
         font-size: 20px;
         cursor: pointer;
+        text-align: center; /* Alinear el texto al centro */
     }
 
     .navbar {
@@ -604,5 +603,4 @@ body {
     .navbar.active {
         display: flex;
     }
-
 }
