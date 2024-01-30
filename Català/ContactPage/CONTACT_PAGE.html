@@ -36,5 +36,14 @@
         <footer>
             <p>&copy; 2023 - 2024 Food4All. Tots els drets reservats.</p>
         </footer>
+
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Previene el envío estándar del formulario
+                // Aquí puede agregar cualquier validación o lógica adicional si es necesario
+                window.location.href = 'CONTACT_SEND.html'; // Cambia a la página de confirmación
+            });
+        </script>
+        
     </body>
 </html>
