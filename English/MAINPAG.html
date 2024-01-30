@@ -92,10 +92,12 @@
             document.querySelector('.nav-toggle').addEventListener('click', toggleNavbar);
             document.querySelector('.nav-toggle').addEventListener('touchstart', toggleNavbar);
         
+
             // By default, load content in English
             document.addEventListener('DOMContentLoaded', function () {
                 loadTranslations('en');
             });
+
         
             function loadTranslations(language) {
                 fetch("../English/MAINPAG.json")
