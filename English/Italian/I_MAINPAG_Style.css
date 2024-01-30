@@ -531,7 +531,7 @@ body {
 
     /* Ajustes adicionales para el contenido de la tarjeta en dispositivos móviles */
     .card__content {
-        flex-direction:row ; /* Ajustar la dirección del contenedor flex a columna */
+        flex-direction: column; /* Ajustar la dirección del contenedor flex a columna */
         align-items: flex-start; /* Alinear elementos a la izquierda */
         text-align: left; /* Alinear el texto a la izquierda */
     }
