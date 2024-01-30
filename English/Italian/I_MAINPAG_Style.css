@@ -563,17 +563,12 @@ body {
     }
 
     .menu1 img {
-        width: 100%; /* Ajustar el ancho de la imagen */
-        height: auto; /* Mantener la proporción original de la imagen */
-        display: block; /* Hacer que la imagen sea un bloque para evitar márgenes indeseados */
-        margin: 10px 0; /* Ajustar márgenes para separar la imagen del texto */
-        border-radius: 10px; /* Mantener bordes redondeados si es necesario */
+        max-width: 100%; /* Ajustar el ancho de la imagen */
+        margin: 0; /* Eliminar el margen */
     }
 
-    .menu1 .text-container {
-        text-align: center; /* Alinear el texto al centro */
-        margin-left: 0; /* Eliminar el margen izquierdo */
-        width: 100%; /* Asegurar que el contenedor de texto ocupe todo el ancho disponible */
+    .menu1 {
+        margin-left: 0;
     }
 
     /* Ajustes adicionales para el botón de navegación en dispositivos móviles */
