@@ -499,6 +499,70 @@ body {
 }
 
 
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin-top: 0;
+    }
+
+    .nav-logo {
+        width: 40px;
+    }
+
+    .content {
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    /* Ajustes adicionales para el contenido de la tarjeta en dispositivos móviles */
+    .card__content {
+        flex-direction: column; /* Ajustar la dirección del contenedor flex a columna */
+        align-items: flex-start; /* Alinear elementos a la izquierda */
+        text-align: left; /* Alinear el texto a la izquierda */
+    }
+
+    .card__content img {
+        max-width: 100%; /* Ajustar el ancho de la imagen */
+        margin: 0; /* Eliminar el margen */
+    }
+
+    h3, p {
+        margin-top: 10px; /* Ajustar el margen para mantener espacio entre elementos */
+    }
+
+    h4 {
+        margin-left: 0; /* Eliminar el margen izquierdo */
+        text-align: left; /* Alinear el texto a la izquierda */
+    }
+
+    /* Ajustes adicionales para el modal en dispositivos móviles */
+    .modal-content {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .modal-close {
+        top: 5px;
+        right: 5px;
+    }
+
+    .menu1 img {
+        max-width: 100%; /* Ajustar el ancho de la imagen */
+        margin: 0; /* Eliminar el margen */
+    }
+
+    .menu1 {
+        margin-left: 0;
+    }
+}
+
+
+/* Media queries para dispositivos con un ancho máximo de 480px */
 @media screen and (max-width: 480px) {
     .nav-toggle {
         display: block;
@@ -510,7 +574,6 @@ body {
         font-size: 20px;
         cursor: pointer;
     }
-   
 
     .navbar {
         display: none;
@@ -531,5 +594,5 @@ body {
     .navbar.active {
         display: flex;
     }
-}
 
+}

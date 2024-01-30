@@ -1,5 +1,6 @@
-
+/* Definición de variables CSS personalizadas */
 :root {
+    /* Colores y estilos comunes */
     --background-beige: beige;
     --background-bisque: bisque;
     --text-black: black;
@@ -18,9 +19,7 @@
     --button-hover-background: linear-gradient(to right, #CD2E3A, white, #008C45);
 }
 
-
-
-/* Reset browser styles */
+/* Reset de estilos del navegador */
 body, div, h1, h2, p, ul {
     margin: 0;
     padding: 0;
@@ -32,12 +31,13 @@ body {
     line-height: 1.6;
 }
 
-header{
-font-weight: bold;
-font-size: 30px;
-
+/* Estilos para la sección de encabezado */
+header {
+    font-weight: bold;
+    font-size: 30px;
 }
 
+/* Estilos para la barra de navegación */
 .navbar {
     background-color: var(--background-bisque);
     display: flex;
@@ -46,9 +46,10 @@ font-size: 30px;
 }
 
 .navbar a {
-color: white;
+    color: white;
 }
 
+/* Estilos para los enlaces de navegación */
 .nav-link {
     text-decoration: none;
     color: var(--text-gray);
@@ -62,16 +63,19 @@ color: white;
     background-color: var(--nav-link-hover);
 }
 
+/* Estilos para el logo de navegación */
 .nav-logo {
     width: 60px;
     height: auto;
 }
 
+/* Estilos para la clase Pay */
 .Pay {
     background-color: var(--background-beige);
     color: var(--text-black) !important;
 }
 
+/* Estilos para la sección de encabezado */
 header {
     color: var(--text-black);
     text-align: center;
@@ -79,12 +83,14 @@ header {
     background-color: var(--background-bisque);
 }
 
+/* Estilos para la sección de contenido */
 .content {
     margin: 20px;
     font-size: 35px;
     font-weight: bold;
 }
 
+/* Estilos para el pie de página */
 footer {
     background-color: var(--text-gray);
     color: var(--text-white);
@@ -92,12 +98,12 @@ footer {
     padding: 10px 0;
 }
 
+/* Estilos para el fondo del cuerpo */
 body {
     background-color: var(--background-beige);
 }
 
-
-
+/* Estilos para el contenido de las tarjetas */
 .card__content {
     display: flex;
     justify-content: flex-start;
@@ -121,24 +127,24 @@ body {
     text-align: left; /* Alinea el texto a la izquierda */
 }
 
+/* Estilos para encabezados de nivel 3 */
 h3 {
-
     text-align: center;
     font-size: 30px;
 }
 
+/* Estilos para encabezados de nivel 4 */
 h4 {
-
     margin-left: 500px;
 }
 
-
+/* Estilos para el menú */
 .menu {
     background-color: var(--menu-background);
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    text-align: center; /* Optional: Center align the menu items */
+    text-align: center;
 }
 
 .menu h1 {
@@ -158,7 +164,7 @@ h4 {
 }
 
 .menu-item .price {
-    color:var(--accent-orange);
+    color: var(--accent-orange);
     font-size: 20px;
     font-weight: bold;
 }
@@ -166,24 +172,21 @@ h4 {
 .menu-item p {
     color: var(--text-light);
     font-size: 18px;
-    margin-top: 10px; /* Add top margin to separate the price from the text */
+    margin-top: 10px; /* Agrega margen superior para separar el precio del texto */
 }
 
 .menu-items {
-    width: 70%; /* Adjust the width of the main menu as needed */
+    width: 70%; /* Ajusta el ancho del menú principal según sea necesario */
 }
 
-.menu1 img{
-
+.menu1 img {
     float: right;
     max-width: 30%;
     margin-right: 100px;
     border-radius: 10px;
-
 }
 
-
-
+/* Estilos para tarjetas */
 .card {
     background-color: var(--card-background);
     padding: 20px;
@@ -195,6 +198,7 @@ section {
     text-align: center;
 }
 
+/* Estilos para encabezados de nivel 3 */
 h3 {
     font-size: 28px;
     margin-bottom: 20px;
@@ -208,11 +212,12 @@ h3 {
     text-align: center;
 }
 
-
+/* Estilos para el contenedor de texto */
 .text-container {
     width: 45%;
 }
 
+/* Estilos para encabezados de nivel 4 */
 h4 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -220,6 +225,7 @@ h4 {
     margin-left: 250px;
 }
 
+/* Estilos para párrafos */
 p {
     font-size: 18px;
     line-height: 1.5;
@@ -227,6 +233,7 @@ p {
     margin-left: 25px;
 }
 
+/* Estilos para elementos de menú */
 .menu-item {
     margin-bottom: 20px;
 }
@@ -235,18 +242,16 @@ p {
     margin-left: 25px;
     text-align: left;
     color: var(--text-black);
-
-
 }
 
-
-
+/* Estilos para precios */
 .price {
     color: var(--accent-red);
     font-weight: bold;
     margin-right: 5px;
 }
 
+/* Estilos para submenús */
 .sub-menu {
     margin-top: 10px;
 }
@@ -255,18 +260,19 @@ p {
     margin-bottom: 10px;
 }
 
+/* Estilos para encabezados de nivel 5 */
 h5 {
     font-size: 18px;
     margin-bottom: 5px;
     color: var(--text-gray);
 }
 
-.image-item{
-
+/* Estilos para imágenes en submenús */
+.image-item {
     font-weight: bold;
 }
 
-
+/* Estilos para elementos de menú */
 .menu-item {
     display: flex;
     flex-direction: column; /* Alinea los elementos de la sección como columna */
@@ -278,9 +284,9 @@ h5 {
 .menu-item .price,
 .menu-item p {
     text-align: left; /* Alinea el texto a la izquierda */
-    
 }
 
+/* Estilos para submenús */
 .sub-menu {
     display: flex;
     flex-direction: column; /* Alinea los elementos de la subsección como columna */
@@ -292,24 +298,25 @@ h5 {
 }
 
 .sub-menu-item h5,
-.sub-menu-item h4
+.sub-menu-item h4,
 .sub-menu-item .price,
 .sub-menu-item p {
     text-align: left; /* Alinea el texto a la izquierda */
     margin-left: 25px;
 }
 
-.sub-menu-item h5{
-
- margin-bottom: 50px;
- font-size: 25px;
+.sub-menu-item h5 {
+    margin-bottom: 50px;
+    font-size: 25px;
 }
+
 .sub-menu-item h6 {
     font-size: 25px;
     margin-left: 25px;
     color: var(--text-gray);
 }
 
+/* Estilos para botones */
 a.button {
     background: var(--button-background);
     font-weight: bold;
@@ -327,31 +334,28 @@ a.button {
     justify-content: center;
 }
 
+/* Estilos para íconos en botones */
 a.button .flag-icon {
     font-size: 18px; /* Ajusta el tamaño del emoji o ícono */
     margin-right: 4px;
-    
 }
 
-
+/* Estilos al pasar el ratón por encima de los botones */
 a.button:hover {
     background: var(to right, #CD2E3A, white, #008C45);
     color: var(--text-black);
 }
 
-
-/* Aplica la animación a la imagen */
+/* Estilos para imágenes */
 div img {
     width: 100%; /* Ajusta el ancho según tus necesidades */
-   }
+}
 
+/* Estilos para imágenes en contenedor */
 .image-container img {
     width: 100%;
     float: right; /* Coloca la imagen a la derecha */
 }
-
-
-
 
 .card__content img {
     width: 100%; /* Ajusta el ancho según tus necesidades */
@@ -359,6 +363,7 @@ div img {
     margin-top: 20px; /* Ajusta el margen superior según sea necesario */
 }
 
+/* Estilos para imágenes en menú */
 .menu-image {
     width: 100%;
     float: right; /* Coloca la imagen a la derecha */
@@ -372,6 +377,7 @@ body {
     box-sizing: border-box;
 }
 
+/* Estilos para la cuadrícula de imágenes */
 .image-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -379,6 +385,7 @@ body {
     padding: 20px;
 }
 
+/* Estilos para elementos de imágenes */
 .image-item {
     text-align: center;
 }
@@ -390,6 +397,7 @@ body {
     object-fit: cover;
 }
 
+/* Estilos para títulos de imágenes */
 .image-title {
     margin-top: 10px;
     font-size: 18px;
@@ -414,7 +422,6 @@ body {
     max-width: 200px; /* Establece un ancho máximo para el botón */
     width: 100%; /* Hace que el ancho sea relativo al contenedor */
 }
-
 
 /* Estilos para el fondo del modal que se muestra detrás */
 .modal-overlay {
@@ -457,6 +464,7 @@ body {
     max-width: 500px;
 }
 
+/* Estilos para el botón de cerrar en el modal */
 .modal-close {
     position: absolute;
     top: 10px;
@@ -475,6 +483,7 @@ body {
     color: var(--text-white); /* Texto en color blanco */
 }
 
+/* Estilos para imágenes dentro del modal */
 .modal-content img {
     width: 100%;
     height: auto;
@@ -483,8 +492,9 @@ body {
     margin-right: 100px;
 }
 
+/* Estilos para imágenes en menú */
 .menu-imatge {
-     float: right; /* Coloca la imagen a la derecha */
+    float: right; /* Coloca la imagen a la derecha */
     margin-left: 20px; /* Ajusta el margen izquierdo para separar la imagen del menú */
 }
 
@@ -494,25 +504,76 @@ body {
     border-radius: 10px; /* Opcional: agrega bordes redondeados a la imagen */
 }
 
+/* Estilos para el interruptor de navegación en dispositivos móviles */
 .nav-toggle {
-        visibility: hidden;
+    visibility: hidden;
 }
 
-/* Mobile Versions */
-@media screen and (max-width: 480px) {
-
-    /* Compact Navigation Bar */
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 767px) {
     .navbar {
-        display: none;
         flex-direction: column;
         align-items: center;
-        background-color: var(--background-bisque);
     }
 
-    .navbar.active {
-        display: flex;
+    .nav-link {
+        margin-top: 0;
     }
 
+    .nav-logo {
+        width: 40px;
+    }
+
+    .content {
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    /* Ajustes adicionales para el contenido de la tarjeta en dispositivos móviles */
+    .card__content {
+        flex-direction:row ; /* Ajustar la dirección del contenedor flex a columna */
+        align-items: flex-start; /* Alinear elementos a la izquierda */
+        text-align: left; /* Alinear el texto a la izquierda */
+    }
+
+    .card__content img {
+        max-width: 100%; /* Ajustar el ancho de la imagen */
+        margin: 0; /* Eliminar el margen */
+    }
+
+    h3, p {
+        margin-top: 10px; /* Ajustar el margen para mantener espacio entre elementos */
+    }
+
+    h4 {
+        margin-left: 0; /* Eliminar el margen izquierdo */
+        text-align: left; /* Alinear el texto a la izquierda */
+    }
+
+    /* Ajustes adicionales para el modal en dispositivos móviles */
+    .modal-content {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .modal-close {
+        top: 5px;
+        right: 5px;
+    }
+
+    .menu1 img {
+        max-width: 100%; /* Ajustar el ancho de la imagen */
+        margin: 0; /* Eliminar el margen */
+    }
+
+    .menu1 {
+        margin-left: 0;
+    }
+}
+
+
+/* Media queries para dispositivos con un ancho máximo de 480px */
+@media screen and (max-width: 480px) {
     .nav-toggle {
         display: block;
         background-color: var(--background-bisque);
@@ -524,10 +585,15 @@ body {
         cursor: pointer;
     }
 
-    /* Adjust Nav Links for Touch Interaction */
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--background-bisque);
+    }
+
     .nav-link {
         background-color: var(--text-gray);
-        padding: 12px 20px; /* Increase padding for easier touch */
     }
 
     .nav-link:hover {
@@ -535,27 +601,8 @@ body {
         color: var(--text-light);
     }
 
-    /* Responsive Image Layout */
-    .image-container {
-        grid-template-columns: repeat(2, 1fr); /* Adjust grid for smaller screen */
+    .navbar.active {
+        display: flex;
     }
 
-    /* Font and Text Adjustments */
-    header, .content, .menu h1, .card__content h3, h4, h5, p {
-        font-size: smaller; /* Adjust font size for smaller screens */
-    }
-
-    /* Button and Link Adjustments */
-    a.button {
-        padding: 10px 15px; /* Increase padding for easier touch */
-        font-size: larger; /* Increase font size for visibility */
-    }
-
-    /* Adjust Layout and Padding */
-    .card__content, .menu-item, .sub-menu-item {
-        padding: 10px; /* Adjust padding for space efficiency */
-        margin: 10px 0; /* Adjust margins for compact layout */
-    }
-
-    /* Additional adjustments as needed... */
 }
